@@ -1,33 +1,33 @@
 Estado,Casos totales,Casos nuevos ultimas 24h,Casos activos,Muertes,Recuperaciones
-Aguascalientes,13,1,13,0,0
-Baja California,19,5,19,0,0
-Baja California Sur,7,2,7,0,0
+Aguascalientes,19,6,19,0,0
+Baja California,20,1,20,0,0
+Baja California Sur,9,2,9,0,0
 Campeche,2,0,2,0,0
-Chiapas,4,0,4,0,0
+Chiapas,7,3,7,0,0
 Chihuahua,6,0,6,0,0
-Ciudad de México,83,1,80,3,0
-Coahuila,13,1,12,0,1
+Ciudad de México,107,24,102,5,0
+Coahuila,14,1,14,0,1
 Colima,2,0,2,0,0
-Durango,5,0,4,1,0
-Estado de México,46,20,45,0,1
-Guanajuato,23,4,23,0,0
+Durango,7,2,6,1,0
+Estado de México,70,24,70,0,1
+Guanajuato,31,8,31,0,0
 Guerrero,7,0,7,0,0
-Hidalgo,12,5,12,0,0
-Jalisco,64,18,62,2,0
-Michoacán,11,1,11,0,0
-Morelos,4,2,4,0,0
-Nayarit,4,0,4,0,0
-Nuevo León,57,5,57,0,0
-Oaxaca,8,1,8,0,0
-Puebla,45,11,45,0,0
-Querétaro,21,3,21,0,0
-Quintana Roo,29,7,29,0,0
-San Luis Potosí,18,1,16,2,0
-Sinaloa,9,5,8,0,1
-Sonora,7,3,7,0,0
-Tabasco,17,11,17,0,0
+Hidalgo,12,0,12,0,0
+Jalisco,77,13,74,3,0
+Michoacán,16,5,15,1,0
+Morelos,4,0,4,0,0
+Nayarit,5,1,5,0,0
+Nuevo León,64,7,64,0,0
+Oaxaca,11,3,11,0,0
+Puebla,51,6,51,0,0
+Querétaro,23,2,23,0,0
+Quintana Roo,29,0,29,0,0
+San Luis Potosí,19,1,17,2,0
+Sinaloa,9,0,9,0,1
+Sonora,8,1,8,0,0
+Tabasco,21,4,21,0,0
 Tamaulipas,6,0,6,0,0
-Tlaxcala,1,0,1,0,0
-Veracruz,7,0,7,0,0
-Yucatán,32,3,32,0,0
-Zacatecas,3,0,3,0,0
+Tlaxcala,4,3,4,0,0
+Veracruz,17,10,17,0,0
+Yucatán,36,4,36,0,0
+Zacatecas,4,1,4,0,0
