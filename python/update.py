@@ -115,7 +115,7 @@ if __name__ == '__main__':
     activos_file = aggr_dir + 'covid19_mex_casos_activos.csv'
     activos_df = pd.read_csv(activos_file)
     row = activos_edos(totales_df, muertes_df, recuperados_df, date_formatted)
-    # activos_df = activos_df.append(row, ignore_index=True)
+    activos_df = activos_df.append(row, ignore_index=True)
 
     pairs_file_df = [(totales_file, totales_df),
                      (nuevos_file, nuevos_df),
