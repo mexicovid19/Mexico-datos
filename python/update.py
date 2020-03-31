@@ -1,10 +1,14 @@
 import sys
 import os
+import json
 import pandas as pd
 import geopandas as gpd
 from datetime import datetime, timedelta
 
 from util import captura
+
+pd.set_option('mode.chained_assignment', None)
+
 
 edos_from = ['AGUASCALIENTES', 'BAJA CALIFORNIA', 'BAJA CALIFORNIA SUR',
              'CAMPECHE', 'CHIAPAS', 'CHIHUAHUA', 'CIUDAD DE MÉXICO',
@@ -59,6 +63,38 @@ def list2row(list, date):
     return pd.concat((date, total, counts))
 
 
+def total_sexo_edad(update_df):
+    df = update_df[['sexo', 'edad', 'id']]
+    df.edad = df.edad.apply(lambda a: a // 5)
+    df = df.rename(columns=dict(edad='age'))
+
+    m = (df.loc[df.sexo == 'M']
+         .drop('sexo', axis=1)
+         .groupby('age', as_index=False)
+         .count()
+         .rename(columns=dict(id='male')))
+    m.age = m.age.map(lambda x: f'{5*x}-{5*x+4}')
+    m = m.set_index('age')
+
+    f = (df.loc[df.sexo == 'F']
+         .drop('sexo', axis=1)
+         .groupby('age', as_index=False)
+         .count()
+         .rename(columns=dict(id='female')))
+    f.age = f.age.map(lambda x: f'{5*x}-{5*x+4}')
+    f = f.set_index('age')
+
+    out_df = f.join(m, how='outer').fillna(0).astype(int)
+
+    json_list = []
+    for idx, row in out_df.iterrows():
+        d = dict(age=idx, male=int(row['male']), female=int(row['female']))
+        json_list.append(d)
+
+    out = json.dumps(json_list)
+    return out
+
+
 if __name__ == '__main__':
 
     date_str = sys.argv[1]
@@ -75,8 +111,9 @@ if __name__ == '__main__':
     repo = '..'
     data_dir = os.path.join(repo, 'datos', '')
     csv_dir = os.path.join(data_dir, 'reportes_oficiales_ssa', '')
-    aggr_dir = os.path.join(data_dir, 'series_de_tiempo', '')
+    series_dir = os.path.join(data_dir, 'series_de_tiempo', '')
     geo_dir = os.path.join(data_dir, 'geograficos', '')
+    demo_dir = os.path.join(data_dir, 'demograficos_variables', '')
 
     # Input: Los nuevos datos recien extraidos
     update_file = csv_dir + f'covid19_mex_confirmados_{date_str}.csv'
@@ -85,34 +122,37 @@ if __name__ == '__main__':
     # Updates
 
     # Nuevos totales por estado
-    totales_file = aggr_dir + 'covid19_mex_casos_totales.csv'
+    totales_file = series_dir + 'covid19_mex_casos_totales.csv'
     totales_df = pd.read_csv(totales_file)
     row = total_edos(update_df, date_formatted)
     totales_df = totales_df.append(row, ignore_index=True)
 
     # Casos nuevos por estado
-    nuevos_file = aggr_dir + 'covid19_mex_casos_nuevos.csv'
+    nuevos_file = series_dir + 'covid19_mex_casos_nuevos.csv'
     nuevos_df = pd.read_csv(nuevos_file)
     row = nuevos_edos(totales_df, date_formatted)
     nuevos_df = nuevos_df.append(row, ignore_index=True)
 
     # Muertes por estado
-    muertes_file = aggr_dir + 'covid19_mex_muertes.csv'
+    muertes_file = series_dir + 'covid19_mex_muertes.csv'
     muertes_df = pd.read_csv(muertes_file)
     print('\nMuertes:')
-    muertes = captura()
+    last_row = muertes_df.iloc[-1, 2:]
+    muertes = captura(datos_previos=last_row.values)
     row = list2row(muertes, date_formatted)
     muertes_df = muertes_df.append(row, ignore_index=True)
 
     # Recuperados por estado
-    recuperados_file = aggr_dir + 'covid19_mex_recuperados.csv'
+    recuperados_file = series_dir + 'covid19_mex_recuperados.csv'
     recuperados_df = pd.read_csv(recuperados_file)
-    print('\nRecuperados:')
-    recuperados = captura()
+    # print('\nRecuperados:')
+    # recuperados = captura()
+    recuperados = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
     row = list2row(recuperados, date_formatted)
     recuperados_df = recuperados_df.append(row, ignore_index=True)
 
-    activos_file = aggr_dir + 'covid19_mex_casos_activos.csv'
+    activos_file = series_dir + 'covid19_mex_casos_activos.csv'
     activos_df = pd.read_csv(activos_file)
     row = activos_edos(totales_df, muertes_df, recuperados_df, date_formatted)
     activos_df = activos_df.append(row, ignore_index=True)
@@ -170,3 +210,13 @@ if __name__ == '__main__':
         gdf.to_file(geojson_file, driver='GeoJSON')
         gdf.loc[0:0, ['updated_at']].to_csv(updated_file, index=False)
         edos_hoy_df.to_csv(edos_hoy_file, index=False)
+
+    # Sexo y edad
+    sexo_edad_file = demo_dir + 'piramide_sexo_edad.json'
+    sexo_edad_json = total_sexo_edad(update_df)
+
+    write = input('\nEscribir cambios piramide_sexo_edad.json (y/n) : ')
+    write = True if write == 'y' else False
+    if write:
+        with open(sexo_edad_file, 'w') as f:
+            f.write(sexo_edad_json)

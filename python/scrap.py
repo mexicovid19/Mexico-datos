@@ -28,6 +28,8 @@ def scrap(file, npages=None, verbose=True):
 
     # La primera tabla tiene nombres de columnas en la primera fila
     df = df.append(format_df(tab[0].df.loc[1:]))
+    if verbose:
+        print(tab[0].parsing_report)
 
     for t in tab[1:]:
         df = df.append(format_df(t.df), ignore_index=True)
