@@ -17,12 +17,20 @@ edos = ['Aguascalientes (AGU)', 'Baja California (BCN)',
         'Yucatán (YUC)', 'Zacatecas (ZAC)']
 
 
-def captura(entradas=edos):
+def captura(entradas=edos, datos_previos=None):
+
+    if datos_previos is not None:
+        assert len(datos_previos) == len(entradas)
 
     data = []
 
-    for x in entradas:
-        num = input(f'{x} : ')
+    for i, x in enumerate(entradas):
+        if datos_previos is not None:
+            n = datos_previos[i]
+            s = f'{x}, prev. {n} : ' if n > 0 else f'{x} : '
+        else:
+            s = f'{x} : '
+        num = input(s)
         num = int(num) if num else 0
         data.append(num)
 
@@ -48,4 +56,5 @@ def captura(entradas=edos):
 
 
 if __name__ == '__main__':
-    captura()
+    l = captura()
+    print(l)
