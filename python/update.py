@@ -172,7 +172,7 @@ if __name__ == '__main__':
 
         if write:
             with open(file, 'a') as f:
-                f.write('\n')
+                # f.write('\n')
                 df.tail(1).to_csv(path_or_buf=f,
                                   header=False, index=False)
 
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     edos_hoy_file = data_dir + 'estados_hoy.csv'
     updated_file = data_dir + 'last_updated.csv'
 
-    gdf = gpd.read_file(geojson_file).sort_values(by='name').reset_index()
+    gdf = gpd.read_file(geojson_file).sort_values(by='name').reset_index(drop=True)
     # gdf = gdf.set_index('name')  # nombres de estado en orden alfabetico
 
     gdf.totales = totales_df.iloc[-1, 2:].values.astype('int')

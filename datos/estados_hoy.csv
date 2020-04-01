@@ -1,33 +1,33 @@
 Estado,Casos totales,Casos nuevos ultimas 24h,Casos activos,Muertes,Recuperaciones
-Aguascalientes,24,0,24,0,0
-Baja California,27,4,27,0,0
-Baja California Sur,13,2,13,0,0
-Campeche,3,0,3,0,0
-Chiapas,11,1,11,0,0
-Chihuahua,6,0,6,0,0
-Ciudad de México,205,9,197,8,0
-Coahuila,39,7,37,1,1
+Aguascalientes,36,12,36,0,0
+Baja California,35,8,35,0,0
+Baja California Sur,17,4,17,0,0
+Campeche,5,2,5,0,0
+Chiapas,13,2,13,0,0
+Chihuahua,7,1,7,0,0
+Ciudad de México,234,29,226,8,0
+Coahuila,44,5,42,1,1
 Colima,2,0,2,0,0
 Durango,7,0,6,1,0
-Estado de México,136,17,134,1,1
-Guanajuato,43,6,43,0,0
-Guerrero,13,0,13,0,0
-Hidalgo,17,0,15,2,0
-Jalisco,90,7,87,3,0
-Michoacán,17,0,16,1,0
-Morelos,6,0,5,1,0
-Nayarit,6,1,6,0,0
-Nuevo León,75,8,75,0,0
+Estado de México,149,13,147,1,1
+Guanajuato,46,3,46,0,0
+Guerrero,15,2,15,0,0
+Hidalgo,19,2,16,3,0
+Jalisco,94,4,91,3,0
+Michoacán,21,4,20,1,0
+Morelos,7,1,6,1,0
+Nayarit,6,0,6,0,0
+Nuevo León,76,1,76,0,0
 Oaxaca,14,0,13,1,0
-Puebla,76,10,75,1,0
-Querétaro,27,1,26,1,0
-Quintana Roo,43,5,42,1,0
-San Luis Potosí,25,1,23,2,0
-Sinaloa,24,5,20,3,1
-Sonora,17,3,17,0,0
-Tabasco,38,5,38,0,0
-Tamaulipas,8,1,8,0,0
+Puebla,81,5,80,1,0
+Querétaro,29,2,28,1,0
+Quintana Roo,47,4,46,1,0
+San Luis Potosí,25,0,23,2,0
+Sinaloa,27,3,23,3,1
+Sonora,17,0,17,0,0
+Tabasco,48,10,48,0,0
+Tamaulipas,8,0,8,0,0
 Tlaxcala,4,0,4,0,0
-Veracruz,26,2,25,1,0
-Yucatán,46,5,46,0,0
-Zacatecas,6,1,6,0,0
+Veracruz,27,1,26,1,0
+Yucatán,49,3,49,0,0
+Zacatecas,6,0,6,0,0
