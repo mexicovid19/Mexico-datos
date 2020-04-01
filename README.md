@@ -20,7 +20,8 @@ Otras fuentes incluyen:
 - [John Hopkins University](https://github.com/CSSEGISandData/COVID-19);
 - [Mesura](http://mesura.org/coronavirusmx);
 - [verificovid](https://verificovid.mx/);
-- [El repositorio de Katia Guzmán Martínez](https://github.com/guzmart/covid19_mex).
+- [El repositorio de Katia Guzmán Martínez](https://github.com/guzmart/covid19_mex);
+- [El repositorio de Gabriel Alfonso Carranco Sapiéns](https://github.com/carranco-sga/Mexico-COVID-19)
 
 ## Limitaciones
 
