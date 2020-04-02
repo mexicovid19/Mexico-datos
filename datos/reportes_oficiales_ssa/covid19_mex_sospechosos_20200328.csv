@@ -1,0 +1,2624 @@
+id,estado,sexo,edad,fecha_sintomas,confirmacion,procedencia,fecha_llegada
+1,PUEBLA,M,49,2020-03-15,Sospechoso,Contacto,
+2,BAJA CALIFORNIA,F,34,2020-03-14,Sospechoso,Estados Unidos,2020-08-03
+3,CIUDAD DE MÉXICO,F,69,2020-02-25,Sospechoso,Italia,2020-03-03
+4,JALISCO,M,19,2020-03-18,Sospechoso,España,2020-03-17
+5,AGUASCALIENTES,M,36,2020-03-12,Sospechoso,Estados Unidos,2020-03-13
+6,AGUASCALIENTES,M,34,2020-03-18,Sospechoso,Contacto,2020-12-03
+7,DURANGO,F,52,2020-03-15,Sospechoso,Contacto,
+8,BAJA CALIFORNIA,F,65,2020-03-13,Sospechoso,Estados Unidos,2020-08-03
+9,CAMPECHE,M,58,2020-03-15,Sospechoso,España,2020-03-15
+10,GUERRERO,F,39,2020-03-01,Sospechoso,Estados Unidos,2020-05-03
+11,MÉXICO,M,46,2020-03-01,Sospechoso,Estados Unidos,2020-08-03
+12,MICHOACÁN,M,38,2020-03-13,Sospechoso,Contacto,
+13,CHIHUAHUA,M,24,2020-03-17,Sospechoso,Estados Unidos,2020-12-03
+14,MÉXICO,M,47,2020-03-07,Sospechoso,España,2020-07-03
+15,MICHOACÁN,F,38,2020-03-07,Sospechoso,España,2020-03-14
+16,MICHOACÁN,F,3,2020-03-13,Sospechoso,Contacto,
+17,VERACRUZ,M,78,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+18,BAJA CALIFORNIA,M,64,2020-03-17,Sospechoso,Estados Unidos,2020-08-03
+19,COAHUILA,F,38,2020-03-10,Sospechoso,España,2020-04-03
+20,TLAXCALA,F,25,2020-03-12,Sospechoso,Contacto,
+21,GUERRERO,M,64,2020-03-16,Sospechoso,Estados Unidos,2020-03-16
+22,TABASCO,F,55,2020-03-18,Sospechoso,España,2020-03-14
+23,TLAXCALA,M,48,2020-03-16,Sospechoso,Contacto,
+24,BAJA CALIFORNIA,M,37,2020-03-09,Sospechoso,Estados Unidos,2020-03-16
+25,AGUASCALIENTES,M,0,2020-03-19,Sospechoso,España,2020-03-14
+26,CIUDAD DE MÉXICO,F,60,2020-03-05,Sospechoso,Contacto,2020-03-15
+27,JALISCO,M,29,2020-03-17,Sospechoso,Contacto,2020-03-16
+28,SAN LUIS POTOSÍ,F,45,2020-03-17,Sospechoso,Estados Unidos,2020-03-18
+29,JALISCO,F,44,2020-03-15,Sospechoso,Contacto,
+30,JALISCO,F,8,2020-03-15,Sospechoso,Contacto,
+31,CIUDAD DE MÉXICO,F,9,2020-03-15,Sospechoso,Estados Unidos,2020-08-03
+32,SAN LUIS POTOSÍ,F,22,2020-03-16,Sospechoso,Contacto,
+33,CIUDAD DE MÉXICO,F,37,2020-03-15,Sospechoso,España,2020-02-03
+34,CIUDAD DE MÉXICO,F,28,2020-03-14,Sospechoso,Estados Unidos,2020-10-03
+35,CIUDAD DE MÉXICO,M,33,2020-03-15,Sospechoso,Estados Unidos,2020-03-15
+36,CIUDAD DE MÉXICO,M,0,2020-03-16,Sospechoso,Contacto,
+37,COLIMA,F,38,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+38,JALISCO,F,35,2020-03-14,Sospechoso,España,2020-03-14
+39,JALISCO,F,56,2020-03-13,Sospechoso,Estados Unidos,2020-04-03
+40,CIUDAD DE MÉXICO,F,37,2020-03-13,Sospechoso,España,2020-11-03
+41,CIUDAD DE MÉXICO,M,50,2020-03-07,Sospechoso,España,2020-02-03
+42,QUINTANA ROO,M,34,2020-03-13,Sospechoso,Contacto,
+43,TLAXCALA,F,51,2020-03-16,Sospechoso,Contacto,
+44,TABASCO,M,37,2020-03-18,Sospechoso,España,2020-03-17
+45,BAJA CALIFORNIA,F,24,2020-03-15,Sospechoso,Estados Unidos,2020-07-03
+46,TLAXCALA,F,25,2020-03-16,Sospechoso,Contacto,
+47,CIUDAD DE MÉXICO,F,52,2020-03-10,Sospechoso,Francia,2020-03-15
+48,CIUDAD DE MÉXICO,M,23,2020-03-14,Sospechoso,España,2020-03-16
+49,CIUDAD DE MÉXICO,M,64,2020-03-12,Sospechoso,Alemania,2020-11-03
+50,GUANAJUATO,M,25,2020-03-10,Sospechoso,España,2020-03-18
+51,CIUDAD DE MÉXICO,F,53,2020-03-03,Sospechoso,Estados Unidos,2020-02-27
+52,CIUDAD DE MÉXICO,M,56,,Sospechoso,Contacto,
+53,BAJA CALIFORNIA,F,40,,Sospechoso,Estados Unidos,2020-03-05
+54,COLIMA,M,70,,Sospechoso,Contacto,2020-03-08
+55,CIUDAD DE MÉXICO,F,58,2020-11-03,Sospechoso,Contacto,
+56,CIUDAD DE MÉXICO,F,21,2020-12-03,Sospechoso,Contacto,
+57,BAJA CALIFORNIA,F,51,,Sospechoso,Estados Unidos,2020-03-17
+58,CIUDAD DE MÉXICO,M,36,,Sospechoso,Estados Unidos,2020-03-10
+59,TLAXCALA,F,28,,Sospechoso,Contacto,
+60,CIUDAD DE MÉXICO,M,39,,Sospechoso,Francia,2020-03-16
+61,MÉXICO,M,56,,Sospechoso,Contacto,
+62,VERACRUZ,M,34,,Sospechoso,Estados Unidos,2020-03-15
+63,CIUDAD DE MÉXICO,F,23,,Sospechoso,Estados Unidos,2020-03-11
+64,MÉXICO,M,58,2020-08-03,Sospechoso,Contacto,2020-03-16
+65,MÉXICO,M,34,,Sospechoso,Contacto,
+66,CIUDAD DE MÉXICO,F,35,,Sospechoso,Francia,2020-03-16
+67,MÉXICO,F,54,,Sospechoso,Estados Unidos,2020-03-18
+68,SINALOA,M,27,,Sospechoso,Estados Unidos,2020-03-13
+69,MÉXICO,M,42,,Sospechoso,Estados Unidos,2020-03-17
+70,MÉXICO,F,31,,Sospechoso,Estados Unidos,2020-03-15
+71,MÉXICO,F,52,,Sospechoso,Estados Unidos,2020-03-15
+72,QUERETARO,F,37,,Sospechoso,Contacto,
+73,MÉXICO,F,42,,Sospechoso,España,2020-03-15
+74,MÉXICO,M,13,,Sospechoso,España,2020-03-13
+75,CIUDAD DE MÉXICO,F,31,,Sospechoso,Estados Unidos,2020-03-05
+76,CIUDAD DE MÉXICO,F,2,,Sospechoso,Contacto,
+77,SONORA,F,27,,Sospechoso,Estados Unidos,2020-03-16
+78,QUERETARO,M,24,,Sospechoso,Contacto,
+79,CIUDAD DE MÉXICO,M,33,,Sospechoso,Francia,2020-03-07
+80,CIUDAD DE MÉXICO,F,54,,Sospechoso,España,2020-03-17
+81,CIUDAD DE MÉXICO,M,62,,Sospechoso,España,2020-03-15
+82,CIUDAD DE MÉXICO,M,27,,Sospechoso,España,2020-03-11
+83,MÉXICO,M,61,2020-07-03,Sospechoso,España,2020-03-15
+84,MORELOS,F,65,,Sospechoso,Estados Unidos,2020-03-14
+85,QUERETARO,F,39,,Sospechoso,Estados Unidos,2020-03-15
+86,JALISCO,M,37,,Sospechoso,Estados Unidos,2020-03-16
+87,CIUDAD DE MÉXICO,M,30,,Sospechoso,Contacto,
+88,GUANAJUATO,F,24,2020-12-03,Sospechoso,España,2020-03-13
+89,CIUDAD DE MÉXICO,M,19,,Sospechoso,Contacto,
+90,JALISCO,M,27,,Sospechoso,Contacto,
+91,CIUDAD DE MÉXICO,F,53,,Sospechoso,Contacto,
+92,SINALOA,F,27,2020-12-03,Sospechoso,Estados Unidos,2020-03-12
+93,TABASCO,M,60,,Sospechoso,Contacto,
+94,SINALOA,M,30,2020-12-03,Sospechoso,Estados Unidos,2020-03-12
+95,TABASCO,M,55,,Sospechoso,Contacto,
+96,CIUDAD DE MÉXICO,F,42,2020-09-03,Sospechoso,España,2020-03-11
+97,MÉXICO,F,17,2020-12-03,Sospechoso,Estados Unidos,
+98,TABASCO,M,50,,Sospechoso,Contacto,
+99,MÉXICO,F,29,,Sospechoso,Contacto,
+100,JALISCO,M,39,2020-12-03,Sospechoso,España,2020-03-16
+101,CIUDAD DE MÉXICO,F,46,,Sospechoso,Contacto,
+102,TLAXCALA,F,41,,Sospechoso,Contacto,
+103,CIUDAD DE MÉXICO,F,33,2020-06-03,Sospechoso,Contacto,
+104,MÉXICO,M,49,,Sospechoso,Contacto,
+105,BAJA CALIFORNIA,F,9,,Sospechoso,Contacto,
+106,MÉXICO,F,29,,Sospechoso,Contacto,
+107,CIUDAD DE MÉXICO,M,55,2020-03-14,Sospechoso,Contacto,
+108,MÉXICO,M,46,2020-03-12,Sospechoso,Contacto,
+109,CIUDAD DE MÉXICO,F,40,2020-03-04,Sospechoso,Contacto,2020-03-16
+110,SAN LUIS POTOSÍ,F,51,2020-03-16,Sospechoso,España,2020-03-15
+111,BAJA CALIFORNIA,M,27,2020-03-13,Sospechoso,Contacto,
+112,CIUDAD DE MÉXICO,M,34,2020-03-12,Sospechoso,Estados Unidos,2020-11-03
+113,VERACRUZ,M,42,2020-03-17,Sospechoso,Estados Unidos,2020-03-16
+114,CIUDAD DE MÉXICO,F,57,2020-03-09,Sospechoso,Estados Unidos,2020-11-03
+115,CIUDAD DE MÉXICO,F,43,2020-03-16,Sospechoso,Contacto,
+116,MÉXICO,F,37,2020-03-13,Sospechoso,España,2020-03-15
+117,CIUDAD DE MÉXICO,F,26,2020-03-19,Sospechoso,Contacto,
+118,VERACRUZ,F,23,2020-03-14,Sospechoso,Contacto,
+119,CIUDAD DE MÉXICO,M,31,2020-03-18,Sospechoso,Contacto,
+120,AGUASCALIENTES,M,44,2020-03-16,Sospechoso,Estados Unidos,2020-03-14
+121,CIUDAD DE MÉXICO,M,57,2020-03-20,Sospechoso,Contacto,
+122,JALISCO,M,36,2020-03-11,Sospechoso,España,2020-09-03
+123,CIUDAD DE MÉXICO,M,20,2020-02-06,Sospechoso,Contacto,
+124,BAJA CALIFORNIA SUR,F,39,2020-03-16,Sospechoso,Estados Unidos,2020-07-03
+125,CIUDAD DE MÉXICO,M,56,2020-03-18,Sospechoso,Contacto,
+126,BAJA CALIFORNIA,F,36,2020-03-15,Sospechoso,Estados Unidos,2020-07-03
+127,BAJA CALIFORNIA SUR,M,40,2020-03-10,Sospechoso,Estados Unidos,2020-06-03
+128,HIDALGO,F,43,2020-03-16,Sospechoso,Contacto,
+129,SONORA,M,42,2020-03-19,Sospechoso,Estados Unidos,2020-03-14
+130,BAJA CALIFORNIA SUR,M,23,2020-03-16,Sospechoso,Contacto,
+131,BAJA CALIFORNIA SUR,F,29,2020-03-08,Sospechoso,Alemania,2020-07-03
+132,MÉXICO,M,39,2020-03-17,Sospechoso,España,2020-03-13
+133,PUEBLA,F,29,2020-03-16,Sospechoso,Contacto,
+134,MÉXICO,F,17,2020-03-12,Sospechoso,Italia,2020-03-13
+135,COAHUILA,F,41,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+136,MÉXICO,F,64,2020-03-15,Sospechoso,Francia,2020-03-14
+137,MÉXICO,F,26,2020-03-13,Sospechoso,Contacto,
+138,MÉXICO,F,27,2020-03-16,Sospechoso,Contacto,
+139,MÉXICO,F,38,2020-03-16,Sospechoso,Contacto,
+140,MÉXICO,M,43,2020-03-19,Sospechoso,Contacto,
+141,MÉXICO,M,32,2020-03-17,Sospechoso,Contacto,
+142,SINALOA,F,21,2020-03-20,Sospechoso,España,2020-03-20
+143,MÉXICO,M,6,2020-03-20,Sospechoso,Contacto,2020-03-20
+144,MÉXICO,M,55,2020-03-18,Sospechoso,España,2020-03-16
+145,MÉXICO,F,36,2020-03-13,Sospechoso,Contacto,
+146,MÉXICO,F,27,2020-03-15,Sospechoso,Contacto,
+147,MÉXICO,M,31,2020-03-10,Sospechoso,Contacto,
+148,MÉXICO,M,57,2020-03-13,Sospechoso,Contacto,
+149,MÉXICO,M,33,2020-03-12,Sospechoso,Contacto,
+150,SINALOA,F,16,2020-03-15,Sospechoso,Francia,2020-03-15
+151,MÉXICO,M,29,2020-03-09,Sospechoso,Alemania,2020-09-03
+152,MÉXICO,F,33,2020-03-13,Sospechoso,Contacto,
+153,CIUDAD DE MÉXICO,M,28,2020-03-17,Sospechoso,Contacto,
+154,CIUDAD DE MÉXICO,F,42,2020-03-20,Sospechoso,Contacto,
+155,MÉXICO,F,48,2020-03-15,Sospechoso,Estados Unidos,2020-03-03
+156,CIUDAD DE MÉXICO,F,38,2020-03-17,Sospechoso,Estados Unidos,2020-08-03
+157,CIUDAD DE MÉXICO,M,33,2020-03-17,Sospechoso,Contacto,
+158,CIUDAD DE MÉXICO,F,32,2020-03-10,Sospechoso,España,2020-03-14
+159,MÉXICO,F,42,2020-03-18,Sospechoso,Contacto,2020-03-19
+160,MÉXICO,M,49,2020-03-17,Sospechoso,Contacto,
+161,CIUDAD DE MÉXICO,F,73,2020-03-16,Sospechoso,Italia,2020-03-15
+162,QUERETARO,F,28,2020-03-20,Sospechoso,Contacto,
+163,MÉXICO,F,24,2020-03-16,Sospechoso,Francia,2020-03-16
+164,MÉXICO,M,24,2020-03-16,Sospechoso,Francia,2020-03-16
+165,BAJA CALIFORNIA,M,18,2020-03-17,Sospechoso,Estados Unidos,2020-03-10
+166,CIUDAD DE MÉXICO,F,27,2020-03-12,Sospechoso,Contacto,
+167,BAJA CALIFORNIA,M,25,2020-03-17,Sospechoso,Estados Unidos,2020-03-08
+168,GUANAJUATO,M,51,2020-03-16,Sospechoso,Contacto,
+169,CIUDAD DE MÉXICO,M,29,2020-03-14,Sospechoso,Estados Unidos,2020-03-17
+170,SAN LUIS POTOSÍ,F,47,2020-03-20,Sospechoso,Contacto,
+171,COLIMA,M,56,2020-03-16,Sospechoso,Estados Unidos,2020-03-12
+172,CIUDAD DE MÉXICO,F,28,2020-03-19,Sospechoso,Contacto,
+173,CIUDAD DE MÉXICO,M,26,2020-03-18,Sospechoso,España,2020-03-15
+174,SONORA,F,42,2020-03-19,Sospechoso,Estados Unidos,2020-03-14
+175,BAJA CALIFORNIA,F,27,2020-03-19,Sospechoso,Estados Unidos,2020-03-15
+176,COAHUILA,M,83,2020-03-16,Sospechoso,Estados Unidos,2020-03-18
+177,CIUDAD DE MÉXICO,M,37,2020-03-18,Sospechoso,Contacto,
+178,SONORA,F,61,2020-03-10,Sospechoso,Contacto,
+179,SINALOA,F,60,2020-03-19,Sospechoso,Contacto,
+180,CIUDAD DE MÉXICO,M,33,2020-03-18,Sospechoso,Contacto,
+181,AGUASCALIENTES,F,53,2020-03-17,Sospechoso,España,2020-03-17
+182,QUINTANA ROO,F,31,2020-03-19,Sospechoso,Contacto,
+183,AGUASCALIENTES,M,35,2020-03-19,Sospechoso,Contacto,
+184,BAJA CALIFORNIA,F,19,2020-03-18,Sospechoso,Contacto,2020-03-19
+185,COAHUILA,F,74,2020-03-17,Sospechoso,Contacto,
+186,BAJA CALIFORNIA,F,45,2020-03-13,Sospechoso,Estados Unidos,2020-03-19
+187,MÉXICO,F,28,2020-03-15,Sospechoso,Japón,2020-03-09
+188,JALISCO,M,42,2020-03-20,Sospechoso,Contacto,
+189,JALISCO,F,32,2020-03-14,Sospechoso,Contacto,
+190,JALISCO,F,57,2020-03-17,Sospechoso,España,2020-03-17
+191,CIUDAD DE MÉXICO,F,25,2020-03-09,Sospechoso,España,2020-02-26
+192,CIUDAD DE MÉXICO,M,21,2020-03-12,Sospechoso,Francia,2020-02-28
+193,MÉXICO,F,42,2020-03-14,Sospechoso,Estados Unidos,2020-03-14
+194,CIUDAD DE MÉXICO,F,28,2020-03-17,Sospechoso,Contacto,
+195,CIUDAD DE MÉXICO,F,32,2020-03-12,Sospechoso,Contacto,2020-03-10
+196,CHIHUAHUA,F,26,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+197,MÉXICO,F,40,2020-03-19,Sospechoso,Contacto,
+198,CHIHUAHUA,F,41,2020-03-15,Sospechoso,Alemania,2020-03-12
+199,CIUDAD DE MÉXICO,F,60,2020-03-18,Sospechoso,Contacto,
+200,CIUDAD DE MÉXICO,M,56,2020-03-04,Sospechoso,Alemania,2020-03-04
+201,CIUDAD DE MÉXICO,F,32,2020-03-17,Sospechoso,Contacto,
+202,JALISCO,F,35,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+203,JALISCO,M,69,2020-03-21,Sospechoso,Estados Unidos,2020-03-21
+204,CIUDAD DE MÉXICO,F,20,2020-03-12,Sospechoso,Francia,2020-02-28
+205,CIUDAD DE MÉXICO,F,53,2020-03-14,Sospechoso,Contacto,2020-03-18
+206,VERACRUZ,M,43,2020-03-18,Sospechoso,Estados Unidos,2020-03-13
+207,CIUDAD DE MÉXICO,M,24,2020-03-18,Sospechoso,Alemania,2020-03-19
+208,CIUDAD DE MÉXICO,M,27,2020-03-17,Sospechoso,Contacto,
+209,JALISCO,M,20,2020-03-18,Sospechoso,Francia,2020-03-15
+210,CIUDAD DE MÉXICO,M,52,2020-03-20,Sospechoso,Contacto,
+211,CIUDAD DE MÉXICO,M,28,2020-03-15,Sospechoso,Contacto,
+212,CIUDAD DE MÉXICO,M,31,2020-03-15,Sospechoso,Contacto,
+213,CIUDAD DE MÉXICO,F,25,2020-03-17,Sospechoso,Contacto,
+214,COAHUILA,F,23,2020-03-17,Sospechoso,Contacto,
+215,CIUDAD DE MÉXICO,M,32,2020-02-16,Sospechoso,Contacto,
+216,MÉXICO,F,24,2020-03-13,Sospechoso,Estados Unidos,2020-03-13
+217,MÉXICO,M,37,2020-03-14,Sospechoso,Corea del Sur,2020-03-02
+218,CIUDAD DE MÉXICO,F,38,2020-03-14,Sospechoso,Italia,2020-03-15
+219,DURANGO,F,37,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+220,CIUDAD DE MÉXICO,F,45,2020-03-08,Sospechoso,Alemania,2020-03-08
+221,TABASCO,F,23,2020-03-20,Sospechoso,Contacto,
+222,GUANAJUATO,F,36,2020-03-18,Sospechoso,Estados Unidos,2020-03-15
+223,CIUDAD DE MÉXICO,M,44,2020-03-09,Sospechoso,Alemania,2020-03-08
+224,CIUDAD DE MÉXICO,F,29,2020-03-15,Sospechoso,Francia,2020-03-14
+225,CIUDAD DE MÉXICO,F,41,2020-03-14,Sospechoso,Contacto,
+226,CIUDAD DE MÉXICO,M,41,2020-03-05,Sospechoso,Contacto,
+227,DURANGO,F,67,2020-03-13,Sospechoso,Estados Unidos,2020-03-10
+228,DURANGO,M,33,2020-03-15,Sospechoso,Estados Unidos,2020-03-08
+229,MÉXICO,M,40,2020-03-13,Sospechoso,Francia,2020-03-04
+230,GUANAJUATO,M,33,2020-03-08,Sospechoso,Contacto,2020-02-29
+231,GUANAJUATO,F,27,2020-03-13,Sospechoso,España,2020-03-09
+232,GUANAJUATO,F,67,2020-03-16,Sospechoso,Contacto,2020-03-16
+233,COLIMA,M,38,2020-03-11,Sospechoso,Estados Unidos,2020-03-13
+234,CIUDAD DE MÉXICO,F,43,2020-03-15,Sospechoso,España,2020-03-13
+235,CIUDAD DE MÉXICO,F,34,2020-03-16,Sospechoso,Estados Unidos,2020-03-17
+236,CIUDAD DE MÉXICO,F,37,2020-03-15,Sospechoso,Estados Unidos,2020-03-11
+237,CIUDAD DE MÉXICO,M,51,2020-03-17,Sospechoso,España,2020-03-09
+238,CIUDAD DE MÉXICO,M,35,2020-03-17,Sospechoso,España,2020-03-11
+239,CIUDAD DE MÉXICO,F,22,2020-03-13,Sospechoso,Francia,2020-03-17
+240,MÉXICO,F,40,2020-03-20,Sospechoso,Contacto,
+241,JALISCO,M,37,2020-03-13,Sospechoso,Contacto,
+242,MÉXICO,M,67,2020-03-17,Sospechoso,Contacto,
+243,MÉXICO,M,48,2020-03-08,Sospechoso,Francia,2020-03-18
+244,MÉXICO,M,34,2020-03-08,Sospechoso,Estados Unidos,2020-03-08
+245,QUINTANA ROO,F,40,2020-03-20,Sospechoso,Contacto,
+246,CIUDAD DE MÉXICO,M,34,2020-03-11,Sospechoso,Contacto,
+247,CIUDAD DE MÉXICO,F,52,2020-03-18,Sospechoso,Contacto,
+248,SAN LUIS POTOSÍ,M,42,2020-03-03,Sospechoso,Estados Unidos,2020-03-03
+249,CIUDAD DE MÉXICO,F,54,2020-03-18,Sospechoso,España,2020-03-15
+250,BAJA CALIFORNIA,M,93,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+251,CIUDAD DE MÉXICO,M,32,2020-03-18,Sospechoso,Contacto,
+252,JALISCO,F,57,2020-03-21,Sospechoso,España,2020-03-17
+253,MÉXICO,M,24,2020-03-18,Sospechoso,España,2020-03-14
+254,MÉXICO,M,52,2020-03-13,Sospechoso,Contacto,
+255,JALISCO,F,35,2020-03-21,Sospechoso,Estados Unidos,2020-03-13
+256,CIUDAD DE MÉXICO,M,60,2020-03-17,Sospechoso,Contacto,
+257,CIUDAD DE MÉXICO,M,31,2020-03-14,Sospechoso,España,2020-03-13
+258,MÉXICO,F,47,2020-03-16,Sospechoso,Estados Unidos,2020-03-11
+259,CIUDAD DE MÉXICO,M,46,2020-03-16,Sospechoso,Contacto,
+260,CIUDAD DE MÉXICO,M,50,2020-03-14,Sospechoso,Contacto,
+261,CIUDAD DE MÉXICO,F,55,2020-03-13,Sospechoso,Contacto,
+262,CIUDAD DE MÉXICO,F,36,2020-03-16,Sospechoso,Contacto,
+263,JALISCO,F,23,2020-03-12,Sospechoso,España,2020-03-17
+264,MICHOACÁN,F,42,2020-03-11,Sospechoso,Estados Unidos,2020-03-09
+265,BAJA CALIFORNIA,F,0,2020-03-20,Sospechoso,Contacto,
+266,BAJA CALIFORNIA,M,93,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+267,BAJA CALIFORNIA,F,33,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+268,CIUDAD DE MÉXICO,F,19,2020-03-21,Sospechoso,Contacto,
+269,CHIHUAHUA,M,39,2020-03-14,Sospechoso,Estados Unidos,
+270,BAJA CALIFORNIA,F,22,2020-03-20,Sospechoso,Contacto,
+271,BAJA CALIFORNIA,M,29,2020-03-17,Sospechoso,Estados Unidos,2020-03-15
+272,BAJA CALIFORNIA,F,86,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+273,CIUDAD DE MÉXICO,F,62,2020-03-11,Sospechoso,Estados Unidos,2020-03-11
+274,MÉXICO,M,28,2020-03-16,Sospechoso,España,2020-02-26
+275,CIUDAD DE MÉXICO,M,27,2020-03-13,Sospechoso,Contacto,
+276,BAJA CALIFORNIA,M,29,2020-03-17,Sospechoso,Estados Unidos,2020-03-15
+277,CIUDAD DE MÉXICO,M,80,2020-03-20,Sospechoso,Contacto,
+278,HIDALGO,M,42,2020-03-21,Sospechoso,España,2020-11-03
+279,CIUDAD DE MÉXICO,M,56,2020-03-18,Sospechoso,Contacto,
+280,MÉXICO,F,35,2020-03-15,Sospechoso,Contacto,
+281,BAJA CALIFORNIA,F,52,2020-03-20,Sospechoso,Estados Unidos,2020-03-15
+282,JALISCO,M,35,2020-03-18,Sospechoso,Estados Unidos,2020-03-18
+283,BAJA CALIFORNIA,M,16,2020-03-17,Sospechoso,Estados Unidos,2020-07-03
+284,PUEBLA,M,18,2020-03-10,Sospechoso,España,2020-03-15
+285,HIDALGO,F,38,2020-03-18,Sospechoso,Contacto,
+286,CIUDAD DE MÉXICO,M,29,2020-03-19,Sospechoso,Contacto,
+287,SINALOA,F,48,2020-03-21,Sospechoso,Contacto,
+288,BAJA CALIFORNIA,F,32,2020-03-18,Sospechoso,Estados Unidos,2020-03-16
+289,MÉXICO,F,29,2020-03-12,Sospechoso,España,2020-03-13
+290,MÉXICO,F,25,2020-03-19,Sospechoso,Contacto,2020-01-03
+291,MÉXICO,F,49,2020-03-19,Sospechoso,Contacto,
+292,BAJA CALIFORNIA,M,23,2020-03-17,Sospechoso,Estados Unidos,2020-09-03
+293,CIUDAD DE MÉXICO,M,64,2020-03-19,Sospechoso,Contacto,2020-06-03
+294,TLAXCALA,F,19,2020-03-09,Sospechoso,Contacto,
+295,BAJA CALIFORNIA,M,24,2020-03-17,Sospechoso,Estados Unidos,2020-03-16
+296,MÉXICO,F,25,2020-03-17,Sospechoso,Contacto,
+297,MÉXICO,M,25,2020-03-21,Sospechoso,Contacto,
+298,CIUDAD DE MÉXICO,F,74,2020-03-19,Sospechoso,Estados Unidos,2020-03-13
+299,MÉXICO,M,29,2020-03-22,Sospechoso,Contacto,
+300,PUEBLA,F,32,2020-03-12,Sospechoso,Estados Unidos,2020-11-03
+301,MÉXICO,M,30,2020-03-14,Sospechoso,Contacto,
+302,JALISCO,F,28,2020-03-18,Sospechoso,Contacto,
+303,BAJA CALIFORNIA,M,58,2020-03-19,Sospechoso,Estados Unidos,2020-03-18
+304,COAHUILA,F,33,2020-03-20,Sospechoso,Estados Unidos,2020-03-14
+305,MÉXICO,F,25,2020-03-18,Sospechoso,Contacto,
+306,MÉXICO,F,50,2020-03-15,Sospechoso,Contacto,
+307,MÉXICO,F,35,2020-03-21,Sospechoso,Contacto,
+308,MÉXICO,M,22,2020-03-15,Sospechoso,Contacto,
+309,COLIMA,F,25,2020-03-22,Sospechoso,Estados Unidos,2020-03-13
+310,MÉXICO,M,85,2020-03-17,Sospechoso,Estados Unidos,2020-09-03
+311,MÉXICO,M,61,2020-03-23,Sospechoso,Contacto,
+312,BAJA CALIFORNIA,F,29,2020-03-17,Sospechoso,Contacto,2020-03-14
+313,PUEBLA,F,33,2020-03-20,Sospechoso,Contacto,
+314,BAJA CALIFORNIA,F,44,2020-03-16,Sospechoso,Estados Unidos,2020-03-13
+315,GUANAJUATO,F,40,2020-03-17,Sospechoso,Estados Unidos,2020-03-15
+316,BAJA CALIFORNIA,F,39,2020-03-18,Sospechoso,Estados Unidos,2020-03-17
+317,CIUDAD DE MÉXICO,M,26,2020-03-18,Sospechoso,España,2020-03-15
+318,MORELOS,F,38,2020-03-19,Sospechoso,Contacto,
+319,TLAXCALA,F,28,2020-03-12,Sospechoso,Contacto,
+320,BAJA CALIFORNIA,F,32,2020-03-19,Sospechoso,Contacto,2020-03-21
+321,GUANAJUATO,F,23,2020-03-17,Sospechoso,España,2020-03-16
+322,QUINTANA ROO,M,39,2020-03-15,Sospechoso,Contacto,2020-03-15
+323,CIUDAD DE MÉXICO,M,27,2020-03-19,Sospechoso,Contacto,
+324,HIDALGO,F,35,2020-03-19,Sospechoso,Contacto,
+325,BAJA CALIFORNIA,F,27,2020-03-18,Sospechoso,Estados Unidos,2020-08-03
+326,BAJA CALIFORNIA,M,49,2020-03-14,Sospechoso,España,2020-01-03
+327,BAJA CALIFORNIA,F,38,2020-03-19,Sospechoso,Contacto,
+328,MÉXICO,M,45,2020-03-22,Sospechoso,Contacto,2020-03-20
+329,HIDALGO,M,35,2020-03-18,Sospechoso,Contacto,
+330,QUINTANA ROO,F,22,2020-03-18,Sospechoso,Contacto,
+331,VERACRUZ,F,23,2020-03-16,Sospechoso,Contacto,
+332,AGUASCALIENTES,F,65,2020-03-17,Sospechoso,Estados Unidos,2020-10-03
+333,VERACRUZ,F,49,2020-03-20,Sospechoso,España,2020-03-14
+334,MÉXICO,F,33,2020-03-15,Sospechoso,Contacto,
+335,MÉXICO,F,73,2020-03-19,Sospechoso,Contacto,
+336,GUANAJUATO,F,26,2020-03-17,Sospechoso,Contacto,2020-03-16
+337,MÉXICO,M,68,2020-03-19,Sospechoso,Contacto,
+338,TABASCO,M,47,2020-03-18,Sospechoso,España,2020-08-03
+339,MÉXICO,M,38,2020-03-19,Sospechoso,Contacto,
+340,VERACRUZ,M,35,2020-03-18,Sospechoso,Estados Unidos,2020-03-17
+341,MÉXICO,F,45,2020-03-19,Sospechoso,Contacto,
+342,MÉXICO,F,29,2020-03-19,Sospechoso,Contacto,
+343,MÉXICO,F,44,2020-03-09,Sospechoso,Contacto,
+344,GUANAJUATO,M,38,2020-03-17,Sospechoso,Contacto,
+345,CHIAPAS,M,85,2020-03-21,Sospechoso,Contacto,2020-03-23
+346,MÉXICO,F,47,2020-03-06,Sospechoso,Contacto,
+347,CHIAPAS,F,37,2020-03-21,Sospechoso,Contacto,2020-03-23
+348,AGUASCALIENTES,F,14,2020-03-23,Sospechoso,España,2020-03-15
+349,CIUDAD DE MÉXICO,F,50,2020-03-21,Sospechoso,Contacto,
+350,CIUDAD DE MÉXICO,M,42,2020-03-18,Sospechoso,Estados Unidos,2020-03-18
+351,CIUDAD DE MÉXICO,M,66,2020-03-21,Sospechoso,Contacto,
+352,TABASCO,F,37,2020-03-20,Sospechoso,Contacto,
+353,CIUDAD DE MÉXICO,M,47,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+354,TABASCO,M,40,2020-03-22,Sospechoso,Estados Unidos,2020-10-03
+355,MÉXICO,F,34,2020-03-18,Sospechoso,Contacto,
+356,MÉXICO,M,8,2020-03-22,Sospechoso,Contacto,
+357,CIUDAD DE MÉXICO,M,32,2020-03-18,Sospechoso,Italia,2020-11-03
+358,TABASCO,M,34,2020-03-22,Sospechoso,Contacto,
+359,COAHUILA,M,43,2020-03-17,Sospechoso,Estados Unidos,
+360,MÉXICO,F,36,2020-03-17,Sospechoso,España,2020-03-18
+361,MÉXICO,F,41,2020-03-19,Sospechoso,Contacto,
+362,JALISCO,M,56,2020-03-17,Sospechoso,Contacto,
+363,MÉXICO,F,25,2020-03-17,Sospechoso,Contacto,
+364,MÉXICO,F,40,2020-03-18,Sospechoso,Contacto,
+365,MÉXICO,F,12,2020-03-16,Sospechoso,Contacto,
+366,MÉXICO,F,37,2020-03-16,Sospechoso,Contacto,
+367,CIUDAD DE MÉXICO,F,45,2020-03-20,Sospechoso,Contacto,
+368,MÉXICO,F,70,2020-03-21,Sospechoso,Contacto,
+369,MÉXICO,M,28,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+370,MÉXICO,F,43,2020-03-16,Sospechoso,Contacto,
+371,CIUDAD DE MÉXICO,F,23,2020-03-18,Sospechoso,Contacto,
+372,CIUDAD DE MÉXICO,M,44,2020-03-19,Sospechoso,Contacto,
+373,AGUASCALIENTES,F,30,2020-03-18,Sospechoso,Alemania,2020-03-15
+374,CIUDAD DE MÉXICO,F,23,2020-03-20,Sospechoso,Contacto,
+375,MÉXICO,F,47,2020-03-17,Sospechoso,España,2020-12-03
+376,SONORA,F,28,2020-03-18,Sospechoso,Estados Unidos,2020-09-03
+377,CIUDAD DE MÉXICO,M,27,2020-03-22,Sospechoso,Contacto,
+378,BAJA CALIFORNIA SUR,F,29,2020-03-17,Sospechoso,Estados Unidos,2020-09-03
+379,CIUDAD DE MÉXICO,M,31,2020-03-21,Sospechoso,Contacto,
+380,BAJA CALIFORNIA,M,68,2020-03-17,Sospechoso,Estados Unidos,2020-03-14
+381,BAJA CALIFORNIA,M,38,2020-03-22,Sospechoso,Estados Unidos,2020-03-19
+382,BAJA CALIFORNIA,M,37,2020-03-18,Sospechoso,Estados Unidos,2020-03-18
+383,MORELOS,M,22,2020-03-10,Sospechoso,Alemania,2020-03-20
+384,CIUDAD DE MÉXICO,M,31,2020-03-20,Sospechoso,Contacto,
+385,BAJA CALIFORNIA,F,18,2020-03-18,Sospechoso,Estados Unidos,2020-03-17
+386,MORELOS,M,43,2020-03-21,Sospechoso,Alemania,2020-03-18
+387,BAJA CALIFORNIA,F,47,2020-03-19,Sospechoso,Estados Unidos,2020-03-15
+388,MÉXICO,F,45,2020-03-20,Sospechoso,Contacto,
+389,BAJA CALIFORNIA SUR,F,26,2020-03-17,Sospechoso,Estados Unidos,2020-03-16
+390,BAJA CALIFORNIA,F,28,2020-03-17,Sospechoso,Estados Unidos,2020-03-07
+391,CIUDAD DE MÉXICO,F,40,2020-03-19,Sospechoso,Contacto,
+392,AGUASCALIENTES,F,62,2020-03-22,Sospechoso,Contacto,
+393,BAJA CALIFORNIA,F,28,2020-03-22,Sospechoso,Contacto,2020-03-23
+394,BAJA CALIFORNIA,F,50,2020-03-15,Sospechoso,Contacto,2020-03-23
+395,MÉXICO,M,55,2020-03-18,Sospechoso,Contacto,
+396,BAJA CALIFORNIA,F,67,2020-03-22,Sospechoso,Estados Unidos,2020-03-20
+397,CIUDAD DE MÉXICO,F,44,2020-03-09,Sospechoso,España,2020-03-12
+398,CIUDAD DE MÉXICO,F,39,2020-03-15,Sospechoso,Contacto,
+399,MÉXICO,M,52,2020-03-19,Sospechoso,Contacto,
+400,MÉXICO,M,17,2020-03-15,Sospechoso,Contacto,
+401,BAJA CALIFORNIA,M,38,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+402,BAJA CALIFORNIA,F,46,2020-03-22,Sospechoso,Estados Unidos,2020-03-16
+403,BAJA CALIFORNIA,M,21,2020-03-18,Sospechoso,Estados Unidos,2020-03-15
+404,CIUDAD DE MÉXICO,F,22,2020-03-16,Sospechoso,Italia,2020-03-14
+405,BAJA CALIFORNIA,F,46,2020-03-16,Sospechoso,Contacto,2020-03-23
+406,MÉXICO,M,31,2020-02-27,Sospechoso,Italia,2020-02-23
+407,BAJA CALIFORNIA,F,26,2020-03-21,Sospechoso,Estados Unidos,2020-03-14
+408,AGUASCALIENTES,F,25,2020-03-16,Sospechoso,Contacto,
+409,BAJA CALIFORNIA,F,34,2020-03-20,Sospechoso,Estados Unidos,2020-03-17
+410,CIUDAD DE MÉXICO,M,48,2020-03-14,Sospechoso,España,2020-02-29
+411,GUERRERO,M,20,2020-03-17,Sospechoso,Contacto,
+412,MÉXICO,F,30,2020-02-27,Sospechoso,Italia,2020-02-23
+413,MÉXICO,F,27,2020-03-15,Sospechoso,España,2020-03-18
+414,BAJA CALIFORNIA,M,32,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+415,CIUDAD DE MÉXICO,M,56,2020-03-13,Sospechoso,Italia,2020-03-08
+416,BAJA CALIFORNIA,M,28,2020-03-17,Sospechoso,Francia,2020-03-13
+417,MÉXICO,F,5,2020-03-18,Sospechoso,Contacto,
+418,BAJA CALIFORNIA,M,38,2020-03-20,Sospechoso,Estados Unidos,2020-03-18
+419,GUERRERO,F,46,2020-03-22,Sospechoso,Estados Unidos,2020-03-12
+420,AGUASCALIENTES,F,32,2020-03-23,Sospechoso,Contacto,
+421,CIUDAD DE MÉXICO,F,33,2020-03-13,Sospechoso,Contacto,
+422,MÉXICO,F,22,2020-02-28,Sospechoso,España,2020-02-17
+423,BAJA CALIFORNIA,F,27,2020-03-23,Sospechoso,Contacto,2020-03-23
+424,JALISCO,F,26,2020-03-19,Sospechoso,Contacto,
+425,MÉXICO,F,33,2020-03-16,Sospechoso,Estados Unidos,2020-03-06
+426,MÉXICO,F,37,2020-03-19,Sospechoso,Contacto,
+427,MÉXICO,M,23,2020-02-07,Sospechoso,Japón,2020-02-29
+428,JALISCO,F,33,2020-03-09,Sospechoso,Francia,2020-03-08
+429,AGUASCALIENTES,M,23,2020-03-20,Sospechoso,Contacto,2020-03-19
+430,MÉXICO,M,39,2020-03-16,Sospechoso,Contacto,
+431,CIUDAD DE MÉXICO,F,63,2020-03-22,Sospechoso,Estados Unidos,2020-03-17
+432,CIUDAD DE MÉXICO,M,44,2020-03-17,Sospechoso,Estados Unidos,2020-03-13
+433,MÉXICO,F,63,2020-03-18,Sospechoso,Contacto,
+434,JALISCO,F,64,2020-03-10,Sospechoso,Estados Unidos,2020-02-27
+435,MÉXICO,F,33,2020-03-10,Sospechoso,Japón,2020-03-09
+436,BAJA CALIFORNIA,F,32,2020-03-20,Sospechoso,Contacto,2020-03-20
+437,TABASCO,F,31,2020-03-19,Sospechoso,Contacto,
+438,BAJA CALIFORNIA,M,29,2020-03-22,Sospechoso,Estados Unidos,2020-03-08
+439,MÉXICO,M,43,2020-03-02,Sospechoso,Estados Unidos,2020-02-26
+440,MÉXICO,M,47,2020-03-16,Sospechoso,España,2020-03-15
+441,TLAXCALA,M,39,2020-03-20,Sospechoso,Contacto,
+442,MÉXICO,M,27,2020-03-17,Sospechoso,Contacto,
+443,ZACATECAS,M,40,2020-03-19,Sospechoso,Contacto,
+444,MÉXICO,M,27,2020-03-15,Sospechoso,Contacto,2020-02-25
+445,MÉXICO,M,44,2020-03-11,Sospechoso,España,2020-03-17
+446,MÉXICO,M,40,2020-03-14,Sospechoso,Estados Unidos,2020-02-26
+447,PUEBLA,F,35,2020-03-19,Sospechoso,Estados Unidos,2020-03-17
+448,MÉXICO,M,24,2020-03-16,Sospechoso,Estados Unidos,2020-12-03
+449,MÉXICO,M,45,2020-03-23,Sospechoso,Contacto,
+450,AGUASCALIENTES,F,35,2020-03-22,Sospechoso,Alemania,2000-03-17
+451,BAJA CALIFORNIA,F,23,2020-03-21,Sospechoso,Estados Unidos,2020-03-16
+452,MÉXICO,M,41,2020-03-11,Sospechoso,Estados Unidos,2020-03-13
+453,PUEBLA,F,40,2020-03-13,Sospechoso,Contacto,
+454,MÉXICO,M,25,2020-02-23,Sospechoso,España,2020-02-26
+455,MÉXICO,F,31,2020-03-16,Sospechoso,Contacto,
+456,SINALOA,F,40,2020-03-20,Sospechoso,Contacto,
+457,ZACATECAS,F,35,2020-03-17,Sospechoso,Contacto,
+458,MÉXICO,F,36,2020-03-18,Sospechoso,Contacto,
+459,QUERETARO,M,39,2020-03-21,Sospechoso,Contacto,
+460,MÉXICO,M,49,2020-03-18,Sospechoso,España,2020-03-16
+461,MÉXICO,F,21,2020-03-17,Sospechoso,España,2020-03-16
+462,BAJA CALIFORNIA,F,48,2020-03-22,Sospechoso,Estados Unidos,2020-03-23
+463,MÉXICO,M,26,2020-03-05,Sospechoso,Estados Unidos,2020-06-03
+464,MÉXICO,M,61,2020-03-20,Sospechoso,Estados Unidos,2020-03-21
+465,MÉXICO,M,27,2020-03-11,Sospechoso,Estados Unidos,2020-03-13
+466,MÉXICO,F,22,2020-02-28,Sospechoso,España,2020-02-16
+467,MÉXICO,M,46,2020-03-11,Sospechoso,Estados Unidos,2020-03-13
+468,MÉXICO,F,6,2020-03-18,Sospechoso,Contacto,
+469,SINALOA,M,40,2020-03-19,Sospechoso,Contacto,
+470,MÉXICO,M,27,2020-03-02,Sospechoso,Francia,2020-02-03
+471,ZACATECAS,F,41,2020-03-19,Sospechoso,Contacto,
+472,MÉXICO,M,15,2020-03-17,Sospechoso,Estados Unidos,2020-03-14
+473,HIDALGO,F,38,2020-03-22,Sospechoso,Contacto,
+474,HIDALGO,F,17,2020-03-22,Sospechoso,Contacto,
+475,MÉXICO,F,24,2020-03-23,Sospechoso,Contacto,
+476,NUEVO LEÓN,F,27,2020-03-18,Sospechoso,España,2020-03-16
+477,MÉXICO,M,40,2020-03-09,Sospechoso,Contacto,
+478,MÉXICO,M,33,2020-03-16,Sospechoso,Contacto,
+479,QUERETARO,M,36,2020-03-07,Sospechoso,Estados Unidos,2020-08-03
+480,ZACATECAS,F,38,2020-03-17,Sospechoso,Contacto,
+481,MÉXICO,F,29,2020-03-11,Sospechoso,Italia,2020-11-03
+482,MÉXICO,M,30,2020-03-14,Sospechoso,Contacto,
+483,MÉXICO,M,32,2020-03-16,Sospechoso,Contacto,
+484,MÉXICO,M,47,2020-03-16,Sospechoso,Contacto,
+485,CHIAPAS,M,27,2020-03-16,Sospechoso,España,
+486,MÉXICO,F,33,2020-03-16,Sospechoso,Estados Unidos,2020-12-03
+487,ZACATECAS,F,43,2020-03-17,Sospechoso,Contacto,
+488,MÉXICO,F,26,2020-03-20,Sospechoso,Estados Unidos,2020-03-14
+489,MÉXICO,M,28,2020-03-16,Sospechoso,Estados Unidos,2020-03-14
+490,JALISCO,F,24,2020-03-22,Sospechoso,Contacto,
+491,MÉXICO,M,43,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+492,JALISCO,M,28,2020-03-18,Sospechoso,España,2020-03-18
+493,JALISCO,F,64,2020-03-24,Sospechoso,Contacto,2020-03-14
+494,CIUDAD DE MÉXICO,M,31,2020-03-15,Sospechoso,Contacto,
+495,MÉXICO,M,66,2020-03-20,Sospechoso,España,2020-03-18
+496,MÉXICO,M,61,2020-03-16,Sospechoso,Contacto,
+497,MÉXICO,M,40,2020-03-12,Sospechoso,España,2020-03-14
+498,VERACRUZ,F,54,2020-03-22,Sospechoso,España,2020-03-15
+499,MÉXICO,F,54,2020-03-14,Sospechoso,Contacto,
+500,JALISCO,F,30,2020-03-21,Sospechoso,Contacto,
+501,MÉXICO,M,38,2020-03-17,Sospechoso,Contacto,
+502,TAMAULIPAS,M,65,2020-03-20,Sospechoso,Contacto,2020-03-13
+503,TABASCO,F,36,2020-03-21,Sospechoso,Contacto,
+504,MÉXICO,M,34,2020-03-13,Sospechoso,España,2020-03-14
+505,TABASCO,F,47,2020-03-20,Sospechoso,Contacto,
+506,MÉXICO,M,32,2020-03-10,Sospechoso,Contacto,
+507,MÉXICO,M,29,2020-03-17,Sospechoso,Estados Unidos,2020-03-15
+508,MÉXICO,F,58,2020-03-13,Sospechoso,Estados Unidos,2020-03-17
+509,SAN LUIS POTOSÍ,M,44,2020-03-21,Sospechoso,Contacto,
+510,BAJA CALIFORNIA SUR,M,21,2020-03-23,Sospechoso,Estados Unidos,2020-03-22
+511,CHIAPAS,F,45,2020-03-22,Sospechoso,Contacto,
+512,QUERETARO,M,33,2020-03-23,Sospechoso,Contacto,
+513,MÉXICO,F,28,2020-03-18,Sospechoso,Contacto,
+514,CIUDAD DE MÉXICO,F,42,2020-03-09,Sospechoso,Contacto,
+515,QUINTANA ROO,F,64,2020-03-18,Sospechoso,Contacto,
+516,CIUDAD DE MÉXICO,M,27,2020-03-23,Sospechoso,Contacto,
+517,MÉXICO,M,35,2020-03-16,Sospechoso,Contacto,
+518,QUERETARO,M,27,2020-03-19,Sospechoso,Contacto,
+519,PUEBLA,F,15,2020-03-18,Sospechoso,Contacto,
+520,CIUDAD DE MÉXICO,F,39,2020-03-20,Sospechoso,Contacto,
+521,CIUDAD DE MÉXICO,M,48,2020-03-23,Sospechoso,Contacto,
+522,MÉXICO,F,59,2020-03-12,Sospechoso,España,2020-12-03
+523,QUERETARO,F,26,2020-03-21,Sospechoso,Contacto,
+524,MÉXICO,M,29,2020-03-21,Sospechoso,Contacto,
+525,CIUDAD DE MÉXICO,M,38,2020-03-20,Sospechoso,Contacto,
+526,QUERETARO,F,45,2020-03-21,Sospechoso,Contacto,
+527,NUEVO LEÓN,M,29,2020-03-20,Sospechoso,Contacto,
+528,MÉXICO,F,30,2020-03-22,Sospechoso,Contacto,
+529,MÉXICO,M,41,2020-03-22,Sospechoso,España,2020-03-23
+530,COLIMA,M,34,2020-03-12,Sospechoso,Estados Unidos,2020-03-14
+531,MÉXICO,F,30,2020-03-15,Sospechoso,Contacto,
+532,COLIMA,F,25,2020-03-22,Sospechoso,Contacto,
+533,MÉXICO,F,32,2020-03-21,Sospechoso,Contacto,
+534,QUINTANA ROO,F,26,2020-03-20,Sospechoso,Contacto,
+535,SINALOA,F,42,2020-03-24,Sospechoso,España,2020-03-17
+536,SINALOA,F,66,2020-03-17,Sospechoso,Contacto,
+537,MÉXICO,M,31,2020-03-20,Sospechoso,Contacto,
+538,MÉXICO,F,26,2020-03-20,Sospechoso,Contacto,
+539,MÉXICO,F,0,2020-03-18,Sospechoso,Contacto,
+540,JALISCO,F,67,2020-03-21,Sospechoso,Estados Unidos,
+541,BAJA CALIFORNIA,M,24,2020-03-20,Sospechoso,Estados Unidos,2020-03-20
+542,DURANGO,M,26,2020-03-18,Sospechoso,Contacto,
+543,DURANGO,F,24,2020-03-19,Sospechoso,Contacto,
+544,CIUDAD DE MÉXICO,M,36,2020-03-16,Sospechoso,Estados Unidos,2020-04-03
+545,DURANGO,M,27,2020-03-22,Sospechoso,Contacto,
+546,DURANGO,M,33,2020-03-17,Sospechoso,Contacto,
+547,DURANGO,M,40,2020-03-19,Sospechoso,Contacto,
+548,DURANGO,M,33,2020-03-22,Sospechoso,Contacto,
+549,DURANGO,M,34,2020-03-22,Sospechoso,Contacto,
+550,DURANGO,M,33,2020-03-16,Sospechoso,Contacto,
+551,DURANGO,M,23,2020-03-11,Sospechoso,Contacto,
+552,CIUDAD DE MÉXICO,F,53,2020-03-17,Sospechoso,Contacto,2020-03-17
+553,QUERETARO,F,56,2020-03-15,Sospechoso,Estados Unidos,2020-10-03
+554,JALISCO,F,33,2020-03-15,Sospechoso,Contacto,
+555,AGUASCALIENTES,M,13,2020-03-23,Sospechoso,Contacto,
+556,AGUASCALIENTES,M,52,2020-03-22,Sospechoso,Contacto,
+557,MÉXICO,M,29,2020-03-07,Sospechoso,España,2020-02-29
+558,CIUDAD DE MÉXICO,M,50,2020-03-20,Sospechoso,Contacto,
+559,MÉXICO,F,23,2020-03-18,Sospechoso,Contacto,
+560,TAMAULIPAS,F,33,2020-03-23,Sospechoso,Alemania,2020-03-17
+561,AGUASCALIENTES,F,11,2020-03-23,Sospechoso,Contacto,2020-03-15
+562,JALISCO,M,26,2020-03-19,Sospechoso,Contacto,
+563,TAMAULIPAS,F,45,2020-03-22,Sospechoso,Estados Unidos,2020-03-17
+564,MÉXICO,F,47,2020-03-17,Sospechoso,Contacto,2020-03-13
+565,CIUDAD DE MÉXICO,F,40,2020-03-22,Sospechoso,Contacto,
+566,TAMAULIPAS,M,31,2020-03-20,Sospechoso,Contacto,
+567,JALISCO,F,22,2020-03-20,Sospechoso,Contacto,
+568,GUANAJUATO,M,48,2020-03-18,Sospechoso,Contacto,
+569,CIUDAD DE MÉXICO,F,34,2020-03-11,Sospechoso,Contacto,
+570,QUERETARO,F,32,2020-03-22,Sospechoso,España,2020-03-20
+571,OAXACA,M,36,2020-03-21,Sospechoso,Contacto,2020-12-03
+572,GUANAJUATO,M,87,2020-03-23,Sospechoso,Contacto,
+573,CIUDAD DE MÉXICO,F,40,2020-03-21,Sospechoso,Contacto,
+574,AGUASCALIENTES,M,11,2020-03-24,Sospechoso,Contacto,
+575,JALISCO,F,40,2020-03-19,Sospechoso,Contacto,
+576,CIUDAD DE MÉXICO,F,26,2020-03-19,Sospechoso,Contacto,
+577,JALISCO,F,36,2020-03-17,Sospechoso,Estados Unidos,2020-03-15
+578,GUANAJUATO,F,64,2020-03-18,Sospechoso,Contacto,
+579,VERACRUZ,F,34,2020-03-16,Sospechoso,Contacto,
+580,VERACRUZ,F,27,2020-03-22,Sospechoso,Contacto,
+581,CIUDAD DE MÉXICO,F,64,2020-03-16,Sospechoso,Contacto,
+582,VERACRUZ,M,28,2020-03-22,Sospechoso,Contacto,
+583,VERACRUZ,F,31,2020-03-17,Sospechoso,Contacto,
+584,CIUDAD DE MÉXICO,M,43,2020-03-16,Sospechoso,España,2020-08-03
+585,MÉXICO,F,43,2020-03-16,Sospechoso,Contacto,2020-10-03
+586,BAJA CALIFORNIA SUR,F,39,2020-03-23,Sospechoso,Contacto,
+587,SONORA,M,30,2020-03-23,Sospechoso,Contacto,
+588,NUEVO LEÓN,F,35,2020-03-17,Sospechoso,Contacto,2020-03-15
+589,SAN LUIS POTOSÍ,F,45,2020-03-18,Sospechoso,Contacto,
+590,JALISCO,F,28,2020-03-26,Sospechoso,Contacto,
+591,VERACRUZ,M,23,2020-03-21,Sospechoso,Contacto,
+592,SONORA,M,67,2020-03-20,Sospechoso,Contacto,
+593,PUEBLA,M,22,2020-03-14,Sospechoso,España,2020-03-20
+594,VERACRUZ,F,20,2020-03-22,Sospechoso,Contacto,
+595,ZACATECAS,F,35,2020-03-20,Sospechoso,Contacto,
+596,CIUDAD DE MÉXICO,M,59,2020-03-19,Sospechoso,Contacto,
+597,SONORA,M,34,2020-03-23,Sospechoso,Contacto,
+598,MÉXICO,M,25,2020-03-22,Sospechoso,España,2020-03-20
+599,MÉXICO,M,29,2020-03-20,Sospechoso,Contacto,
+600,CIUDAD DE MÉXICO,M,30,2020-03-16,Sospechoso,Contacto,
+601,MÉXICO,M,39,2020-03-20,Sospechoso,Estados Unidos,2020-03-20
+602,MÉXICO,M,19,2020-03-13,Sospechoso,Contacto,
+603,CIUDAD DE MÉXICO,F,29,2020-03-13,Sospechoso,Contacto,
+604,MÉXICO,F,31,2020-03-19,Sospechoso,España,2020-08-03
+605,TLAXCALA,M,27,2020-03-12,Sospechoso,Contacto,
+606,ZACATECAS,M,37,2020-03-21,Sospechoso,Contacto,
+607,CIUDAD DE MÉXICO,F,55,2020-03-16,Sospechoso,Contacto,
+608,MÉXICO,F,34,2020-03-22,Sospechoso,España,2020-03-19
+609,ZACATECAS,M,41,2020-03-17,Sospechoso,Contacto,
+610,ZACATECAS,F,32,2020-03-21,Sospechoso,Contacto,
+611,MÉXICO,F,43,2020-03-21,Sospechoso,Contacto,
+612,MÉXICO,F,28,2020-03-18,Sospechoso,Alemania,2020-12-03
+613,PUEBLA,M,33,2020-03-10,Sospechoso,Contacto,
+614,BAJA CALIFORNIA,F,28,2020-03-23,Sospechoso,Contacto,
+615,AGUASCALIENTES,F,60,2020-03-22,Sospechoso,Contacto,
+616,BAJA CALIFORNIA,F,30,2020-03-20,Sospechoso,Contacto,
+617,CIUDAD DE MÉXICO,M,48,2020-03-20,Sospechoso,Contacto,
+618,TABASCO,F,48,2020-03-23,Sospechoso,Contacto,
+619,ZACATECAS,M,49,2020-03-21,Sospechoso,Contacto,
+620,ZACATECAS,F,31,2020-03-18,Sospechoso,Contacto,
+621,VERACRUZ,M,52,2020-03-22,Sospechoso,Estados Unidos,
+622,MÉXICO,F,28,2020-03-23,Sospechoso,Contacto,2020-03-18
+623,MÉXICO,M,29,2020-03-15,Sospechoso,Alemania,2020-12-03
+624,CIUDAD DE MÉXICO,M,36,2020-03-15,Sospechoso,Contacto,
+625,PUEBLA,F,71,2020-03-21,Sospechoso,Estados Unidos,2020-03-18
+626,CIUDAD DE MÉXICO,F,70,2020-03-20,Sospechoso,Contacto,
+627,ZACATECAS,F,44,2020-03-16,Sospechoso,Contacto,
+628,MÉXICO,F,44,2020-03-21,Sospechoso,Contacto,
+629,TLAXCALA,M,27,2020-03-12,Sospechoso,Contacto,
+630,ZACATECAS,F,37,2020-03-20,Sospechoso,Contacto,
+631,BAJA CALIFORNIA,F,53,2020-03-22,Sospechoso,Contacto,
+632,CIUDAD DE MÉXICO,M,35,2020-03-19,Sospechoso,Contacto,
+633,BAJA CALIFORNIA,M,24,2020-03-19,Sospechoso,Estados Unidos,2020-03-19
+634,BAJA CALIFORNIA,F,36,2020-03-19,Sospechoso,Contacto,
+635,SINALOA,M,30,2020-03-18,Sospechoso,Estados Unidos,2020-03-18
+636,ZACATECAS,F,39,2020-03-22,Sospechoso,Contacto,
+637,MÉXICO,F,44,2020-03-22,Sospechoso,Contacto,
+638,NAYARIT,F,25,2020-03-21,Sospechoso,Contacto,
+639,TLAXCALA,F,39,2020-03-22,Sospechoso,Contacto,
+640,BAJA CALIFORNIA,M,37,2020-03-19,Sospechoso,Estados Unidos,2020-03-14
+641,COAHUILA,M,22,2020-03-20,Sospechoso,Contacto,
+642,CIUDAD DE MÉXICO,M,54,2020-03-23,Sospechoso,Contacto,
+643,ZACATECAS,F,52,2020-03-13,Sospechoso,Contacto,
+644,NUEVO LEÓN,M,34,2020-03-17,Sospechoso,Contacto,
+645,MICHOACÁN,M,30,2020-03-11,Sospechoso,Estados Unidos,2020-11-03
+646,PUEBLA,F,0,2020-03-18,Sospechoso,Contacto,
+647,SONORA,F,33,2020-03-16,Sospechoso,Contacto,
+648,BAJA CALIFORNIA,F,17,2020-03-18,Sospechoso,Contacto,
+649,BAJA CALIFORNIA,M,50,2020-03-19,Sospechoso,Contacto,
+650,JALISCO,F,27,2020-03-23,Sospechoso,Contacto,
+651,NUEVO LEÓN,F,20,2020-03-13,Sospechoso,Contacto,
+652,AGUASCALIENTES,M,31,2020-03-23,Sospechoso,Contacto,
+653,ZACATECAS,F,49,2020-03-20,Sospechoso,Contacto,
+654,MICHOACÁN,M,32,2020-03-18,Sospechoso,Contacto,
+655,CIUDAD DE MÉXICO,F,27,2020-03-15,Sospechoso,Contacto,
+656,BAJA CALIFORNIA,F,45,2020-03-23,Sospechoso,Contacto,
+657,BAJA CALIFORNIA,M,77,2020-03-20,Sospechoso,Contacto,
+658,VERACRUZ,F,55,2020-03-17,Sospechoso,Contacto,2020-03-19
+659,ZACATECAS,F,41,2020-03-20,Sospechoso,Contacto,
+660,BAJA CALIFORNIA,M,23,2020-03-22,Sospechoso,Estados Unidos,2020-03-16
+661,BAJA CALIFORNIA,M,29,2020-03-23,Sospechoso,Estados Unidos,2020-03-16
+662,BAJA CALIFORNIA,F,30,2020-03-20,Sospechoso,Contacto,2020-03-15
+663,GUANAJUATO,M,54,2020-03-18,Sospechoso,Francia,2020-03-18
+664,BAJA CALIFORNIA,M,28,2020-03-19,Sospechoso,Contacto,
+665,VERACRUZ,F,39,2020-03-19,Sospechoso,Contacto,
+666,JALISCO,F,69,2020-03-18,Sospechoso,Estados Unidos,2020-03-18
+667,ZACATECAS,F,44,2020-03-20,Sospechoso,Contacto,
+668,CIUDAD DE MÉXICO,F,28,2020-03-18,Sospechoso,Contacto,
+669,BAJA CALIFORNIA,F,14,2020-03-21,Sospechoso,Contacto,
+670,BAJA CALIFORNIA,F,51,2020-03-21,Sospechoso,Contacto,2020-03-22
+671,PUEBLA,F,42,2020-03-22,Sospechoso,España,2020-03-18
+672,CAMPECHE,F,62,2020-03-21,Sospechoso,Contacto,2020-03-21
+673,VERACRUZ,F,71,2020-03-18,Sospechoso,Contacto,
+674,BAJA CALIFORNIA,M,25,2020-03-22,Sospechoso,Contacto,
+675,PUEBLA,F,41,2020-03-16,Sospechoso,Contacto,
+676,VERACRUZ,F,32,2020-03-24,Sospechoso,Contacto,
+677,ZACATECAS,M,31,2020-03-13,Sospechoso,Contacto,
+678,QUINTANA ROO,F,1,2020-03-21,Sospechoso,Contacto,
+679,BAJA CALIFORNIA,M,26,2020-03-21,Sospechoso,Contacto,
+680,AGUASCALIENTES,M,38,2020-03-18,Sospechoso,España,2020-03-17
+681,NAYARIT,F,0,2020-03-21,Sospechoso,Contacto,
+682,AGUASCALIENTES,F,58,2020-03-25,Sospechoso,España,2020-03-23
+683,CIUDAD DE MÉXICO,F,23,2020-03-09,Sospechoso,España,2020-07-03
+684,CIUDAD DE MÉXICO,F,32,2020-03-20,Sospechoso,Contacto,
+685,BAJA CALIFORNIA,F,25,2020-03-22,Sospechoso,Estados Unidos,2020-03-17
+686,QUERETARO,M,27,2020-03-20,Sospechoso,Contacto,
+687,BAJA CALIFORNIA,M,31,2020-03-22,Sospechoso,Contacto,
+688,AGUASCALIENTES,F,41,2020-03-17,Sospechoso,Contacto,2020-03-16
+689,VERACRUZ,F,56,2020-03-25,Sospechoso,Contacto,
+690,CIUDAD DE MÉXICO,M,50,2020-03-19,Sospechoso,Contacto,
+691,JALISCO,F,4,2020-03-19,Sospechoso,Contacto,
+692,AGUASCALIENTES,F,24,2020-03-19,Sospechoso,España,2020-03-23
+693,QUINTANA ROO,F,51,2020-03-19,Sospechoso,Contacto,
+694,SONORA,M,42,2020-03-18,Sospechoso,Contacto,
+695,JALISCO,M,42,2020-03-20,Sospechoso,Alemania,2020-03-17
+696,BAJA CALIFORNIA,M,46,2020-03-12,Sospechoso,Estados Unidos,2020-03-15
+697,BAJA CALIFORNIA,M,25,2020-03-20,Sospechoso,Contacto,
+698,BAJA CALIFORNIA,F,25,2020-03-20,Sospechoso,Contacto,
+699,JALISCO,F,30,2020-03-20,Sospechoso,Contacto,
+700,BAJA CALIFORNIA,F,72,2020-03-05,Sospechoso,Estados Unidos,2020-03-15
+701,NAYARIT,F,46,2020-03-15,Sospechoso,Contacto,
+702,VERACRUZ,F,43,2020-03-23,Sospechoso,Contacto,
+703,BAJA CALIFORNIA SUR,M,35,2020-03-15,Sospechoso,Contacto,
+704,SONORA,F,36,2020-03-24,Sospechoso,Estados Unidos,2020-03-20
+705,AGUASCALIENTES,F,37,2020-03-18,Sospechoso,España,2020-03-17
+706,ZACATECAS,F,48,2020-03-23,Sospechoso,Contacto,
+707,JALISCO,F,36,2020-03-19,Sospechoso,Alemania,2020-03-17
+708,CIUDAD DE MÉXICO,M,22,2020-03-20,Sospechoso,Contacto,
+709,BAJA CALIFORNIA,F,29,2020-03-19,Sospechoso,Contacto,
+710,JALISCO,F,34,2020-03-24,Sospechoso,Contacto,
+711,AGUASCALIENTES,M,23,2020-03-25,Sospechoso,Estados Unidos,2020-03-23
+712,SONORA,M,35,2020-03-20,Sospechoso,España,2020-03-22
+713,VERACRUZ,M,28,2020-03-22,Sospechoso,Contacto,
+714,SONORA,F,21,2020-03-19,Sospechoso,Contacto,
+715,JALISCO,M,11,2020-03-22,Sospechoso,Contacto,
+716,MÉXICO,F,40,2020-03-22,Sospechoso,Italia,2020-03-24
+717,JALISCO,F,23,2020-03-23,Sospechoso,Estados Unidos,2020-03-23
+718,BAJA CALIFORNIA,F,29,2020-03-23,Sospechoso,Contacto,
+719,CIUDAD DE MÉXICO,M,28,2020-03-22,Sospechoso,Contacto,
+720,CIUDAD DE MÉXICO,F,39,2020-03-23,Sospechoso,Estados Unidos,
+721,SONORA,F,32,2020-03-19,Sospechoso,España,2020-03-23
+722,PUEBLA,M,48,2020-03-20,Sospechoso,Contacto,
+723,PUEBLA,F,40,2020-03-17,Sospechoso,Contacto,
+724,CIUDAD DE MÉXICO,F,65,2020-03-03,Sospechoso,Contacto,
+725,ZACATECAS,F,46,2020-03-21,Sospechoso,Contacto,
+726,ZACATECAS,M,42,2020-03-22,Sospechoso,Contacto,
+727,SONORA,F,81,2020-03-20,Sospechoso,Estados Unidos,2020-03-24
+728,TAMAULIPAS,F,49,2020-03-23,Sospechoso,Contacto,
+729,COAHUILA,M,87,2020-03-16,Sospechoso,Contacto,
+730,BAJA CALIFORNIA,F,43,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+731,BAJA CALIFORNIA,M,8,2020-03-23,Sospechoso,Contacto,
+732,ZACATECAS,M,34,2020-03-18,Sospechoso,Contacto,
+733,ZACATECAS,M,63,2020-03-20,Sospechoso,Contacto,
+734,BAJA CALIFORNIA,M,23,2020-03-21,Sospechoso,Contacto,
+735,TLAXCALA,F,48,2020-03-25,Sospechoso,Contacto,
+736,PUEBLA,F,35,2020-03-21,Sospechoso,Contacto,
+737,JALISCO,M,57,2020-03-10,Sospechoso,Contacto,
+738,SINALOA,M,66,2020-03-18,Sospechoso,Contacto,
+739,CIUDAD DE MÉXICO,M,46,2020-03-19,Sospechoso,Contacto,
+740,BAJA CALIFORNIA,F,56,2020-03-23,Sospechoso,Estados Unidos,2020-03-15
+741,ZACATECAS,F,31,2020-03-14,Sospechoso,Contacto,2020-11-03
+742,VERACRUZ,F,35,2020-03-08,Sospechoso,Contacto,
+743,TAMAULIPAS,M,47,2020-03-22,Sospechoso,Contacto,
+744,TLAXCALA,M,36,2020-03-22,Sospechoso,Contacto,
+745,VERACRUZ,M,26,2020-03-23,Sospechoso,Contacto,
+746,PUEBLA,F,31,2020-03-13,Sospechoso,Contacto,
+747,CHIAPAS,F,30,2020-03-22,Sospechoso,Contacto,
+748,PUEBLA,F,36,2020-03-22,Sospechoso,Contacto,
+749,MÉXICO,F,35,2020-03-18,Sospechoso,Contacto,
+750,JALISCO,F,67,2020-03-12,Sospechoso,Estados Unidos,2020-02-27
+751,SINALOA,F,40,2020-03-20,Sospechoso,Contacto,
+752,OAXACA,F,32,2020-03-22,Sospechoso,Contacto,2020-07-03
+753,PUEBLA,M,42,2020-03-22,Sospechoso,Contacto,
+754,CIUDAD DE MÉXICO,F,32,2020-03-21,Sospechoso,Estados Unidos,2020-03-15
+755,SAN LUIS POTOSÍ,F,24,2020-03-17,Sospechoso,Contacto,
+756,SINALOA,M,41,2020-03-20,Sospechoso,Contacto,
+757,CIUDAD DE MÉXICO,F,31,2020-03-18,Sospechoso,Contacto,
+758,JALISCO,M,29,2020-03-18,Sospechoso,Estados Unidos,2020-03-16
+759,BAJA CALIFORNIA,F,69,2020-03-20,Sospechoso,Contacto,2020-10-03
+760,QUINTANA ROO,F,33,2020-03-23,Sospechoso,Contacto,
+761,PUEBLA,M,36,2020-03-18,Sospechoso,Contacto,
+762,PUEBLA,F,45,2020-03-21,Sospechoso,Estados Unidos,2020-03-18
+763,HIDALGO,F,24,2020-03-22,Sospechoso,Contacto,
+764,SINALOA,M,45,2020-03-19,Sospechoso,Contacto,
+765,JALISCO,F,37,2020-03-20,Sospechoso,Contacto,
+766,JALISCO,F,50,2020-03-21,Sospechoso,Contacto,
+767,PUEBLA,F,38,2020-03-19,Sospechoso,Contacto,
+768,TAMAULIPAS,F,47,2020-03-23,Sospechoso,Contacto,
+769,PUEBLA,M,34,2020-03-24,Sospechoso,Contacto,
+770,OAXACA,M,34,2020-03-23,Sospechoso,Contacto,
+771,BAJA CALIFORNIA,M,33,2020-03-20,Sospechoso,Contacto,2020-05-03
+772,BAJA CALIFORNIA,F,61,2020-03-18,Sospechoso,Estados Unidos,2020-03-13
+773,VERACRUZ,F,36,2020-03-24,Sospechoso,Contacto,
+774,VERACRUZ,F,35,2020-03-19,Sospechoso,Contacto,
+775,VERACRUZ,M,53,2020-03-16,Sospechoso,Contacto,
+776,JALISCO,F,39,2020-03-22,Sospechoso,Contacto,
+777,PUEBLA,M,57,2020-03-23,Sospechoso,Contacto,
+778,MICHOACÁN,M,27,2020-03-23,Sospechoso,Contacto,
+779,VERACRUZ,M,39,2020-03-20,Sospechoso,Contacto,
+780,VERACRUZ,F,36,2020-03-24,Sospechoso,Contacto,
+781,PUEBLA,F,60,2020-03-23,Sospechoso,Contacto,
+782,VERACRUZ,F,48,2020-03-23,Sospechoso,Contacto,
+783,MORELOS,F,18,2020-03-21,Sospechoso,Estados Unidos,2020-03-15
+784,VERACRUZ,F,30,2020-03-22,Sospechoso,Contacto,
+785,PUEBLA,F,28,2020-03-21,Sospechoso,Contacto,
+786,GUANAJUATO,F,35,2020-03-22,Sospechoso,Contacto,
+787,PUEBLA,F,35,2020-03-20,Sospechoso,Contacto,
+788,VERACRUZ,F,78,2020-03-19,Sospechoso,Contacto,
+789,MORELOS,F,35,2020-03-20,Sospechoso,Contacto,
+790,CIUDAD DE MÉXICO,F,55,2020-03-22,Sospechoso,Contacto,
+791,VERACRUZ,F,54,2020-03-22,Sospechoso,Estados Unidos,2020-03-23
+792,MÉXICO,M,24,2020-03-22,Sospechoso,Contacto,
+793,GUANAJUATO,F,19,2020-03-22,Sospechoso,Contacto,2020-03-23
+794,MÉXICO,M,36,2020-03-21,Sospechoso,Estados Unidos,2020-08-03
+795,SONORA,F,32,2020-03-16,Sospechoso,Contacto,
+796,PUEBLA,M,27,2020-03-24,Sospechoso,Contacto,
+797,JALISCO,M,27,2020-03-23,Sospechoso,Contacto,
+798,MORELOS,F,57,2020-03-20,Sospechoso,Contacto,2020-03-22
+799,AGUASCALIENTES,F,60,2020-03-12,Sospechoso,España,
+800,MÉXICO,M,35,2020-03-21,Sospechoso,Contacto,
+801,CIUDAD DE MÉXICO,M,59,2020-02-19,Sospechoso,Italia,2020-02-28
+802,BAJA CALIFORNIA SUR,F,44,2020-03-23,Sospechoso,Contacto,
+803,SAN LUIS POTOSÍ,M,29,2020-03-23,Sospechoso,Contacto,
+804,CIUDAD DE MÉXICO,F,24,2020-03-13,Sospechoso,Contacto,
+805,VERACRUZ,M,13,2020-03-23,Sospechoso,Estados Unidos,2020-03-17
+806,MÉXICO,F,23,2020-03-24,Sospechoso,Contacto,
+807,HIDALGO,M,29,2020-03-23,Sospechoso,Contacto,
+808,BAJA CALIFORNIA,F,32,2020-03-11,Sospechoso,Contacto,2020-03-25
+809,PUEBLA,F,22,2020-03-14,Sospechoso,Contacto,
+810,COAHUILA,M,23,2020-03-23,Sospechoso,Contacto,
+811,TLAXCALA,F,45,2020-03-18,Sospechoso,Contacto,
+812,BAJA CALIFORNIA,F,32,2020-03-19,Sospechoso,Contacto,
+813,HIDALGO,F,25,2020-03-22,Sospechoso,Contacto,
+814,TLAXCALA,M,30,2020-03-15,Sospechoso,Estados Unidos,2020-03-19
+815,SONORA,F,24,2020-03-20,Sospechoso,Contacto,
+816,TABASCO,F,25,2020-03-21,Sospechoso,Contacto,
+817,MÉXICO,F,49,2020-03-23,Sospechoso,Estados Unidos,2020-03-03
+818,HIDALGO,M,70,2020-03-23,Sospechoso,Contacto,
+819,MÉXICO,F,24,2020-03-18,Sospechoso,Contacto,
+820,BAJA CALIFORNIA,F,35,2020-03-22,Sospechoso,Contacto,
+821,MÉXICO,F,37,2020-03-22,Sospechoso,Contacto,
+822,TABASCO,M,62,2020-03-21,Sospechoso,Contacto,2020-04-03
+823,SAN LUIS POTOSÍ,M,50,2020-03-20,Sospechoso,Contacto,
+824,BAJA CALIFORNIA,F,63,2020-03-24,Sospechoso,Contacto,
+825,NUEVO LEÓN,M,28,2020-03-23,Sospechoso,Estados Unidos,2020-03-20
+826,BAJA CALIFORNIA,M,62,2020-03-20,Sospechoso,Estados Unidos,2020-10-03
+827,BAJA CALIFORNIA,M,40,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+828,NUEVO LEÓN,F,35,2020-03-21,Sospechoso,Contacto,
+829,CIUDAD DE MÉXICO,M,49,2020-03-13,Sospechoso,Contacto,
+830,BAJA CALIFORNIA,F,30,2020-03-20,Sospechoso,Contacto,
+831,BAJA CALIFORNIA,M,24,2020-03-20,Sospechoso,Contacto,2020-03-20
+832,COLIMA,M,70,2020-03-20,Sospechoso,Estados Unidos,2020-03-15
+833,SAN LUIS POTOSÍ,M,33,2020-03-24,Sospechoso,Contacto,
+834,VERACRUZ,F,30,2020-03-20,Sospechoso,Contacto,
+835,VERACRUZ,F,49,2020-03-20,Sospechoso,Contacto,
+836,CHIAPAS,M,26,2020-03-21,Sospechoso,Contacto,2020-11-03
+837,CIUDAD DE MÉXICO,F,26,2020-03-21,Sospechoso,Contacto,
+838,TABASCO,F,48,2020-03-24,Sospechoso,Contacto,
+839,VERACRUZ,F,36,2020-03-13,Sospechoso,Contacto,
+840,TAMAULIPAS,M,28,2020-03-22,Sospechoso,Contacto,
+841,CIUDAD DE MÉXICO,M,32,2020-03-21,Sospechoso,Contacto,
+842,COLIMA,M,42,2020-03-18,Sospechoso,Contacto,
+843,QUINTANA ROO,F,33,2020-03-24,Sospechoso,Contacto,
+844,HIDALGO,M,42,2020-03-22,Sospechoso,Contacto,
+845,COLIMA,M,72,2020-03-21,Sospechoso,Contacto,
+846,QUINTANA ROO,F,5,2020-03-21,Sospechoso,Contacto,
+847,QUINTANA ROO,M,44,2020-03-20,Sospechoso,Contacto,
+848,VERACRUZ,F,34,2020-03-23,Sospechoso,Contacto,
+849,CIUDAD DE MÉXICO,F,37,2020-03-20,Sospechoso,España,2020-03-16
+850,CIUDAD DE MÉXICO,M,46,2020-03-19,Sospechoso,España,2020-03-16
+851,QUINTANA ROO,F,53,2020-03-17,Sospechoso,Francia,2020-03-15
+852,VERACRUZ,F,31,2020-03-20,Sospechoso,Contacto,
+853,TABASCO,M,53,2020-03-24,Sospechoso,España,2020-03-22
+854,CIUDAD DE MÉXICO,M,34,2020-03-18,Sospechoso,Contacto,
+855,VERACRUZ,F,59,2020-03-20,Sospechoso,Contacto,
+856,NUEVO LEÓN,F,30,2020-03-24,Sospechoso,Contacto,
+857,CHIAPAS,F,30,2020-03-23,Sospechoso,Contacto,
+858,VERACRUZ,M,34,2020-03-23,Sospechoso,Contacto,
+859,NUEVO LEÓN,M,27,2020-03-19,Sospechoso,Contacto,
+860,CIUDAD DE MÉXICO,M,46,2020-03-24,Sospechoso,España,2020-12-03
+861,QUINTANA ROO,F,21,2020-03-03,Sospechoso,Italia,2020-03-15
+862,VERACRUZ,F,48,2020-03-20,Sospechoso,Contacto,
+863,BAJA CALIFORNIA SUR,F,7,2020-03-21,Sospechoso,Contacto,
+864,MÉXICO,F,26,2020-03-19,Sospechoso,Contacto,
+865,VERACRUZ,F,57,2020-03-21,Sospechoso,Contacto,
+866,QUINTANA ROO,M,42,2020-03-18,Sospechoso,España,2020-11-03
+867,PUEBLA,M,24,2020-03-16,Sospechoso,Contacto,
+868,CIUDAD DE MÉXICO,F,33,2020-03-14,Sospechoso,Contacto,
+869,BAJA CALIFORNIA SUR,M,57,2020-03-17,Sospechoso,Contacto,
+870,CIUDAD DE MÉXICO,M,29,2020-03-24,Sospechoso,Contacto,
+871,CHIAPAS,F,22,2020-03-10,Sospechoso,Contacto,
+872,CHIAPAS,F,27,2020-03-23,Sospechoso,Contacto,
+873,CIUDAD DE MÉXICO,M,26,2020-03-20,Sospechoso,Contacto,
+874,BAJA CALIFORNIA SUR,F,44,2020-03-19,Sospechoso,Contacto,
+875,MÉXICO,F,29,2020-03-22,Sospechoso,Contacto,
+876,QUINTANA ROO,F,26,2020-03-22,Sospechoso,Francia,2020-03-15
+877,MÉXICO,F,40,2020-03-20,Sospechoso,Contacto,
+878,SINALOA,M,32,2020-03-24,Sospechoso,Contacto,
+879,NUEVO LEÓN,F,29,2020-03-19,Sospechoso,Contacto,
+880,CIUDAD DE MÉXICO,F,35,2020-03-23,Sospechoso,Contacto,
+881,CIUDAD DE MÉXICO,M,88,2020-03-19,Sospechoso,Contacto,
+882,QUINTANA ROO,F,54,2020-03-10,Sospechoso,Contacto,
+883,SINALOA,F,31,2020-03-20,Sospechoso,Contacto,
+884,JALISCO,M,26,2020-03-22,Sospechoso,Contacto,
+885,NUEVO LEÓN,F,22,2020-03-14,Sospechoso,Contacto,
+886,CIUDAD DE MÉXICO,M,33,2020-03-13,Sospechoso,Contacto,
+887,QUINTANA ROO,F,27,2020-03-21,Sospechoso,España,2020-10-03
+888,CIUDAD DE MÉXICO,F,38,2020-03-17,Sospechoso,Contacto,
+889,CIUDAD DE MÉXICO,F,41,2020-03-22,Sospechoso,Contacto,
+890,TAMAULIPAS,F,33,2020-03-20,Sospechoso,Contacto,
+891,CIUDAD DE MÉXICO,F,26,2020-03-16,Sospechoso,Estados Unidos,2020-03-14
+892,CIUDAD DE MÉXICO,M,69,2020-03-20,Sospechoso,Contacto,
+893,MÉXICO,M,49,2020-03-10,Sospechoso,Estados Unidos,2020-03-08
+894,CIUDAD DE MÉXICO,F,67,2020-03-21,Sospechoso,Contacto,
+895,MÉXICO,M,33,2020-03-23,Sospechoso,Contacto,
+896,VERACRUZ,F,24,2020-03-21,Sospechoso,Contacto,
+897,QUINTANA ROO,F,26,2020-03-13,Sospechoso,Contacto,
+898,VERACRUZ,M,30,2020-03-20,Sospechoso,Contacto,
+899,SINALOA,F,55,2020-03-24,Sospechoso,Contacto,
+900,VERACRUZ,M,41,2020-03-19,Sospechoso,Contacto,
+901,SINALOA,F,26,2020-03-23,Sospechoso,Contacto,
+902,VERACRUZ,M,28,2020-03-23,Sospechoso,Contacto,
+903,SINALOA,F,54,2020-03-16,Sospechoso,Contacto,
+904,VERACRUZ,M,25,2020-03-23,Sospechoso,Contacto,
+905,QUINTANA ROO,M,56,2020-03-17,Sospechoso,Contacto,
+906,VERACRUZ,M,18,2020-03-24,Sospechoso,Contacto,
+907,CIUDAD DE MÉXICO,M,59,2020-03-19,Sospechoso,España,2020-03-07
+908,AGUASCALIENTES,M,43,2020-03-22,Sospechoso,Contacto,
+909,AGUASCALIENTES,M,75,2020-03-26,Sospechoso,Contacto,
+910,TLAXCALA,M,34,2020-03-19,Sospechoso,Contacto,
+911,CIUDAD DE MÉXICO,M,64,2020-03-20,Sospechoso,Contacto,
+912,CIUDAD DE MÉXICO,F,40,2020-03-21,Sospechoso,Contacto,
+913,AGUASCALIENTES,F,69,2020-03-24,Sospechoso,Contacto,2020-03-15
+914,NUEVO LEÓN,F,24,2020-03-12,Sospechoso,Contacto,2020-03-16
+915,MÉXICO,M,47,2020-03-22,Sospechoso,Contacto,
+916,QUINTANA ROO,M,27,2020-03-21,Sospechoso,Contacto,
+917,MÉXICO,M,21,2020-03-18,Sospechoso,Contacto,
+918,CIUDAD DE MÉXICO,F,28,2020-03-22,Sospechoso,Contacto,
+919,CIUDAD DE MÉXICO,F,36,2020-03-15,Sospechoso,Estados Unidos,2020-03-14
+920,MÉXICO,M,42,2020-03-17,Sospechoso,Contacto,
+921,MÉXICO,M,40,2020-03-22,Sospechoso,Contacto,
+922,MÉXICO,M,42,2020-03-25,Sospechoso,Contacto,
+923,QUERETARO,F,28,2020-03-20,Sospechoso,Contacto,
+924,SAN LUIS POTOSÍ,F,44,2020-03-22,Sospechoso,Contacto,2020-03-21
+925,CIUDAD DE MÉXICO,M,33,2020-03-18,Sospechoso,España,2020-03-01
+926,CIUDAD DE MÉXICO,F,31,2020-03-16,Sospechoso,Contacto,
+927,MÉXICO,F,48,2020-03-23,Sospechoso,Contacto,
+928,CIUDAD DE MÉXICO,F,32,2020-03-23,Sospechoso,Contacto,
+929,CIUDAD DE MÉXICO,F,51,2020-03-23,Sospechoso,Contacto,
+930,CIUDAD DE MÉXICO,F,38,2020-03-15,Sospechoso,Contacto,
+931,MÉXICO,F,50,2020-03-18,Sospechoso,Contacto,
+932,MÉXICO,M,36,2020-03-24,Sospechoso,Contacto,
+933,SONORA,F,39,2020-03-24,Sospechoso,Contacto,
+934,CIUDAD DE MÉXICO,M,42,2020-03-19,Sospechoso,Contacto,
+935,SONORA,F,36,2020-03-22,Sospechoso,Estados Unidos,2020-03-12
+936,MÉXICO,M,29,2020-03-23,Sospechoso,España,2020-03-18
+937,CIUDAD DE MÉXICO,F,31,2020-03-20,Sospechoso,Estados Unidos,2020-03-15
+938,SAN LUIS POTOSÍ,M,55,2020-03-21,Sospechoso,Estados Unidos,2020-03-20
+939,DURANGO,F,47,2020-03-21,Sospechoso,Estados Unidos,2020-03-07
+940,BAJA CALIFORNIA,M,30,2020-02-13,Sospechoso,Estados Unidos,2020-03-05
+941,AGUASCALIENTES,M,27,2020-03-16,Sospechoso,Contacto,
+942,MÉXICO,F,24,2020-03-24,Sospechoso,Contacto,
+943,MÉXICO,F,17,2020-03-18,Sospechoso,Contacto,
+944,CIUDAD DE MÉXICO,M,45,2020-03-25,Sospechoso,Contacto,
+945,CIUDAD DE MÉXICO,M,60,2020-03-18,Sospechoso,Contacto,2020-03-12
+946,JALISCO,M,57,2020-03-13,Sospechoso,Contacto,
+947,QUERETARO,F,48,2020-03-17,Sospechoso,Contacto,
+948,SINALOA,M,28,2020-03-19,Sospechoso,Estados Unidos,2020-03-23
+949,MÉXICO,F,38,2020-03-24,Sospechoso,Contacto,
+950,VERACRUZ,F,41,2020-03-19,Sospechoso,Contacto,
+951,CIUDAD DE MÉXICO,F,41,2020-03-21,Sospechoso,Estados Unidos,2020-03-17
+952,MÉXICO,M,39,2020-03-23,Sospechoso,Estados Unidos,2020-03-21
+953,SAN LUIS POTOSÍ,M,54,2020-03-21,Sospechoso,Estados Unidos,2020-03-18
+954,CIUDAD DE MÉXICO,F,65,2020-03-17,Sospechoso,Contacto,
+955,SONORA,F,21,2020-03-22,Sospechoso,Contacto,
+956,BAJA CALIFORNIA,M,53,2020-03-20,Sospechoso,Contacto,
+957,QUERETARO,F,21,2020-03-20,Sospechoso,Contacto,
+958,SONORA,M,30,2020-03-19,Sospechoso,Contacto,
+959,DURANGO,F,28,2020-03-21,Sospechoso,Contacto,
+960,SONORA,M,59,2020-03-17,Sospechoso,Contacto,
+961,JALISCO,M,20,2020-03-19,Sospechoso,Contacto,
+962,CIUDAD DE MÉXICO,F,30,2020-03-17,Sospechoso,Contacto,
+963,JALISCO,M,27,2020-03-24,Sospechoso,Contacto,
+964,GUERRERO,M,37,2020-03-21,Sospechoso,Contacto,
+965,MÉXICO,F,72,2020-03-23,Sospechoso,Contacto,
+966,CIUDAD DE MÉXICO,M,27,2020-03-14,Sospechoso,Contacto,
+967,CIUDAD DE MÉXICO,F,72,2020-03-23,Sospechoso,Contacto,
+968,MÉXICO,F,42,2020-03-22,Sospechoso,Contacto,2020-03-21
+969,TLAXCALA,M,36,2020-03-22,Sospechoso,Contacto,
+970,QUERETARO,M,48,2020-03-22,Sospechoso,Contacto,
+971,GUERRERO,M,66,2020-03-22,Sospechoso,Contacto,
+972,MÉXICO,M,21,2020-03-23,Sospechoso,Contacto,
+973,MÉXICO,F,38,2020-03-20,Sospechoso,Contacto,
+974,BAJA CALIFORNIA,M,53,2020-03-20,Sospechoso,Contacto,2020-10-03
+975,DURANGO,F,82,2020-03-21,Sospechoso,Contacto,
+976,TAMAULIPAS,M,82,2020-03-21,Sospechoso,Estados Unidos,
+977,JALISCO,M,56,2020-02-21,Sospechoso,Contacto,
+978,TABASCO,M,41,2020-03-20,Sospechoso,Contacto,
+979,CIUDAD DE MÉXICO,M,31,2020-03-17,Sospechoso,Contacto,
+980,QUINTANA ROO,F,33,2020-03-16,Sospechoso,Francia,2020-03-16
+981,CIUDAD DE MÉXICO,M,55,2020-03-14,Sospechoso,Contacto,
+982,TABASCO,M,33,2020-03-16,Sospechoso,Contacto,
+983,JALISCO,F,0,2020-03-20,Sospechoso,Contacto,
+984,TLAXCALA,F,19,2020-03-25,Sospechoso,Contacto,
+985,MÉXICO,F,36,2020-03-23,Sospechoso,Contacto,
+986,SAN LUIS POTOSÍ,F,29,2020-03-21,Sospechoso,Contacto,
+987,QUERETARO,M,35,2020-03-20,Sospechoso,Contacto,
+988,AGUASCALIENTES,M,8,2020-03-20,Sospechoso,Contacto,2020-12-03
+989,AGUASCALIENTES,F,35,2020-03-23,Sospechoso,Contacto,
+990,MÉXICO,F,33,2020-03-19,Sospechoso,Contacto,
+991,DURANGO,M,35,2020-03-21,Sospechoso,Contacto,
+992,VERACRUZ,M,0,2020-03-26,Sospechoso,Contacto,
+993,MÉXICO,M,33,2020-03-23,Sospechoso,Contacto,
+994,TABASCO,F,27,2020-03-16,Sospechoso,Contacto,
+995,SAN LUIS POTOSÍ,F,30,2020-03-14,Sospechoso,Contacto,2020-03-14
+996,JALISCO,M,21,2020-03-24,Sospechoso,Contacto,
+997,TABASCO,F,50,2020-03-18,Sospechoso,Contacto,
+998,MÉXICO,F,48,2020-03-23,Sospechoso,Contacto,
+999,PUEBLA,F,31,2020-03-24,Sospechoso,Contacto,
+1000,TLAXCALA,M,24,2020-03-23,Sospechoso,Contacto,
+1001,PUEBLA,M,39,2020-03-18,Sospechoso,Estados Unidos,2020-09-03
+1002,CIUDAD DE MÉXICO,F,22,2020-03-15,Sospechoso,Estados Unidos,2020-03-15
+1003,CIUDAD DE MÉXICO,F,56,2020-03-15,Sospechoso,Estados Unidos,2020-03-15
+1004,AGUASCALIENTES,F,29,2020-03-20,Sospechoso,Contacto,
+1005,CIUDAD DE MÉXICO,M,15,2020-03-22,Sospechoso,Contacto,
+1006,VERACRUZ,F,58,2020-03-25,Sospechoso,Contacto,
+1007,AGUASCALIENTES,M,29,2020-03-23,Sospechoso,Contacto,
+1008,PUEBLA,F,29,2020-03-24,Sospechoso,Contacto,
+1009,QUERETARO,F,24,2020-03-20,Sospechoso,Contacto,
+1010,VERACRUZ,M,29,2020-03-25,Sospechoso,Contacto,
+1011,MÉXICO,M,25,2020-03-20,Sospechoso,Contacto,
+1012,SAN LUIS POTOSÍ,F,86,2020-03-23,Sospechoso,Contacto,
+1013,SAN LUIS POTOSÍ,M,26,2020-03-21,Sospechoso,Contacto,
+1014,VERACRUZ,F,35,2020-03-18,Sospechoso,Contacto,
+1015,QUINTANA ROO,M,12,2020-03-04,Sospechoso,Contacto,
+1016,SAN LUIS POTOSÍ,F,54,2020-03-23,Sospechoso,Contacto,
+1017,MÉXICO,F,46,2020-03-21,Sospechoso,Contacto,
+1018,GUERRERO,M,34,2020-03-22,Sospechoso,Contacto,
+1019,BAJA CALIFORNIA,F,20,2020-03-21,Sospechoso,Contacto,
+1020,TABASCO,F,63,2020-03-19,Sospechoso,Contacto,
+1021,JALISCO,F,59,2020-03-19,Sospechoso,Contacto,
+1022,CIUDAD DE MÉXICO,F,77,2020-03-14,Sospechoso,Contacto,
+1023,SAN LUIS POTOSÍ,M,18,2020-03-19,Sospechoso,Contacto,
+1024,CIUDAD DE MÉXICO,M,39,2020-03-18,Sospechoso,Contacto,
+1025,HIDALGO,M,29,2020-03-23,Sospechoso,España,2020-03-23
+1026,CIUDAD DE MÉXICO,F,30,2020-03-22,Sospechoso,Contacto,
+1027,NUEVO LEÓN,M,25,2020-03-20,Sospechoso,España,2020-03-14
+1028,VERACRUZ,F,47,2020-03-23,Sospechoso,Estados Unidos,2020-03-15
+1029,AGUASCALIENTES,M,49,2020-03-21,Sospechoso,Contacto,
+1030,MORELOS,M,20,2020-03-19,Sospechoso,Contacto,
+1031,GUERRERO,F,51,2020-03-22,Sospechoso,Contacto,
+1032,TLAXCALA,F,28,2020-03-24,Sospechoso,Contacto,
+1033,VERACRUZ,F,58,2020-03-17,Sospechoso,Estados Unidos,2020-03-04
+1034,PUEBLA,F,63,2020-03-15,Sospechoso,Contacto,
+1035,NAYARIT,F,23,2020-03-20,Sospechoso,Contacto,
+1036,TABASCO,M,34,2020-03-22,Sospechoso,Contacto,
+1037,TABASCO,F,37,2020-03-19,Sospechoso,Contacto,
+1038,SAN LUIS POTOSÍ,F,28,2020-03-20,Sospechoso,Contacto,
+1039,CIUDAD DE MÉXICO,M,42,2020-03-19,Sospechoso,Contacto,
+1040,BAJA CALIFORNIA,M,51,2020-03-12,Sospechoso,Estados Unidos,2020-03-15
+1041,JALISCO,M,25,2020-03-23,Sospechoso,Contacto,
+1042,AGUASCALIENTES,F,58,2020-03-22,Sospechoso,Contacto,
+1043,CIUDAD DE MÉXICO,M,21,2020-03-21,Sospechoso,Contacto,
+1044,MICHOACÁN,F,38,2020-03-21,Sospechoso,Contacto,
+1045,SAN LUIS POTOSÍ,M,57,2020-03-20,Sospechoso,Contacto,
+1046,VERACRUZ,F,32,2020-03-19,Sospechoso,Contacto,
+1047,CIUDAD DE MÉXICO,M,35,2020-03-24,Sospechoso,Contacto,
+1048,GUERRERO,M,45,2020-02-20,Sospechoso,Contacto,
+1049,GUERRERO,F,26,2020-03-19,Sospechoso,Contacto,
+1050,COAHUILA,F,49,2020-03-16,Sospechoso,Contacto,
+1051,BAJA CALIFORNIA,M,49,2020-03-23,Sospechoso,Estados Unidos,2020-03-15
+1052,BAJA CALIFORNIA SUR,M,49,2020-03-24,Sospechoso,Contacto,
+1053,BAJA CALIFORNIA,M,62,2020-03-20,Sospechoso,Contacto,
+1054,MORELOS,M,68,2020-03-20,Sospechoso,Contacto,
+1055,CIUDAD DE MÉXICO,F,60,2020-03-13,Sospechoso,Contacto,
+1056,VERACRUZ,M,8,2020-03-16,Sospechoso,Contacto,
+1057,TABASCO,F,32,2020-03-21,Sospechoso,Contacto,
+1058,MÉXICO,M,40,2020-03-23,Sospechoso,Contacto,
+1059,VERACRUZ,M,46,2020-03-20,Sospechoso,Contacto,
+1060,CIUDAD DE MÉXICO,F,26,2020-03-11,Sospechoso,Contacto,
+1061,CIUDAD DE MÉXICO,M,34,2020-03-21,Sospechoso,Contacto,
+1062,TLAXCALA,M,1,2020-03-24,Sospechoso,Contacto,
+1063,NUEVO LEÓN,M,25,2020-03-14,Sospechoso,Contacto,
+1064,CIUDAD DE MÉXICO,F,32,2020-03-20,Sospechoso,Contacto,
+1065,TABASCO,F,59,2020-03-19,Sospechoso,Contacto,
+1066,HIDALGO,M,41,2020-03-18,Sospechoso,Estados Unidos,2020-03-16
+1067,CIUDAD DE MÉXICO,M,64,2020-03-20,Sospechoso,Contacto,
+1068,JALISCO,F,2,2020-03-20,Sospechoso,Contacto,
+1069,MÉXICO,F,37,2020-03-24,Sospechoso,Contacto,
+1070,CIUDAD DE MÉXICO,M,26,2020-03-17,Sospechoso,Contacto,
+1071,GUERRERO,F,69,2020-03-19,Sospechoso,Contacto,
+1072,CIUDAD DE MÉXICO,M,28,2020-03-22,Sospechoso,Contacto,
+1073,CIUDAD DE MÉXICO,F,35,2020-03-21,Sospechoso,Estados Unidos,2020-03-22
+1074,BAJA CALIFORNIA,F,17,2020-03-21,Sospechoso,Contacto,2020-03-25
+1075,VERACRUZ,F,27,2020-03-20,Sospechoso,Contacto,
+1076,PUEBLA,F,31,2020-03-20,Sospechoso,Contacto,
+1077,SAN LUIS POTOSÍ,F,25,2020-03-23,Sospechoso,Contacto,
+1078,MÉXICO,F,42,2020-03-17,Sospechoso,España,2020-03-13
+1079,CIUDAD DE MÉXICO,M,30,2020-03-24,Sospechoso,Contacto,
+1080,TABASCO,F,27,2020-03-23,Sospechoso,Contacto,
+1081,JALISCO,F,15,2020-03-19,Sospechoso,Contacto,
+1082,SAN LUIS POTOSÍ,F,40,2020-03-24,Sospechoso,Contacto,
+1083,COAHUILA,M,28,2020-03-25,Sospechoso,Contacto,
+1084,CIUDAD DE MÉXICO,F,28,2020-03-24,Sospechoso,Contacto,
+1085,PUEBLA,F,48,2020-03-23,Sospechoso,Contacto,
+1086,TABASCO,M,60,2020-03-12,Sospechoso,Contacto,
+1087,CIUDAD DE MÉXICO,M,44,2020-03-19,Sospechoso,Contacto,
+1088,GUERRERO,F,56,2020-03-24,Sospechoso,Estados Unidos,2020-03-17
+1089,SONORA,M,21,2020-03-24,Sospechoso,Estados Unidos,2020-03-19
+1090,BAJA CALIFORNIA,M,56,2020-03-23,Sospechoso,Contacto,2020-03-24
+1091,GUERRERO,F,31,2020-03-20,Sospechoso,Contacto,
+1092,CIUDAD DE MÉXICO,F,51,2020-03-23,Sospechoso,Contacto,
+1093,PUEBLA,M,30,2020-03-20,Sospechoso,Contacto,
+1094,JALISCO,F,42,2020-03-17,Sospechoso,Estados Unidos,2020-03-17
+1095,QUINTANA ROO,F,1,2020-03-25,Sospechoso,Contacto,
+1096,MÉXICO,M,13,2020-03-18,Sospechoso,Contacto,
+1097,PUEBLA,F,35,2020-03-22,Sospechoso,Contacto,
+1098,MÉXICO,M,27,2020-03-24,Sospechoso,Contacto,
+1099,MICHOACÁN,F,35,2020-03-20,Sospechoso,Contacto,
+1100,CIUDAD DE MÉXICO,F,50,2020-03-22,Sospechoso,Contacto,
+1101,CIUDAD DE MÉXICO,M,44,2020-03-23,Sospechoso,Contacto,
+1102,MÉXICO,F,40,2020-03-23,Sospechoso,Contacto,
+1103,AGUASCALIENTES,F,29,2020-03-19,Sospechoso,Contacto,
+1104,OAXACA,F,29,2020-03-22,Sospechoso,Contacto,
+1105,PUEBLA,M,67,2020-03-23,Sospechoso,Contacto,
+1106,TAMAULIPAS,M,24,2020-03-22,Sospechoso,Contacto,
+1107,GUERRERO,M,36,2020-03-21,Sospechoso,Contacto,
+1108,SONORA,F,49,2020-03-24,Sospechoso,Contacto,
+1109,COAHUILA,M,21,2020-03-23,Sospechoso,Contacto,
+1110,CIUDAD DE MÉXICO,F,39,2020-03-23,Sospechoso,Contacto,
+1111,VERACRUZ,M,54,2020-03-21,Sospechoso,Contacto,
+1112,TLAXCALA,M,6,2020-03-21,Sospechoso,Contacto,
+1113,SINALOA,F,22,2020-03-23,Sospechoso,Contacto,
+1114,MICHOACÁN,F,59,2020-03-21,Sospechoso,Contacto,
+1115,BAJA CALIFORNIA,M,52,2020-03-17,Sospechoso,Contacto,
+1116,OAXACA,F,33,2020-03-24,Sospechoso,Contacto,
+1117,GUERRERO,M,43,2020-03-22,Sospechoso,Contacto,
+1118,TLAXCALA,F,1,2020-03-24,Sospechoso,Contacto,
+1119,CIUDAD DE MÉXICO,F,58,2020-03-21,Sospechoso,Contacto,2020-03-21
+1120,AGUASCALIENTES,F,30,2020-03-18,Sospechoso,Contacto,
+1121,MÉXICO,M,8,2020-03-18,Sospechoso,Contacto,
+1122,JALISCO,F,29,2020-03-23,Sospechoso,Contacto,
+1123,HIDALGO,M,61,2020-03-16,Sospechoso,España,2020-03-16
+1124,GUERRERO,F,19,2020-03-18,Sospechoso,Contacto,
+1125,CIUDAD DE MÉXICO,M,32,2020-03-19,Sospechoso,Contacto,
+1126,CIUDAD DE MÉXICO,M,50,2020-03-23,Sospechoso,Contacto,
+1127,PUEBLA,M,46,2020-03-20,Sospechoso,Contacto,
+1128,MICHOACÁN,F,43,2020-03-24,Sospechoso,Contacto,
+1129,OAXACA,F,54,2020-03-23,Sospechoso,Contacto,
+1130,CIUDAD DE MÉXICO,F,37,2020-03-18,Sospechoso,Contacto,
+1131,BAJA CALIFORNIA,M,31,2020-03-16,Sospechoso,Contacto,
+1132,PUEBLA,F,31,2020-03-18,Sospechoso,Contacto,
+1133,JALISCO,F,27,2020-03-22,Sospechoso,España,2020-03-15
+1134,CIUDAD DE MÉXICO,M,19,2020-03-25,Sospechoso,Contacto,
+1135,MICHOACÁN,M,82,2020-03-23,Sospechoso,Contacto,
+1136,OAXACA,F,38,2020-03-24,Sospechoso,Contacto,
+1137,PUEBLA,F,12,2020-03-20,Sospechoso,Contacto,
+1138,CIUDAD DE MÉXICO,F,57,2020-03-17,Sospechoso,Estados Unidos,2020-03-20
+1139,GUERRERO,M,34,2020-03-23,Sospechoso,Contacto,
+1140,CIUDAD DE MÉXICO,M,76,2020-03-24,Sospechoso,Contacto,
+1141,JALISCO,F,50,2020-03-24,Sospechoso,Contacto,
+1142,OAXACA,F,61,2020-03-23,Sospechoso,Contacto,
+1143,PUEBLA,M,36,2020-03-24,Sospechoso,Contacto,
+1144,PUEBLA,M,27,2020-03-16,Sospechoso,España,2020-03-15
+1145,COLIMA,F,48,2020-03-19,Sospechoso,Contacto,
+1146,CIUDAD DE MÉXICO,F,61,2020-03-21,Sospechoso,Contacto,
+1147,CIUDAD DE MÉXICO,M,43,2020-03-23,Sospechoso,Contacto,
+1148,HIDALGO,M,46,2020-03-21,Sospechoso,Contacto,
+1149,SONORA,F,41,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+1150,OAXACA,F,27,2020-03-25,Sospechoso,Contacto,
+1151,CIUDAD DE MÉXICO,F,32,2020-03-20,Sospechoso,Contacto,
+1152,VERACRUZ,F,52,2020-03-19,Sospechoso,Contacto,
+1153,ZACATECAS,F,34,2020-03-24,Sospechoso,Contacto,
+1154,MÉXICO,F,52,2020-03-02,Sospechoso,Contacto,
+1155,JALISCO,F,25,2020-03-20,Sospechoso,Estados Unidos,2020-03-16
+1156,OAXACA,M,25,2020-03-22,Sospechoso,Contacto,
+1157,CIUDAD DE MÉXICO,F,79,2020-03-19,Sospechoso,Contacto,
+1158,MORELOS,M,72,2020-03-20,Sospechoso,Contacto,2020-03-16
+1159,JALISCO,F,40,2020-03-25,Sospechoso,Contacto,
+1160,TABASCO,M,3,2020-03-21,Sospechoso,Contacto,
+1161,NAYARIT,F,48,2020-03-21,Sospechoso,Contacto,
+1162,MÉXICO,F,30,2020-02-20,Sospechoso,Contacto,
+1163,BAJA CALIFORNIA,M,81,2020-03-23,Sospechoso,Contacto,
+1164,QUINTANA ROO,F,32,2020-03-20,Sospechoso,Contacto,
+1165,CIUDAD DE MÉXICO,F,62,2020-03-18,Sospechoso,Contacto,
+1166,JALISCO,F,9,2020-03-25,Sospechoso,Contacto,
+1167,JALISCO,F,38,2020-03-07,Sospechoso,Contacto,
+1168,AGUASCALIENTES,F,61,2020-03-26,Sospechoso,España,2020-03-21
+1169,MORELOS,F,71,2020-03-20,Sospechoso,Contacto,
+1170,PUEBLA,F,35,2020-03-22,Sospechoso,Contacto,
+1171,PUEBLA,M,38,2020-03-22,Sospechoso,Contacto,
+1172,NAYARIT,M,32,2020-03-21,Sospechoso,Contacto,
+1173,JALISCO,F,39,2020-03-15,Sospechoso,Contacto,
+1174,VERACRUZ,F,35,2020-03-25,Sospechoso,Contacto,
+1175,AGUASCALIENTES,F,27,2020-03-25,Sospechoso,España,2020-03-21
+1176,BAJA CALIFORNIA,F,60,2020-03-19,Sospechoso,Contacto,
+1177,TAMAULIPAS,F,43,2020-03-21,Sospechoso,Contacto,
+1178,ZACATECAS,M,84,2020-03-24,Sospechoso,Contacto,
+1179,JALISCO,M,42,2020-03-19,Sospechoso,Contacto,2020-03-15
+1180,VERACRUZ,F,25,2020-03-21,Sospechoso,Contacto,
+1181,MORELOS,F,42,2020-03-21,Sospechoso,Contacto,
+1182,PUEBLA,M,21,2020-03-23,Sospechoso,Contacto,
+1183,PUEBLA,M,58,2020-03-18,Sospechoso,Contacto,
+1184,JALISCO,M,34,2020-03-19,Sospechoso,España,2020-03-22
+1185,JALISCO,F,20,2020-03-24,Sospechoso,Contacto,
+1186,PUEBLA,M,25,2020-03-21,Sospechoso,Contacto,
+1187,VERACRUZ,F,22,2020-03-21,Sospechoso,Contacto,
+1188,NUEVO LEÓN,F,29,2020-03-15,Sospechoso,Estados Unidos,2020-03-22
+1189,GUANAJUATO,F,44,2020-03-15,Sospechoso,Contacto,
+1190,CIUDAD DE MÉXICO,F,63,2020-03-23,Sospechoso,Contacto,
+1191,CIUDAD DE MÉXICO,M,52,2020-03-15,Sospechoso,Estados Unidos,2020-03-15
+1192,MÉXICO,M,27,2020-03-23,Sospechoso,Contacto,
+1193,HIDALGO,F,69,2020-03-25,Sospechoso,Contacto,
+1194,PUEBLA,M,54,2020-03-18,Sospechoso,Contacto,
+1195,MÉXICO,F,22,2020-03-18,Sospechoso,Contacto,
+1196,JALISCO,F,36,2020-03-19,Sospechoso,España,2020-03-21
+1197,AGUASCALIENTES,F,56,2020-03-18,Sospechoso,Contacto,2020-03-18
+1198,SAN LUIS POTOSÍ,M,65,2020-03-12,Sospechoso,Contacto,
+1199,TAMAULIPAS,F,47,2020-03-18,Sospechoso,Contacto,
+1200,CIUDAD DE MÉXICO,F,43,2020-03-25,Sospechoso,Contacto,
+1201,VERACRUZ,F,18,2020-03-23,Sospechoso,Contacto,
+1202,MICHOACÁN,F,62,2020-03-20,Sospechoso,Contacto,2020-03-23
+1203,AGUASCALIENTES,F,22,2020-02-26,Sospechoso,Francia,2020-03-19
+1204,CIUDAD DE MÉXICO,F,13,2020-03-21,Sospechoso,Contacto,
+1205,CIUDAD DE MÉXICO,M,42,2020-03-09,Sospechoso,Contacto,
+1206,AGUASCALIENTES,M,26,2020-03-21,Sospechoso,Contacto,
+1207,MÉXICO,F,54,2020-03-20,Sospechoso,Contacto,
+1208,VERACRUZ,M,32,2020-03-22,Sospechoso,Contacto,
+1209,CIUDAD DE MÉXICO,F,61,2020-03-23,Sospechoso,Francia,2020-12-03
+1210,JALISCO,M,87,2020-03-24,Sospechoso,Contacto,
+1211,ZACATECAS,M,36,2020-03-25,Sospechoso,Contacto,
+1212,GUERRERO,F,35,2020-03-19,Sospechoso,Contacto,
+1213,TAMAULIPAS,F,28,2020-03-22,Sospechoso,Contacto,
+1214,VERACRUZ,F,61,2020-03-20,Sospechoso,Contacto,
+1215,VERACRUZ,M,30,2020-03-22,Sospechoso,Contacto,
+1216,VERACRUZ,F,30,2020-03-21,Sospechoso,Contacto,
+1217,CIUDAD DE MÉXICO,M,21,2020-03-25,Sospechoso,Contacto,
+1218,VERACRUZ,M,28,2020-03-21,Sospechoso,Contacto,
+1219,MICHOACÁN,F,58,2020-03-18,Sospechoso,Contacto,2020-03-23
+1220,CIUDAD DE MÉXICO,F,13,2020-03-20,Sospechoso,Contacto,
+1221,BAJA CALIFORNIA SUR,F,12,2020-03-26,Sospechoso,Contacto,
+1222,VERACRUZ,F,19,2020-03-23,Sospechoso,Contacto,
+1223,VERACRUZ,M,34,2020-03-19,Sospechoso,Contacto,
+1224,AGUASCALIENTES,F,11,2020-03-12,Sospechoso,Contacto,
+1225,AGUASCALIENTES,F,46,2020-03-17,Sospechoso,Italia,2020-02-29
+1226,VERACRUZ,F,36,2020-03-22,Sospechoso,Contacto,
+1227,JALISCO,M,0,2020-11-03,Sospechoso,Contacto,
+1228,JALISCO,F,62,,Sospechoso,Contacto,
+1229,VERACRUZ,F,31,,Sospechoso,Contacto,
+1230,AGUASCALIENTES,M,40,,Sospechoso,Contacto,
+1231,JALISCO,F,26,,Sospechoso,Contacto,
+1232,CHIHUAHUA,M,67,,Sospechoso,Contacto,
+1233,CIUDAD DE MÉXICO,F,52,,Sospechoso,Contacto,
+1234,ZACATECAS,M,29,,Sospechoso,Contacto,2020-09-03
+1235,JALISCO,F,19,,Sospechoso,Contacto,
+1236,TAMAULIPAS,F,38,,Sospechoso,Contacto,
+1237,CHIAPAS,F,0,,Sospechoso,Contacto,
+1238,SAN LUIS POTOSÍ,F,30,,Sospechoso,Contacto,
+1239,JALISCO,F,14,,Sospechoso,Contacto,
+1240,CIUDAD DE MÉXICO,M,39,,Sospechoso,Contacto,
+1241,JALISCO,F,41,,Sospechoso,Contacto,
+1242,AGUASCALIENTES,F,31,,Sospechoso,España,2020-03-22
+1243,CHIHUAHUA,M,21,,Sospechoso,Contacto,
+1244,CIUDAD DE MÉXICO,M,6,,Sospechoso,Contacto,
+1245,PUEBLA,F,21,,Sospechoso,Contacto,
+1246,PUEBLA,F,40,,Sospechoso,Contacto,
+1247,PUEBLA,M,26,2020-12-03,Sospechoso,Contacto,
+1248,AGUASCALIENTES,M,64,,Sospechoso,España,2020-03-22
+1249,CIUDAD DE MÉXICO,M,14,,Sospechoso,Contacto,
+1250,ZACATECAS,M,51,,Sospechoso,Contacto,
+1251,AGUASCALIENTES,M,29,,Sospechoso,Contacto,
+1252,CIUDAD DE MÉXICO,F,22,,Sospechoso,Contacto,
+1253,AGUASCALIENTES,M,29,,Sospechoso,España,2020-03-22
+1254,JALISCO,F,32,,Sospechoso,Contacto,
+1255,COAHUILA,M,61,2020-11-03,Sospechoso,Estados Unidos,2020-07-03
+1256,CIUDAD DE MÉXICO,F,51,,Sospechoso,Contacto,
+1257,AGUASCALIENTES,M,48,,Sospechoso,Contacto,
+1258,AGUASCALIENTES,F,30,,Sospechoso,Contacto,
+1259,AGUASCALIENTES,M,47,,Sospechoso,Contacto,
+1260,CHIAPAS,M,25,,Sospechoso,Contacto,
+1261,GUANAJUATO,M,22,,Sospechoso,Contacto,
+1262,HIDALGO,F,43,,Sospechoso,Contacto,
+1263,VERACRUZ,M,44,,Sospechoso,Contacto,
+1264,HIDALGO,M,52,,Sospechoso,Contacto,
+1265,AGUASCALIENTES,M,51,,Sospechoso,Contacto,
+1266,AGUASCALIENTES,F,63,,Sospechoso,España,2020-03-22
+1267,HIDALGO,F,49,,Sospechoso,Contacto,
+1268,PUEBLA,F,51,,Sospechoso,Contacto,
+1269,CIUDAD DE MÉXICO,F,15,,Sospechoso,Contacto,
+1270,PUEBLA,M,39,,Sospechoso,Contacto,
+1271,AGUASCALIENTES,F,49,,Sospechoso,Contacto,
+1272,HIDALGO,F,49,,Sospechoso,Contacto,
+1273,VERACRUZ,M,34,,Sospechoso,Contacto,
+1274,SINALOA,F,14,,Sospechoso,Contacto,
+1275,HIDALGO,F,48,,Sospechoso,Contacto,
+1276,GUANAJUATO,F,22,,Sospechoso,Contacto,
+1277,CHIAPAS,F,46,,Sospechoso,Contacto,
+1278,CIUDAD DE MÉXICO,F,27,,Sospechoso,Contacto,
+1279,QUINTANA ROO,M,38,,Sospechoso,Contacto,
+1280,CIUDAD DE MÉXICO,M,44,,Sospechoso,Contacto,
+1281,TABASCO,M,60,,Sospechoso,Contacto,
+1282,CIUDAD DE MÉXICO,M,62,,Sospechoso,Contacto,
+1283,GUANAJUATO,F,0,2020-03-17,Sospechoso,Contacto,
+1284,TABASCO,F,36,2020-03-22,Sospechoso,Contacto,
+1285,CIUDAD DE MÉXICO,M,39,2020-03-23,Sospechoso,Estados Unidos,2020-03-16
+1286,CHIAPAS,M,27,2020-03-18,Sospechoso,Contacto,
+1287,JALISCO,M,36,2020-03-21,Sospechoso,Estados Unidos,
+1288,CIUDAD DE MÉXICO,F,22,2020-03-20,Sospechoso,Contacto,
+1289,GUANAJUATO,M,31,2020-03-19,Sospechoso,Contacto,
+1290,CHIAPAS,F,56,2020-03-24,Sospechoso,Contacto,
+1291,HIDALGO,F,22,2020-03-22,Sospechoso,Contacto,
+1292,CIUDAD DE MÉXICO,M,32,2020-03-25,Sospechoso,Contacto,
+1293,SINALOA,F,27,2020-03-24,Sospechoso,Contacto,
+1294,JALISCO,F,63,2020-03-13,Sospechoso,Contacto,
+1295,VERACRUZ,M,1,2020-03-21,Sospechoso,Contacto,
+1296,GUANAJUATO,F,46,2020-03-20,Sospechoso,Contacto,
+1297,PUEBLA,M,32,2020-03-21,Sospechoso,Contacto,
+1298,GUANAJUATO,M,2,2020-03-21,Sospechoso,Contacto,
+1299,SONORA,F,67,2020-03-23,Sospechoso,Estados Unidos,2020-03-13
+1300,GUANAJUATO,F,24,2020-03-21,Sospechoso,Contacto,
+1301,QUERETARO,F,29,2020-03-23,Sospechoso,Contacto,
+1302,QUERETARO,M,31,2020-03-21,Sospechoso,Contacto,
+1303,QUERETARO,M,24,2020-03-23,Sospechoso,Contacto,
+1304,GUANAJUATO,M,63,2020-03-22,Sospechoso,Contacto,
+1305,CHIAPAS,F,34,2020-03-17,Sospechoso,Contacto,2020-03-17
+1306,GUANAJUATO,F,25,2020-03-22,Sospechoso,Contacto,
+1307,QUERETARO,F,79,2020-03-24,Sospechoso,Contacto,
+1308,GUANAJUATO,M,47,2020-03-22,Sospechoso,Contacto,
+1309,QUERETARO,M,37,2020-03-20,Sospechoso,Contacto,
+1310,COLIMA,M,32,2020-03-20,Sospechoso,Contacto,
+1311,QUERETARO,M,28,2020-03-25,Sospechoso,Contacto,
+1312,CIUDAD DE MÉXICO,M,27,2020-03-12,Sospechoso,Contacto,2020-02-21
+1313,HIDALGO,M,30,2020-03-23,Sospechoso,Contacto,
+1314,QUERETARO,F,39,2020-03-19,Sospechoso,Contacto,
+1315,QUERETARO,F,41,2020-03-22,Sospechoso,Contacto,
+1316,CHIAPAS,F,24,2020-03-21,Sospechoso,Contacto,
+1317,CIUDAD DE MÉXICO,F,26,2020-03-23,Sospechoso,Contacto,
+1318,TABASCO,F,65,2020-03-20,Sospechoso,Contacto,
+1319,QUERETARO,F,46,2020-03-24,Sospechoso,Contacto,
+1320,CIUDAD DE MÉXICO,F,18,2020-03-25,Sospechoso,Contacto,
+1321,QUERETARO,F,36,2020-03-21,Sospechoso,Contacto,
+1322,QUERETARO,M,48,2020-03-22,Sospechoso,Contacto,
+1323,PUEBLA,F,23,2020-03-20,Sospechoso,Contacto,
+1324,TAMAULIPAS,M,34,2020-03-21,Sospechoso,Contacto,
+1325,JALISCO,F,19,2020-03-25,Sospechoso,Contacto,
+1326,TABASCO,F,23,2020-03-21,Sospechoso,Contacto,
+1327,JALISCO,F,26,2020-03-24,Sospechoso,Contacto,2020-03-20
+1328,CIUDAD DE MÉXICO,M,65,2020-03-25,Sospechoso,Contacto,
+1329,TABASCO,F,27,2020-03-24,Sospechoso,Contacto,
+1330,TAMAULIPAS,M,50,2020-03-21,Sospechoso,Estados Unidos,2020-03-16
+1331,CIUDAD DE MÉXICO,F,54,2020-03-20,Sospechoso,Contacto,
+1332,MÉXICO,M,18,2020-03-07,Sospechoso,Contacto,
+1333,JALISCO,M,24,2020-03-22,Sospechoso,Contacto,
+1334,CIUDAD DE MÉXICO,F,32,2020-03-18,Sospechoso,Contacto,
+1335,TABASCO,M,35,2020-03-23,Sospechoso,Contacto,
+1336,CIUDAD DE MÉXICO,F,43,2020-03-20,Sospechoso,Contacto,
+1337,MICHOACÁN,F,3,2020-03-23,Sospechoso,Contacto,
+1338,TABASCO,F,38,2020-03-24,Sospechoso,Contacto,
+1339,CIUDAD DE MÉXICO,F,33,2020-03-25,Sospechoso,Contacto,
+1340,TABASCO,M,34,2020-03-22,Sospechoso,Contacto,
+1341,CIUDAD DE MÉXICO,F,29,2020-03-22,Sospechoso,Contacto,
+1342,COAHUILA,F,47,2020-03-21,Sospechoso,Contacto,
+1343,CIUDAD DE MÉXICO,M,27,2020-03-20,Sospechoso,Contacto,
+1344,CIUDAD DE MÉXICO,M,40,2020-03-19,Sospechoso,Contacto,
+1345,TABASCO,F,51,2020-03-24,Sospechoso,Contacto,
+1346,TABASCO,M,54,2020-03-23,Sospechoso,Contacto,
+1347,QUINTANA ROO,F,35,2020-03-18,Sospechoso,Contacto,
+1348,QUINTANA ROO,F,36,2020-03-20,Sospechoso,Contacto,
+1349,QUINTANA ROO,M,31,2020-03-24,Sospechoso,Contacto,
+1350,QUINTANA ROO,F,11,2020-03-26,Sospechoso,Contacto,
+1351,QUINTANA ROO,M,35,2020-03-25,Sospechoso,Contacto,
+1352,COAHUILA,F,41,2020-03-22,Sospechoso,Contacto,
+1353,MÉXICO,M,56,2020-03-24,Sospechoso,Contacto,2020-10-03
+1354,CIUDAD DE MÉXICO,F,29,2020-03-18,Sospechoso,Contacto,
+1355,MÉXICO,F,49,2020-03-16,Sospechoso,Estados Unidos,2020-03-16
+1356,SINALOA,M,38,2020-03-20,Sospechoso,Contacto,
+1357,GUANAJUATO,F,27,2020-03-22,Sospechoso,Contacto,2020-03-22
+1358,QUERETARO,M,29,2020-03-21,Sospechoso,Contacto,
+1359,SINALOA,M,37,2020-03-24,Sospechoso,Contacto,
+1360,CIUDAD DE MÉXICO,M,29,2020-03-25,Sospechoso,Contacto,
+1361,GUANAJUATO,M,63,2020-03-23,Sospechoso,Estados Unidos,2020-03-24
+1362,JALISCO,F,21,2020-03-15,Sospechoso,Contacto,
+1363,SINALOA,F,23,2020-03-23,Sospechoso,Contacto,
+1364,MICHOACÁN,M,34,2020-03-21,Sospechoso,Contacto,
+1365,SAN LUIS POTOSÍ,M,84,2020-03-20,Sospechoso,Contacto,
+1366,GUANAJUATO,M,28,2020-03-23,Sospechoso,Contacto,2020-03-22
+1367,CHIAPAS,F,19,2020-03-19,Sospechoso,Contacto,
+1368,CIUDAD DE MÉXICO,F,46,2020-03-25,Sospechoso,Contacto,
+1369,CIUDAD DE MÉXICO,M,32,2020-03-24,Sospechoso,Contacto,
+1370,JALISCO,M,67,2020-03-25,Sospechoso,Estados Unidos,2020-03-25
+1371,TAMAULIPAS,M,15,2020-03-24,Sospechoso,Contacto,2020-02-28
+1372,QUERETARO,F,48,2020-03-20,Sospechoso,Contacto,2020-03-21
+1373,MICHOACÁN,F,21,2020-03-19,Sospechoso,Contacto,
+1374,MÉXICO,F,49,2020-03-20,Sospechoso,Contacto,2020-11-03
+1375,MÉXICO,M,25,2020-03-25,Sospechoso,Contacto,
+1376,QUERETARO,F,31,2020-03-20,Sospechoso,Contacto,
+1377,VERACRUZ,F,33,2020-03-23,Sospechoso,Contacto,
+1378,TLAXCALA,M,43,2020-03-23,Sospechoso,Contacto,
+1379,GUERRERO,F,40,2020-03-25,Sospechoso,Contacto,
+1380,MÉXICO,F,67,2020-03-21,Sospechoso,Contacto,2020-10-03
+1381,YUCATÁN,M,42,2020-03-19,Sospechoso,Contacto,
+1382,JALISCO,F,35,2020-03-25,Sospechoso,Contacto,
+1383,TAMAULIPAS,F,53,2020-03-25,Sospechoso,Contacto,2019-12-25
+1384,JALISCO,M,59,2020-03-23,Sospechoso,Contacto,
+1385,MICHOACÁN,F,24,2020-03-21,Sospechoso,Contacto,
+1386,CHIHUAHUA,M,33,2020-03-19,Sospechoso,Contacto,
+1387,GUERRERO,F,27,2020-03-20,Sospechoso,Contacto,
+1388,SONORA,M,32,2020-03-17,Sospechoso,Contacto,
+1389,COAHUILA,M,25,2020-03-22,Sospechoso,Contacto,
+1390,CIUDAD DE MÉXICO,F,64,2020-03-23,Sospechoso,Contacto,
+1391,OAXACA,M,35,2020-03-23,Sospechoso,Contacto,
+1392,COAHUILA,F,24,2020-03-14,Sospechoso,Contacto,
+1393,AGUASCALIENTES,F,54,2020-03-25,Sospechoso,Contacto,
+1394,JALISCO,M,0,2020-03-25,Sospechoso,Contacto,
+1395,OAXACA,M,34,2020-03-22,Sospechoso,Contacto,
+1396,TABASCO,M,26,2020-03-20,Sospechoso,Contacto,
+1397,VERACRUZ,M,28,2020-03-26,Sospechoso,Contacto,
+1398,GUANAJUATO,F,19,2020-03-19,Sospechoso,Contacto,
+1399,PUEBLA,M,0,2020-03-25,Sospechoso,Estados Unidos,2020-03-25
+1400,JALISCO,F,64,2020-03-26,Sospechoso,Estados Unidos,2020-03-24
+1401,GUERRERO,F,30,2020-03-23,Sospechoso,Contacto,
+1402,GUERRERO,F,34,2020-03-19,Sospechoso,Contacto,
+1403,AGUASCALIENTES,M,39,2020-03-25,Sospechoso,Contacto,
+1404,TLAXCALA,M,51,2020-03-22,Sospechoso,Contacto,
+1405,VERACRUZ,F,26,2020-03-19,Sospechoso,Contacto,
+1406,MICHOACÁN,M,30,2020-03-20,Sospechoso,Contacto,
+1407,VERACRUZ,F,52,2020-03-22,Sospechoso,Contacto,
+1408,COAHUILA,F,50,2020-03-23,Sospechoso,Estados Unidos,2020-03-23
+1409,MÉXICO,F,54,2020-03-14,Sospechoso,Contacto,2020-09-03
+1410,CIUDAD DE MÉXICO,M,39,2020-03-23,Sospechoso,Contacto,
+1411,PUEBLA,M,26,2020-03-20,Sospechoso,Contacto,
+1412,JALISCO,F,22,2020-03-25,Sospechoso,Contacto,
+1413,VERACRUZ,M,52,2020-03-25,Sospechoso,Contacto,
+1414,OAXACA,M,27,2020-03-23,Sospechoso,Contacto,
+1415,JALISCO,F,71,2020-03-27,Sospechoso,Estados Unidos,2020-03-27
+1416,GUERRERO,M,17,2020-03-23,Sospechoso,Contacto,
+1417,TAMAULIPAS,F,30,2020-03-22,Sospechoso,Contacto,
+1418,ZACATECAS,F,22,2020-03-21,Sospechoso,Contacto,
+1419,AGUASCALIENTES,M,18,2020-03-20,Sospechoso,Contacto,
+1420,SAN LUIS POTOSÍ,M,85,2020-03-20,Sospechoso,Contacto,
+1421,GUANAJUATO,M,46,2020-03-25,Sospechoso,Contacto,
+1422,PUEBLA,F,26,2020-03-20,Sospechoso,Contacto,
+1423,CIUDAD DE MÉXICO,M,57,2020-03-25,Sospechoso,Contacto,
+1424,MÉXICO,F,59,2020-02-19,Sospechoso,Contacto,
+1425,GUERRERO,F,59,2020-03-23,Sospechoso,Contacto,
+1426,COAHUILA,F,45,2020-03-22,Sospechoso,Contacto,
+1427,JALISCO,F,29,2020-03-23,Sospechoso,Francia,
+1428,ZACATECAS,M,31,2020-03-22,Sospechoso,Contacto,2020-03-16
+1429,COAHUILA,F,27,2020-03-24,Sospechoso,Contacto,
+1430,GUERRERO,F,25,2020-03-20,Sospechoso,Contacto,
+1431,GUANAJUATO,M,27,2020-03-23,Sospechoso,España,2020-03-24
+1432,QUERETARO,M,39,2020-03-24,Sospechoso,Contacto,
+1433,CIUDAD DE MÉXICO,M,30,2020-03-20,Sospechoso,España,2020-03-03
+1434,OAXACA,M,2,2020-03-25,Sospechoso,Contacto,2020-03-19
+1435,JALISCO,F,44,2020-03-19,Sospechoso,Contacto,2020-03-16
+1436,QUERETARO,M,30,2020-03-22,Sospechoso,Contacto,
+1437,PUEBLA,F,50,2020-03-24,Sospechoso,Contacto,
+1438,VERACRUZ,M,31,2020-03-22,Sospechoso,Contacto,
+1439,VERACRUZ,F,47,2020-03-23,Sospechoso,Contacto,
+1440,CIUDAD DE MÉXICO,M,77,2020-03-12,Sospechoso,Contacto,
+1441,CIUDAD DE MÉXICO,M,32,2020-03-20,Sospechoso,Contacto,
+1442,TABASCO,M,15,2020-03-22,Sospechoso,Contacto,
+1443,JALISCO,F,65,2020-03-27,Sospechoso,Contacto,
+1444,SAN LUIS POTOSÍ,F,89,2020-03-25,Sospechoso,Contacto,
+1445,CIUDAD DE MÉXICO,F,23,2020-03-23,Sospechoso,España,2020-03-22
+1446,JALISCO,M,39,2020-03-19,Sospechoso,Estados Unidos,2020-03-16
+1447,CIUDAD DE MÉXICO,M,48,2020-03-11,Sospechoso,Contacto,
+1448,CIUDAD DE MÉXICO,F,35,2020-03-22,Sospechoso,Contacto,
+1449,JALISCO,M,26,2020-03-21,Sospechoso,Francia,2020-03-20
+1450,JALISCO,M,29,2020-03-20,Sospechoso,Contacto,
+1451,MÉXICO,F,22,2020-03-22,Sospechoso,Contacto,2020-03-20
+1452,TLAXCALA,F,37,2020-03-22,Sospechoso,Contacto,
+1453,MÉXICO,M,1,2020-03-24,Sospechoso,Contacto,
+1454,GUERRERO,F,50,2020-03-23,Sospechoso,Contacto,
+1455,MICHOACÁN,F,19,2020-03-24,Sospechoso,Contacto,
+1456,CIUDAD DE MÉXICO,F,60,2020-03-26,Sospechoso,Contacto,
+1457,CIUDAD DE MÉXICO,M,71,2020-03-24,Sospechoso,Contacto,
+1458,CIUDAD DE MÉXICO,F,37,2020-03-19,Sospechoso,Contacto,
+1459,CIUDAD DE MÉXICO,F,66,2020-03-15,Sospechoso,Contacto,
+1460,ZACATECAS,F,31,2020-03-24,Sospechoso,Contacto,
+1461,CHIHUAHUA,F,34,2020-03-22,Sospechoso,Contacto,
+1462,TLAXCALA,F,10,2020-03-22,Sospechoso,Contacto,
+1463,PUEBLA,F,32,2020-03-24,Sospechoso,Contacto,
+1464,VERACRUZ,F,35,2020-03-22,Sospechoso,Contacto,
+1465,PUEBLA,F,61,2020-03-20,Sospechoso,Contacto,
+1466,BAJA CALIFORNIA,M,51,2020-03-20,Sospechoso,Contacto,
+1467,MÉXICO,M,12,2020-03-23,Sospechoso,Contacto,
+1468,GUERRERO,M,58,2020-03-20,Sospechoso,Contacto,
+1469,SONORA,F,24,2020-03-21,Sospechoso,Contacto,
+1470,JALISCO,M,19,2020-03-14,Sospechoso,Contacto,
+1471,CHIHUAHUA,M,26,2020-03-23,Sospechoso,Contacto,
+1472,CIUDAD DE MÉXICO,F,25,2020-03-11,Sospechoso,España,2020-03-15
+1473,CHIHUAHUA,F,27,2020-03-21,Sospechoso,Contacto,
+1474,GUANAJUATO,F,22,2020-03-15,Sospechoso,España,2020-03-15
+1475,COAHUILA,M,39,2020-03-24,Sospechoso,Contacto,
+1476,SINALOA,F,24,2020-03-25,Sospechoso,Contacto,
+1477,MÉXICO,M,46,2020-03-20,Sospechoso,Estados Unidos,2020-03-16
+1478,PUEBLA,M,25,2020-03-15,Sospechoso,Contacto,
+1479,QUERETARO,F,38,2020-03-21,Sospechoso,España,2020-03-14
+1480,TLAXCALA,F,19,2020-03-26,Sospechoso,Contacto,
+1481,MÉXICO,M,24,2020-03-21,Sospechoso,Contacto,
+1482,GUERRERO,F,0,2020-03-24,Sospechoso,Contacto,
+1483,VERACRUZ,F,4,2020-03-20,Sospechoso,Contacto,
+1484,CHIHUAHUA,M,25,2020-03-16,Sospechoso,Contacto,
+1485,SINALOA,M,47,2020-03-18,Sospechoso,Contacto,
+1486,VERACRUZ,F,32,2020-03-23,Sospechoso,Contacto,
+1487,MÉXICO,M,51,2020-03-23,Sospechoso,Contacto,
+1488,PUEBLA,F,25,2020-03-21,Sospechoso,Contacto,
+1489,GUANAJUATO,F,64,2020-03-22,Sospechoso,Estados Unidos,2020-03-01
+1490,CIUDAD DE MÉXICO,F,33,2020-03-23,Sospechoso,Contacto,
+1491,CIUDAD DE MÉXICO,F,51,2020-03-27,Sospechoso,Contacto,
+1492,CIUDAD DE MÉXICO,M,35,2020-03-15,Sospechoso,España,2020-03-11
+1493,SINALOA,M,39,2020-03-20,Sospechoso,Contacto,
+1494,SONORA,M,33,2020-03-21,Sospechoso,Contacto,
+1495,CIUDAD DE MÉXICO,F,60,2020-03-20,Sospechoso,Estados Unidos,2020-03-20
+1496,VERACRUZ,F,28,2020-03-24,Sospechoso,Contacto,
+1497,ZACATECAS,M,25,2020-03-23,Sospechoso,Contacto,
+1498,JALISCO,F,45,2020-03-18,Sospechoso,Estados Unidos,2020-03-14
+1499,PUEBLA,F,42,2020-03-24,Sospechoso,Contacto,
+1500,HIDALGO,F,26,2020-03-24,Sospechoso,Contacto,
+1501,CIUDAD DE MÉXICO,F,39,2020-03-26,Sospechoso,Contacto,
+1502,PUEBLA,F,64,2020-03-26,Sospechoso,Contacto,
+1503,ZACATECAS,F,35,2020-03-23,Sospechoso,Contacto,
+1504,VERACRUZ,F,23,2020-03-22,Sospechoso,Alemania,2020-03-16
+1505,CIUDAD DE MÉXICO,F,1,2020-03-25,Sospechoso,Contacto,
+1506,JALISCO,M,21,2020-03-21,Sospechoso,Contacto,2020-03-15
+1507,MÉXICO,F,47,2020-03-25,Sospechoso,Contacto,
+1508,VERACRUZ,F,5,2020-03-20,Sospechoso,Contacto,
+1509,SINALOA,M,81,2020-03-24,Sospechoso,Contacto,
+1510,CIUDAD DE MÉXICO,M,42,2020-03-21,Sospechoso,Estados Unidos,2020-03-17
+1511,ZACATECAS,M,91,2020-03-24,Sospechoso,Contacto,
+1512,VERACRUZ,F,48,2020-03-25,Sospechoso,Contacto,
+1513,MICHOACÁN,M,42,2020-03-20,Sospechoso,Contacto,
+1514,ZACATECAS,F,40,2020-03-22,Sospechoso,Contacto,
+1515,BAJA CALIFORNIA SUR,F,35,2020-03-16,Sospechoso,Contacto,
+1516,VERACRUZ,F,59,2020-03-20,Sospechoso,Contacto,
+1517,GUANAJUATO,F,19,2020-03-23,Sospechoso,Contacto,
+1518,QUINTANA ROO,M,42,2020-03-23,Sospechoso,Contacto,
+1519,CIUDAD DE MÉXICO,F,38,2020-03-23,Sospechoso,Contacto,
+1520,SINALOA,F,48,2020-03-26,Sospechoso,Contacto,
+1521,JALISCO,F,20,2020-03-21,Sospechoso,Contacto,2020-03-18
+1522,ZACATECAS,F,49,2020-03-22,Sospechoso,Contacto,
+1523,SINALOA,F,24,2020-03-22,Sospechoso,Contacto,
+1524,PUEBLA,M,43,2020-03-20,Sospechoso,Contacto,
+1525,CIUDAD DE MÉXICO,M,56,2020-03-24,Sospechoso,Contacto,
+1526,CIUDAD DE MÉXICO,F,55,2020-03-22,Sospechoso,Contacto,2020-03-24
+1527,CIUDAD DE MÉXICO,F,67,2020-03-25,Sospechoso,Contacto,
+1528,MÉXICO,F,41,2020-03-18,Sospechoso,Contacto,
+1529,VERACRUZ,F,47,2020-03-20,Sospechoso,Contacto,
+1530,VERACRUZ,M,43,2020-03-20,Sospechoso,Contacto,
+1531,ZACATECAS,M,46,2020-03-24,Sospechoso,Contacto,
+1532,PUEBLA,M,55,2020-03-16,Sospechoso,Contacto,2020-03-17
+1533,VERACRUZ,M,23,2020-03-23,Sospechoso,Contacto,
+1534,JALISCO,M,5,2020-03-23,Sospechoso,Contacto,
+1535,COAHUILA,F,24,2020-03-25,Sospechoso,Contacto,
+1536,CIUDAD DE MÉXICO,F,34,2020-03-27,Sospechoso,Contacto,
+1537,ZACATECAS,M,35,2020-03-21,Sospechoso,Contacto,
+1538,JALISCO,M,33,2020-03-21,Sospechoso,Contacto,2020-03-23
+1539,TLAXCALA,F,42,2020-03-23,Sospechoso,Contacto,
+1540,JALISCO,F,54,2020-03-24,Sospechoso,Contacto,
+1541,TAMAULIPAS,F,45,2020-03-23,Sospechoso,Contacto,
+1542,CIUDAD DE MÉXICO,M,45,2020-03-23,Sospechoso,Contacto,
+1543,SINALOA,F,69,2020-03-23,Sospechoso,Contacto,
+1544,CHIHUAHUA,F,24,2020-03-25,Sospechoso,Contacto,
+1545,VERACRUZ,F,21,2020-03-24,Sospechoso,Contacto,
+1546,BAJA CALIFORNIA,F,50,2020-03-25,Sospechoso,Contacto,
+1547,VERACRUZ,F,31,2020-03-23,Sospechoso,Contacto,
+1548,BAJA CALIFORNIA,M,53,2020-03-23,Sospechoso,Contacto,
+1549,VERACRUZ,F,47,2020-03-21,Sospechoso,Contacto,
+1550,QUINTANA ROO,M,29,2020-03-24,Sospechoso,Contacto,
+1551,PUEBLA,F,21,2020-03-22,Sospechoso,Contacto,
+1552,TLAXCALA,F,48,2020-03-24,Sospechoso,Contacto,
+1553,VERACRUZ,M,53,2020-03-22,Sospechoso,Contacto,
+1554,VERACRUZ,M,43,2020-03-24,Sospechoso,Contacto,
+1555,JALISCO,M,55,2020-03-22,Sospechoso,Contacto,
+1556,TABASCO,M,31,2020-03-26,Sospechoso,Contacto,
+1557,SAN LUIS POTOSÍ,M,11,2020-03-25,Sospechoso,Contacto,
+1558,GUANAJUATO,M,48,2020-03-25,Sospechoso,Contacto,
+1559,MÉXICO,F,58,2020-03-25,Sospechoso,Contacto,
+1560,VERACRUZ,F,52,2020-03-22,Sospechoso,Contacto,
+1561,ZACATECAS,F,60,2020-03-18,Sospechoso,Contacto,
+1562,CIUDAD DE MÉXICO,F,46,2020-03-20,Sospechoso,Contacto,
+1563,BAJA CALIFORNIA,F,22,2020-03-23,Sospechoso,Contacto,
+1564,COAHUILA,F,69,2020-03-25,Sospechoso,Contacto,
+1565,CIUDAD DE MÉXICO,F,24,2020-03-24,Sospechoso,Contacto,
+1566,VERACRUZ,F,45,2020-03-23,Sospechoso,Contacto,
+1567,BAJA CALIFORNIA,M,44,2020-03-22,Sospechoso,Contacto,
+1568,PUEBLA,M,47,2020-03-23,Sospechoso,Contacto,
+1569,QUINTANA ROO,F,40,2020-03-23,Sospechoso,Contacto,
+1570,JALISCO,F,48,2020-03-20,Sospechoso,Contacto,
+1571,PUEBLA,M,67,2020-03-20,Sospechoso,Contacto,
+1572,SAN LUIS POTOSÍ,F,33,2020-03-27,Sospechoso,Contacto,2020-03-23
+1573,MÉXICO,F,22,2020-03-23,Sospechoso,Contacto,
+1574,GUERRERO,F,64,2020-03-25,Sospechoso,Contacto,
+1575,VERACRUZ,M,27,2020-03-24,Sospechoso,Contacto,
+1576,SONORA,F,37,2020-03-25,Sospechoso,Contacto,
+1577,CIUDAD DE MÉXICO,M,51,2020-03-25,Sospechoso,Contacto,
+1578,TABASCO,M,60,2020-03-23,Sospechoso,Contacto,
+1579,JALISCO,F,22,2020-03-22,Sospechoso,Contacto,
+1580,GUANAJUATO,M,38,2020-03-22,Sospechoso,Contacto,2020-03-20
+1581,ZACATECAS,F,40,2020-03-26,Sospechoso,Contacto,
+1582,COAHUILA,F,21,2020-03-25,Sospechoso,Contacto,
+1583,TABASCO,M,23,2020-03-19,Sospechoso,Contacto,
+1584,SAN LUIS POTOSÍ,M,14,2020-03-26,Sospechoso,Contacto,
+1585,QUERETARO,F,64,2020-03-25,Sospechoso,Contacto,
+1586,CIUDAD DE MÉXICO,M,43,2020-03-19,Sospechoso,Contacto,
+1587,VERACRUZ,M,56,2020-03-21,Sospechoso,Contacto,
+1588,TLAXCALA,F,42,2020-03-24,Sospechoso,Contacto,
+1589,TLAXCALA,M,29,2020-03-24,Sospechoso,Contacto,
+1590,TABASCO,F,18,2020-03-21,Sospechoso,Contacto,
+1591,PUEBLA,F,22,2020-03-25,Sospechoso,Contacto,
+1592,SONORA,F,49,2020-03-25,Sospechoso,Contacto,2020-03-16
+1593,MÉXICO,F,73,2020-03-20,Sospechoso,Contacto,2020-05-03
+1594,CIUDAD DE MÉXICO,M,33,2020-03-21,Sospechoso,Contacto,
+1595,GUANAJUATO,M,65,2020-03-26,Sospechoso,Contacto,
+1596,ZACATECAS,F,31,2020-03-23,Sospechoso,Contacto,
+1597,CIUDAD DE MÉXICO,F,60,2020-03-06,Sospechoso,Francia,2020-04-03
+1598,QUINTANA ROO,M,30,2020-03-26,Sospechoso,Contacto,
+1599,TABASCO,M,60,2020-03-25,Sospechoso,Contacto,
+1600,ZACATECAS,F,46,2020-03-16,Sospechoso,Contacto,
+1601,TABASCO,M,7,2020-03-25,Sospechoso,Contacto,
+1602,NUEVO LEÓN,F,25,2020-03-20,Sospechoso,Contacto,
+1603,NAYARIT,F,23,2020-03-22,Sospechoso,Contacto,
+1604,GUANAJUATO,F,26,2020-03-23,Sospechoso,Contacto,2020-03-23
+1605,MICHOACÁN,F,40,2020-03-16,Sospechoso,Contacto,
+1606,GUERRERO,F,47,2020-03-25,Sospechoso,Contacto,
+1607,QUERETARO,M,8,2020-03-25,Sospechoso,Contacto,
+1608,QUERETARO,F,66,2020-03-20,Sospechoso,Contacto,
+1609,SONORA,M,0,2020-03-22,Sospechoso,Contacto,
+1610,CIUDAD DE MÉXICO,F,30,2020-03-26,Sospechoso,Contacto,
+1611,JALISCO,M,12,2020-03-25,Sospechoso,Contacto,
+1612,BAJA CALIFORNIA,M,63,2020-03-23,Sospechoso,Contacto,
+1613,NUEVO LEÓN,F,34,2020-03-20,Sospechoso,Contacto,
+1614,VERACRUZ,M,30,2020-03-20,Sospechoso,Contacto,
+1615,GUERRERO,M,20,2020-03-25,Sospechoso,Contacto,
+1616,CIUDAD DE MÉXICO,F,26,2020-03-12,Sospechoso,España,2020-03-15
+1617,QUINTANA ROO,F,54,2020-03-18,Sospechoso,Contacto,
+1618,CIUDAD DE MÉXICO,F,47,2020-03-27,Sospechoso,Contacto,
+1619,VERACRUZ,F,39,2020-03-25,Sospechoso,Contacto,
+1620,NAYARIT,M,68,2020-03-20,Sospechoso,Contacto,
+1621,CIUDAD DE MÉXICO,F,49,2020-03-25,Sospechoso,Contacto,
+1622,VERACRUZ,F,25,2020-03-24,Sospechoso,Contacto,
+1623,ZACATECAS,F,20,2020-03-20,Sospechoso,Estados Unidos,2020-10-03
+1624,CIUDAD DE MÉXICO,F,68,2020-03-10,Sospechoso,Contacto,
+1625,TABASCO,M,26,2020-03-23,Sospechoso,Contacto,
+1626,OAXACA,M,18,2020-03-20,Sospechoso,Contacto,
+1627,TABASCO,M,40,2020-03-22,Sospechoso,Estados Unidos,2020-03-20
+1628,TAMAULIPAS,M,48,2020-03-22,Sospechoso,Contacto,
+1629,CIUDAD DE MÉXICO,M,65,2020-03-27,Sospechoso,Contacto,
+1630,JALISCO,M,18,2020-03-12,Sospechoso,Contacto,2020-02-25
+1631,VERACRUZ,F,20,2020-03-21,Sospechoso,Contacto,
+1632,SAN LUIS POTOSÍ,M,47,2020-03-23,Sospechoso,Contacto,
+1633,SINALOA,F,44,2020-03-26,Sospechoso,Contacto,
+1634,OAXACA,F,67,2020-03-20,Sospechoso,Contacto,
+1635,MORELOS,F,28,2020-03-24,Sospechoso,Contacto,
+1636,MÉXICO,F,24,2020-03-23,Sospechoso,Contacto,2020-03-16
+1637,SONORA,F,54,2020-03-24,Sospechoso,Contacto,
+1638,ZACATECAS,M,24,2020-03-21,Sospechoso,Contacto,
+1639,AGUASCALIENTES,M,33,2020-03-22,Sospechoso,Contacto,2020-06-03
+1640,NAYARIT,M,71,2020-03-20,Sospechoso,Contacto,
+1641,ZACATECAS,F,44,2020-03-24,Sospechoso,Contacto,
+1642,SONORA,F,30,2020-03-16,Sospechoso,Estados Unidos,2020-03-26
+1643,VERACRUZ,F,66,2020-03-25,Sospechoso,Contacto,
+1644,VERACRUZ,M,48,2020-03-20,Sospechoso,Contacto,
+1645,PUEBLA,F,82,2020-03-26,Sospechoso,Contacto,
+1646,CIUDAD DE MÉXICO,M,33,2020-03-17,Sospechoso,Contacto,
+1647,VERACRUZ,F,34,2020-03-23,Sospechoso,Contacto,
+1648,BAJA CALIFORNIA,F,49,2020-03-20,Sospechoso,Estados Unidos,2020-03-14
+1649,VERACRUZ,F,51,2020-03-24,Sospechoso,Contacto,
+1650,CIUDAD DE MÉXICO,F,37,2020-03-23,Sospechoso,Contacto,
+1651,CIUDAD DE MÉXICO,F,41,2020-03-27,Sospechoso,Contacto,
+1652,JALISCO,M,25,2020-03-23,Sospechoso,Contacto,2020-03-23
+1653,VERACRUZ,F,52,2020-03-23,Sospechoso,Contacto,
+1654,VERACRUZ,F,24,2020-03-22,Sospechoso,Contacto,
+1655,COAHUILA,F,28,2020-03-23,Sospechoso,Estados Unidos,2020-06-03
+1656,TABASCO,F,40,2020-03-26,Sospechoso,Contacto,
+1657,VERACRUZ,M,52,,Sospechoso,Contacto,
+1658,VERACRUZ,F,35,,Sospechoso,Contacto,
+1659,NAYARIT,M,25,,Sospechoso,Contacto,
+1660,JALISCO,F,34,,Sospechoso,Contacto,
+1661,COAHUILA,F,25,,Sospechoso,Contacto,
+1662,MORELOS,M,55,,Sospechoso,Contacto,
+1663,BAJA CALIFORNIA,M,42,,Sospechoso,España,2020-03-16
+1664,PUEBLA,F,60,,Sospechoso,Contacto,
+1665,GUERRERO,F,43,,Sospechoso,Contacto,
+1666,JALISCO,F,26,,Sospechoso,Contacto,
+1667,CIUDAD DE MÉXICO,M,40,,Sospechoso,Contacto,
+1668,SINALOA,M,18,,Sospechoso,Contacto,
+1669,PUEBLA,F,50,,Sospechoso,Contacto,
+1670,NAYARIT,M,49,,Sospechoso,Contacto,
+1671,CIUDAD DE MÉXICO,F,34,,Sospechoso,Contacto,
+1672,NAYARIT,M,42,,Sospechoso,Contacto,
+1673,CHIHUAHUA,F,5,,Sospechoso,Contacto,
+1674,MORELOS,M,26,,Sospechoso,Contacto,
+1675,MICHOACÁN,M,40,,Sospechoso,Contacto,
+1676,VERACRUZ,F,42,,Sospechoso,Contacto,
+1677,GUANAJUATO,M,31,,Sospechoso,Contacto,
+1678,GUANAJUATO,M,45,,Sospechoso,Contacto,
+1679,PUEBLA,F,51,,Sospechoso,Estados Unidos,2020-03-21
+1680,CIUDAD DE MÉXICO,M,29,,Sospechoso,Contacto,
+1681,ZACATECAS,M,27,,Sospechoso,Contacto,2020-03-19
+1682,ZACATECAS,F,65,,Sospechoso,Estados Unidos,2020-03-16
+1683,NUEVO LEÓN,M,33,,Sospechoso,Estados Unidos,2020-03-17
+1684,SINALOA,M,32,,Sospechoso,Contacto,
+1685,QUINTANA ROO,M,34,,Sospechoso,Contacto,2020-03-14
+1686,TABASCO,M,26,,Sospechoso,Contacto,
+1687,NAYARIT,F,21,,Sospechoso,Contacto,
+1688,COAHUILA,M,31,,Sospechoso,Contacto,
+1689,CIUDAD DE MÉXICO,M,64,,Sospechoso,Contacto,
+1690,COAHUILA,M,35,,Sospechoso,Contacto,
+1691,GUANAJUATO,F,24,,Sospechoso,Contacto,2020-03-21
+1692,JALISCO,F,23,,Sospechoso,Contacto,
+1693,CIUDAD DE MÉXICO,F,42,,Sospechoso,Contacto,
+1694,BAJA CALIFORNIA,M,60,,Sospechoso,Contacto,
+1695,SAN LUIS POTOSÍ,F,60,,Sospechoso,Contacto,
+1696,VERACRUZ,M,22,,Sospechoso,Contacto,
+1697,TAMAULIPAS,F,31,,Sospechoso,Contacto,
+1698,CIUDAD DE MÉXICO,F,1,,Sospechoso,Contacto,
+1699,BAJA CALIFORNIA SUR,M,48,,Sospechoso,Contacto,
+1700,AGUASCALIENTES,M,10,,Sospechoso,Contacto,
+1701,TABASCO,F,35,,Sospechoso,Contacto,
+1702,GUANAJUATO,F,46,,Sospechoso,Contacto,
+1703,GUANAJUATO,F,19,,Sospechoso,Contacto,2020-03-23
+1704,SONORA,F,35,,Sospechoso,Contacto,
+1705,COAHUILA,M,33,,Sospechoso,Estados Unidos,
+1706,PUEBLA,F,51,,Sospechoso,Contacto,
+1707,GUANAJUATO,M,38,,Sospechoso,Contacto,
+1708,GUANAJUATO,F,55,,Sospechoso,Estados Unidos,2020-03-17
+1709,HIDALGO,F,33,,Sospechoso,Contacto,
+1710,MORELOS,F,65,,Sospechoso,Estados Unidos,2020-03-20
+1711,VERACRUZ,F,29,,Sospechoso,Contacto,
+1712,SINALOA,F,5,,Sospechoso,Contacto,
+1713,SAN LUIS POTOSÍ,F,18,,Sospechoso,Contacto,
+1714,AGUASCALIENTES,M,5,,Sospechoso,Contacto,
+1715,SINALOA,M,45,,Sospechoso,Contacto,
+1716,CIUDAD DE MÉXICO,M,35,,Sospechoso,Contacto,
+1717,COAHUILA,F,36,,Sospechoso,Contacto,
+1718,VERACRUZ,M,51,,Sospechoso,Contacto,
+1719,PUEBLA,M,60,,Sospechoso,Contacto,
+1720,GUANAJUATO,F,33,,Sospechoso,Contacto,
+1721,CHIHUAHUA,M,65,,Sospechoso,Contacto,2020-03-15
+1722,OAXACA,M,0,,Sospechoso,Contacto,
+1723,AGUASCALIENTES,M,79,,Sospechoso,Contacto,
+1724,TABASCO,M,24,,Sospechoso,Contacto,
+1725,PUEBLA,M,2,,Sospechoso,Contacto,
+1726,SAN LUIS POTOSÍ,M,24,,Sospechoso,Contacto,
+1727,CIUDAD DE MÉXICO,F,31,,Sospechoso,Contacto,
+1728,CIUDAD DE MÉXICO,F,40,,Sospechoso,Contacto,
+1729,ZACATECAS,F,27,,Sospechoso,Contacto,
+1730,NUEVO LEÓN,M,40,,Sospechoso,Contacto,
+1731,TAMAULIPAS,M,30,,Sospechoso,Contacto,
+1732,BAJA CALIFORNIA SUR,F,24,,Sospechoso,Contacto,
+1733,MICHOACÁN,M,40,,Sospechoso,Contacto,2020-03-14
+1734,BAJA CALIFORNIA SUR,F,37,,Sospechoso,Contacto,
+1735,AGUASCALIENTES,F,30,,Sospechoso,Contacto,
+1736,GUANAJUATO,F,28,,Sospechoso,Contacto,
+1737,TABASCO,M,45,,Sospechoso,Contacto,
+1738,SINALOA,F,24,,Sospechoso,Contacto,
+1739,CHIAPAS,M,51,,Sospechoso,Contacto,
+1740,GUANAJUATO,F,18,,Sospechoso,Estados Unidos,2020-03-26
+1741,OAXACA,F,23,,Sospechoso,Contacto,
+1742,CHIHUAHUA,M,24,,Sospechoso,Contacto,
+1743,SAN LUIS POTOSÍ,M,24,,Sospechoso,Contacto,
+1744,PUEBLA,F,22,,Sospechoso,Contacto,
+1745,TABASCO,M,38,,Sospechoso,Contacto,2020-03-23
+1746,CIUDAD DE MÉXICO,M,60,,Sospechoso,Contacto,
+1747,SINALOA,M,33,,Sospechoso,Contacto,
+1748,NUEVO LEÓN,F,29,,Sospechoso,Contacto,
+1749,GUANAJUATO,M,45,,Sospechoso,Contacto,
+1750,CIUDAD DE MÉXICO,M,26,,Sospechoso,Contacto,
+1751,SINALOA,F,32,,Sospechoso,Contacto,
+1752,NUEVO LEÓN,F,76,,Sospechoso,Estados Unidos,2020-03-15
+1753,GUANAJUATO,F,38,,Sospechoso,Contacto,
+1754,CIUDAD DE MÉXICO,M,31,,Sospechoso,Contacto,
+1755,TAMAULIPAS,M,22,,Sospechoso,Contacto,
+1756,PUEBLA,M,33,,Sospechoso,Contacto,
+1757,SINALOA,M,0,,Sospechoso,Contacto,
+1758,TAMAULIPAS,F,38,,Sospechoso,Contacto,
+1759,SAN LUIS POTOSÍ,M,66,,Sospechoso,Contacto,
+1760,OAXACA,M,34,,Sospechoso,Contacto,
+1761,AGUASCALIENTES,F,25,,Sospechoso,Contacto,
+1762,CIUDAD DE MÉXICO,F,33,,Sospechoso,Contacto,
+1763,SINALOA,M,5,,Sospechoso,Contacto,
+1764,VERACRUZ,F,52,,Sospechoso,Contacto,
+1765,COAHUILA,M,54,,Sospechoso,Contacto,
+1766,MÉXICO,F,87,,Sospechoso,Contacto,
+1767,SINALOA,M,48,,Sospechoso,Contacto,
+1768,BAJA CALIFORNIA SUR,M,30,,Sospechoso,Contacto,
+1769,GUANAJUATO,M,20,,Sospechoso,Estados Unidos,2020-03-18
+1770,TABASCO,F,8,,Sospechoso,Contacto,
+1771,COAHUILA,M,24,,Sospechoso,Contacto,
+1772,PUEBLA,F,31,,Sospechoso,Contacto,
+1773,NUEVO LEÓN,F,65,,Sospechoso,Contacto,
+1774,GUERRERO,M,44,,Sospechoso,Contacto,
+1775,NUEVO LEÓN,F,45,,Sospechoso,Contacto,
+1776,JALISCO,M,61,,Sospechoso,Contacto,2020-03-17
+1777,OAXACA,F,36,,Sospechoso,Contacto,
+1778,GUANAJUATO,M,30,,Sospechoso,Contacto,
+1779,PUEBLA,M,22,,Sospechoso,Contacto,
+1780,MICHOACÁN,F,23,,Sospechoso,Estados Unidos,2020-03-22
+1781,NUEVO LEÓN,M,32,,Sospechoso,Estados Unidos,2020-10-03
+1782,AGUASCALIENTES,F,40,,Sospechoso,Contacto,2020-03-27
+1783,CIUDAD DE MÉXICO,M,55,,Sospechoso,Contacto,
+1784,BAJA CALIFORNIA SUR,F,38,,Sospechoso,Contacto,
+1785,AGUASCALIENTES,M,8,,Sospechoso,Contacto,
+1786,NUEVO LEÓN,M,55,,Sospechoso,Estados Unidos,2020-03-15
+1787,CHIHUAHUA,F,0,,Sospechoso,Contacto,
+1788,SAN LUIS POTOSÍ,F,56,,Sospechoso,Contacto,
+1789,SINALOA,M,52,,Sospechoso,Contacto,
+1790,CIUDAD DE MÉXICO,M,54,,Sospechoso,Contacto,
+1791,NUEVO LEÓN,F,15,,Sospechoso,Contacto,
+1792,CIUDAD DE MÉXICO,F,13,,Sospechoso,Estados Unidos,2020-03-14
+1793,CIUDAD DE MÉXICO,F,90,,Sospechoso,Estados Unidos,2020-03-17
+1794,ZACATECAS,M,4,,Sospechoso,Contacto,
+1795,VERACRUZ,M,1,,Sospechoso,Contacto,
+1796,CIUDAD DE MÉXICO,M,60,,Sospechoso,Contacto,
+1797,GUANAJUATO,F,35,,Sospechoso,Contacto,
+1798,GUANAJUATO,F,45,,Sospechoso,Corea del Sur,2020-03-13
+1799,CIUDAD DE MÉXICO,M,24,,Sospechoso,Contacto,
+1800,GUANAJUATO,M,29,,Sospechoso,Alemania,2020-03-19
+1801,TABASCO,M,27,,Sospechoso,Contacto,
+1802,AGUASCALIENTES,M,15,,Sospechoso,Contacto,
+1803,GUANAJUATO,F,33,,Sospechoso,Contacto,
+1804,NUEVO LEÓN,F,26,,Sospechoso,Contacto,
+1805,CIUDAD DE MÉXICO,F,33,,Sospechoso,Contacto,
+1806,SINALOA,M,47,,Sospechoso,Estados Unidos,2020-03-26
+1807,PUEBLA,M,35,,Sospechoso,Contacto,
+1808,VERACRUZ,F,48,,Sospechoso,Contacto,
+1809,SINALOA,F,44,,Sospechoso,Contacto,
+1810,CIUDAD DE MÉXICO,M,33,,Sospechoso,Contacto,
+1811,NUEVO LEÓN,M,63,,Sospechoso,Estados Unidos,2020-03-16
+1812,CIUDAD DE MÉXICO,M,49,,Sospechoso,Contacto,
+1813,NUEVO LEÓN,F,43,,Sospechoso,Contacto,
+1814,TABASCO,M,12,,Sospechoso,Contacto,
+1815,MÉXICO,F,45,,Sospechoso,Contacto,
+1816,SINALOA,M,49,,Sospechoso,Contacto,
+1817,GUANAJUATO,F,54,,Sospechoso,Contacto,
+1818,PUEBLA,M,64,,Sospechoso,Contacto,
+1819,CIUDAD DE MÉXICO,F,48,,Sospechoso,Contacto,
+1820,CIUDAD DE MÉXICO,M,75,,Sospechoso,Contacto,
+1821,GUANAJUATO,F,30,,Sospechoso,Contacto,
+1822,COAHUILA,F,41,,Sospechoso,Contacto,
+1823,MICHOACÁN,M,78,,Sospechoso,Estados Unidos,2020-12-03
+1824,GUANAJUATO,M,52,,Sospechoso,Contacto,
+1825,NUEVO LEÓN,F,21,,Sospechoso,España,2020-03-14
+1826,TABASCO,F,33,,Sospechoso,Contacto,
+1827,SINALOA,F,75,,Sospechoso,Contacto,
+1828,PUEBLA,F,50,,Sospechoso,Contacto,
+1829,SAN LUIS POTOSÍ,M,43,,Sospechoso,Contacto,
+1830,CIUDAD DE MÉXICO,F,85,,Sospechoso,Contacto,
+1831,TABASCO,M,56,,Sospechoso,Contacto,
+1832,VERACRUZ,F,43,,Sospechoso,Contacto,2020-03-23
+1833,COAHUILA,F,57,,Sospechoso,Estados Unidos,
+1834,NUEVO LEÓN,M,30,,Sospechoso,Estados Unidos,2020-03-16
+1835,SONORA,F,27,,Sospechoso,Contacto,
+1836,NUEVO LEÓN,M,29,,Sospechoso,España,2020-03-20
+1837,VERACRUZ,M,19,,Sospechoso,Contacto,
+1838,CIUDAD DE MÉXICO,M,47,,Sospechoso,Contacto,
+1839,GUANAJUATO,F,50,,Sospechoso,Contacto,
+1840,TABASCO,F,27,,Sospechoso,Contacto,
+1841,SAN LUIS POTOSÍ,F,51,,Sospechoso,Contacto,
+1842,SAN LUIS POTOSÍ,M,48,,Sospechoso,Contacto,
+1843,VERACRUZ,M,71,,Sospechoso,Contacto,
+1844,NUEVO LEÓN,M,22,,Sospechoso,Contacto,
+1845,VERACRUZ,M,49,,Sospechoso,Contacto,
+1846,SINALOA,M,55,,Sospechoso,Contacto,
+1847,CIUDAD DE MÉXICO,F,55,,Sospechoso,Contacto,
+1848,SAN LUIS POTOSÍ,M,36,,Sospechoso,Contacto,
+1849,AGUASCALIENTES,F,45,,Sospechoso,Contacto,
+1850,AGUASCALIENTES,F,14,,Sospechoso,Contacto,
+1851,CHIAPAS,M,5,,Sospechoso,Contacto,
+1852,GUANAJUATO,F,0,,Sospechoso,Estados Unidos,2020-03-15
+1853,NUEVO LEÓN,F,27,,Sospechoso,Contacto,
+1854,CIUDAD DE MÉXICO,F,35,,Sospechoso,Estados Unidos,2020-10-03
+1855,CIUDAD DE MÉXICO,M,24,,Sospechoso,Contacto,
+1856,GUANAJUATO,M,44,,Sospechoso,Contacto,
+1857,CIUDAD DE MÉXICO,F,26,,Sospechoso,Contacto,
+1858,OAXACA,M,38,,Sospechoso,Contacto,
+1859,TABASCO,M,46,,Sospechoso,Contacto,
+1860,CIUDAD DE MÉXICO,F,56,,Sospechoso,Contacto,
+1861,VERACRUZ,F,49,,Sospechoso,Contacto,
+1862,VERACRUZ,F,31,,Sospechoso,Contacto,
+1863,VERACRUZ,M,19,,Sospechoso,Contacto,
+1864,COAHUILA,M,53,,Sospechoso,Contacto,
+1865,GUANAJUATO,F,30,,Sospechoso,Contacto,
+1866,ZACATECAS,M,30,,Sospechoso,Contacto,
+1867,PUEBLA,M,56,,Sospechoso,Contacto,
+1868,SAN LUIS POTOSÍ,M,65,,Sospechoso,Estados Unidos,2020-03-26
+1869,PUEBLA,F,38,,Sospechoso,Estados Unidos,2020-03-25
+1870,NUEVO LEÓN,F,55,,Sospechoso,Estados Unidos,2020-03-15
+1871,PUEBLA,M,33,,Sospechoso,Contacto,
+1872,SINALOA,M,43,,Sospechoso,Contacto,
+1873,OAXACA,M,34,,Sospechoso,Contacto,
+1874,NUEVO LEÓN,M,3,,Sospechoso,Contacto,
+1875,QUERETARO,M,32,,Sospechoso,Contacto,
+1876,CIUDAD DE MÉXICO,F,56,,Sospechoso,Contacto,
+1877,CIUDAD DE MÉXICO,F,55,,Sospechoso,Contacto,
+1878,VERACRUZ,M,80,,Sospechoso,Contacto,
+1879,SAN LUIS POTOSÍ,F,26,,Sospechoso,Contacto,
+1880,ZACATECAS,F,35,,Sospechoso,Contacto,
+1881,NUEVO LEÓN,F,38,,Sospechoso,Contacto,
+1882,VERACRUZ,F,46,,Sospechoso,Contacto,
+1883,GUANAJUATO,F,36,,Sospechoso,Contacto,
+1884,OAXACA,M,32,,Sospechoso,Estados Unidos,2020-03-21
+1885,TABASCO,F,57,,Sospechoso,Contacto,
+1886,JALISCO,M,37,,Sospechoso,Contacto,
+1887,GUANAJUATO,M,0,,Sospechoso,Contacto,
+1888,CIUDAD DE MÉXICO,F,19,,Sospechoso,Contacto,
+1889,OAXACA,F,31,,Sospechoso,Contacto,
+1890,CIUDAD DE MÉXICO,M,30,,Sospechoso,Contacto,
+1891,GUANAJUATO,F,48,,Sospechoso,Estados Unidos,2020-03-18
+1892,CIUDAD DE MÉXICO,M,45,,Sospechoso,Contacto,
+1893,GUANAJUATO,M,40,,Sospechoso,Contacto,
+1894,MORELOS,F,32,,Sospechoso,Contacto,
+1895,SINALOA,F,48,,Sospechoso,Contacto,
+1896,MÉXICO,F,33,,Sospechoso,Contacto,
+1897,VERACRUZ,M,22,,Sospechoso,Contacto,
+1898,NUEVO LEÓN,M,0,,Sospechoso,Contacto,
+1899,PUEBLA,F,37,,Sospechoso,Contacto,
+1900,SINALOA,F,38,,Sospechoso,Contacto,
+1901,COAHUILA,M,38,,Sospechoso,Estados Unidos,
+1902,PUEBLA,M,3,,Sospechoso,Contacto,
+1903,CIUDAD DE MÉXICO,F,34,,Sospechoso,Contacto,
+1904,MICHOACÁN,F,39,,Sospechoso,Contacto,
+1905,OAXACA,F,24,,Sospechoso,Contacto,
+1906,NUEVO LEÓN,M,56,,Sospechoso,Estados Unidos,2020-03-15
+1907,VERACRUZ,F,33,,Sospechoso,Contacto,
+1908,CIUDAD DE MÉXICO,M,35,,Sospechoso,Contacto,
+1909,TABASCO,M,23,,Sospechoso,Contacto,
+1910,CIUDAD DE MÉXICO,M,19,,Sospechoso,Contacto,
+1911,COAHUILA,M,46,,Sospechoso,Contacto,
+1912,TAMAULIPAS,M,70,,Sospechoso,Estados Unidos,2020-03-24
+1913,GUANAJUATO,M,19,,Sospechoso,Contacto,
+1914,JALISCO,F,57,,Sospechoso,Contacto,
+1915,OAXACA,M,46,,Sospechoso,Contacto,
+1916,PUEBLA,M,43,,Sospechoso,Contacto,
+1917,PUEBLA,M,31,,Sospechoso,Contacto,
+1918,MÉXICO,M,40,,Sospechoso,Contacto,
+1919,SINALOA,F,69,,Sospechoso,Contacto,
+1920,NUEVO LEÓN,M,14,,Sospechoso,Estados Unidos,2020-03-18
+1921,NUEVO LEÓN,F,55,,Sospechoso,Contacto,
+1922,CIUDAD DE MÉXICO,M,60,,Sospechoso,Contacto,
+1923,SAN LUIS POTOSÍ,F,31,,Sospechoso,Contacto,
+1924,SINALOA,M,28,,Sospechoso,Estados Unidos,
+1925,TABASCO,M,50,,Sospechoso,Contacto,
+1926,PUEBLA,F,58,,Sospechoso,Contacto,
+1927,QUERETARO,F,67,,Sospechoso,Contacto,2020-03-23
+1928,MÉXICO,M,27,,Sospechoso,Contacto,
+1929,VERACRUZ,M,53,,Sospechoso,Contacto,
+1930,PUEBLA,M,10,,Sospechoso,Contacto,
+1931,GUANAJUATO,F,33,,Sospechoso,Corea del Sur,2020-03-20
+1932,OAXACA,M,30,,Sospechoso,Contacto,
+1933,VERACRUZ,F,31,,Sospechoso,Contacto,
+1934,NUEVO LEÓN,F,30,,Sospechoso,Contacto,
+1935,TABASCO,F,42,,Sospechoso,Contacto,
+1936,MORELOS,F,7,,Sospechoso,Contacto,
+1937,COAHUILA,M,42,,Sospechoso,Contacto,
+1938,AGUASCALIENTES,F,44,,Sospechoso,Contacto,2020-03-14
+1939,OAXACA,F,26,,Sospechoso,Contacto,
+1940,GUERRERO,M,28,,Sospechoso,Contacto,
+1941,PUEBLA,M,29,,Sospechoso,Contacto,
+1942,SONORA,F,41,,Sospechoso,Estados Unidos,2020-03-17
+1943,COAHUILA,M,28,,Sospechoso,España,
+1944,CIUDAD DE MÉXICO,M,57,,Sospechoso,Contacto,
+1945,GUANAJUATO,M,39,,Sospechoso,Contacto,
+1946,SAN LUIS POTOSÍ,M,24,,Sospechoso,Contacto,
+1947,GUANAJUATO,F,51,,Sospechoso,Contacto,
+1948,NUEVO LEÓN,F,61,,Sospechoso,Contacto,
+1949,MORELOS,M,66,,Sospechoso,Contacto,
+1950,SINALOA,F,28,,Sospechoso,Estados Unidos,
+1951,TABASCO,F,37,,Sospechoso,Contacto,
+1952,VERACRUZ,M,35,,Sospechoso,Contacto,
+1953,OAXACA,F,27,,Sospechoso,Contacto,
+1954,QUERETARO,M,24,,Sospechoso,Contacto,
+1955,MICHOACÁN,M,46,,Sospechoso,Estados Unidos,2020-03-23
+1956,GUANAJUATO,F,6,,Sospechoso,Contacto,
+1957,NUEVO LEÓN,M,17,,Sospechoso,Contacto,
+1958,SONORA,F,28,,Sospechoso,Estados Unidos,2020-03-09
+1959,MORELOS,M,44,,Sospechoso,Contacto,
+1960,SAN LUIS POTOSÍ,F,24,,Sospechoso,Contacto,
+1961,TABASCO,F,32,,Sospechoso,Contacto,
+1962,OAXACA,F,34,,Sospechoso,Contacto,
+1963,QUERETARO,F,55,,Sospechoso,Estados Unidos,2020-03-18
+1964,SONORA,M,52,,Sospechoso,Contacto,
+1965,COAHUILA,F,41,,Sospechoso,Contacto,
+1966,CIUDAD DE MÉXICO,M,51,,Sospechoso,Estados Unidos,2020-03-17
+1967,NUEVO LEÓN,F,30,,Sospechoso,Contacto,
+1968,NAYARIT,F,21,,Sospechoso,Contacto,
+1969,COAHUILA,F,56,,Sospechoso,Estados Unidos,
+1970,NUEVO LEÓN,F,21,,Sospechoso,Estados Unidos,2020-03-06
+1971,CHIAPAS,F,51,,Sospechoso,Contacto,
+1972,TLAXCALA,M,21,,Sospechoso,Contacto,
+1973,MÉXICO,F,3,,Sospechoso,Contacto,
+1974,GUANAJUATO,F,24,,Sospechoso,Estados Unidos,2020-03-17
+1975,JALISCO,M,46,,Sospechoso,Contacto,
+1976,SINALOA,F,66,,Sospechoso,Contacto,
+1977,AGUASCALIENTES,M,43,,Sospechoso,Contacto,
+1978,MICHOACÁN,M,43,,Sospechoso,Contacto,
+1979,OAXACA,M,38,,Sospechoso,Contacto,
+1980,GUANAJUATO,F,49,,Sospechoso,Contacto,
+1981,NUEVO LEÓN,M,35,,Sospechoso,Contacto,
+1982,GUANAJUATO,F,23,,Sospechoso,Contacto,
+1983,VERACRUZ,F,30,,Sospechoso,Contacto,
+1984,VERACRUZ,F,34,,Sospechoso,Contacto,
+1985,GUERRERO,F,37,,Sospechoso,Contacto,
+1986,NUEVO LEÓN,F,45,,Sospechoso,Contacto,
+1987,MORELOS,F,2,,Sospechoso,Contacto,
+1988,COAHUILA,M,42,,Sospechoso,Contacto,
+1989,GUANAJUATO,M,27,,Sospechoso,Contacto,
+1990,GUANAJUATO,F,62,,Sospechoso,España,2020-03-22
+1991,CIUDAD DE MÉXICO,M,64,,Sospechoso,Contacto,
+1992,MORELOS,M,86,,Sospechoso,Contacto,
+1993,NUEVO LEÓN,M,22,,Sospechoso,Contacto,
+1994,SONORA,F,27,,Sospechoso,Contacto,
+1995,JALISCO,F,23,,Sospechoso,Contacto,
+1996,AGUASCALIENTES,M,24,,Sospechoso,Contacto,
+1997,GUANAJUATO,F,53,,Sospechoso,Contacto,
+1998,MORELOS,M,44,,Sospechoso,Contacto,
+1999,CIUDAD DE MÉXICO,M,47,,Sospechoso,Contacto,
+2000,NUEVO LEÓN,F,27,,Sospechoso,Contacto,
+2001,NAYARIT,F,46,,Sospechoso,Estados Unidos,2020-03-09
+2002,GUANAJUATO,M,24,,Sospechoso,Contacto,
+2003,DURANGO,M,47,,Sospechoso,Contacto,
+2004,GUANAJUATO,F,22,,Sospechoso,España,2020-03-22
+2005,GUANAJUATO,F,72,,Sospechoso,Contacto,
+2006,GUERRERO,M,30,,Sospechoso,Contacto,
+2007,MICHOACÁN,M,69,,Sospechoso,Contacto,
+2008,COAHUILA,F,58,,Sospechoso,Contacto,
+2009,NUEVO LEÓN,F,33,,Sospechoso,Contacto,
+2010,BAJA CALIFORNIA SUR,M,13,,Sospechoso,Contacto,
+2011,JALISCO,F,48,,Sospechoso,Contacto,2020-03-19
+2012,JALISCO,F,36,,Sospechoso,Estados Unidos,2020-03-20
+2013,GUANAJUATO,F,22,,Sospechoso,Italia,2020-03-16
+2014,MICHOACÁN,F,28,,Sospechoso,Contacto,
+2015,GUANAJUATO,M,31,,Sospechoso,Contacto,
+2016,JALISCO,M,48,,Sospechoso,Contacto,
+2017,MÉXICO,M,62,,Sospechoso,Contacto,
+2018,COAHUILA,F,28,,Sospechoso,Contacto,
+2019,GUANAJUATO,M,60,,Sospechoso,Italia,2020-03-16
+2020,AGUASCALIENTES,F,30,,Sospechoso,Contacto,
+2021,GUANAJUATO,M,28,,Sospechoso,España,2020-03-22
+2022,GUANAJUATO,M,25,,Sospechoso,Estados Unidos,2020-03-25
+2023,SINALOA,M,37,,Sospechoso,Contacto,
+2024,GUANAJUATO,M,27,,Sospechoso,Contacto,
+2025,TABASCO,F,15,,Sospechoso,Contacto,
+2026,GUANAJUATO,M,19,,Sospechoso,Contacto,2020-03-20
+2027,AGUASCALIENTES,F,45,,Sospechoso,España,2020-03-25
+2028,JALISCO,M,31,,Sospechoso,España,2020-03-01
+2029,GUANAJUATO,F,23,,Sospechoso,España,2020-03-20
+2030,SONORA,F,25,,Sospechoso,Contacto,
+2031,JALISCO,F,45,,Sospechoso,Contacto,
+2032,JALISCO,F,45,,Sospechoso,Estados Unidos,2020-03-18
+2033,JALISCO,F,9,,Sospechoso,Contacto,
+2034,HIDALGO,F,16,,Sospechoso,España,2020-03-14
+2035,COAHUILA,F,72,,Sospechoso,Contacto,2020-03-15
+2036,PUEBLA,F,47,,Sospechoso,Contacto,
+2037,CHIAPAS,F,28,,Sospechoso,Contacto,2020-03-16
+2038,COAHUILA,F,50,,Sospechoso,Contacto,
+2039,NUEVO LEÓN,F,40,,Sospechoso,Contacto,
+2040,MICHOACÁN,M,81,,Sospechoso,Estados Unidos,2020-03-12
+2041,GUANAJUATO,M,37,,Sospechoso,Contacto,
+2042,AGUASCALIENTES,F,25,,Sospechoso,Contacto,2020-03-21
+2043,AGUASCALIENTES,F,29,,Sospechoso,Contacto,
+2044,JALISCO,F,46,,Sospechoso,Contacto,2020-03-26
+2045,GUANAJUATO,F,27,,Sospechoso,Contacto,
+2046,JALISCO,F,49,,Sospechoso,Estados Unidos,2020-03-14
+2047,GUERRERO,M,70,,Sospechoso,Estados Unidos,2020-03-20
+2048,PUEBLA,M,45,,Sospechoso,Contacto,
+2049,GUANAJUATO,F,44,,Sospechoso,Italia,2020-03-16
+2050,MICHOACÁN,F,37,,Sospechoso,Contacto,
+2051,SINALOA,F,46,,Sospechoso,Contacto,
+2052,SINALOA,F,39,,Sospechoso,Contacto,
+2053,CHIAPAS,M,22,,Sospechoso,España,2020-03-19
+2054,BAJA CALIFORNIA,F,66,,Sospechoso,Estados Unidos,2020-03-22
+2055,AGUASCALIENTES,F,22,,Sospechoso,Francia,2020-03-21
+2056,TAMAULIPAS,M,64,,Sospechoso,Contacto,
+2057,JALISCO,M,28,,Sospechoso,Contacto,
+2058,GUANAJUATO,F,24,,Sospechoso,Contacto,2020-03-16
+2059,SINALOA,F,40,,Sospechoso,Contacto,
+2060,CIUDAD DE MÉXICO,F,46,,Sospechoso,Contacto,
+2061,SAN LUIS POTOSÍ,F,49,,Sospechoso,Contacto,
+2062,BAJA CALIFORNIA,F,63,,Sospechoso,Estados Unidos,2020-03-18
+2063,CHIAPAS,M,40,,Sospechoso,Contacto,
+2064,BAJA CALIFORNIA,M,41,,Sospechoso,Contacto,2020-03-22
+2065,GUANAJUATO,M,10,,Sospechoso,Italia,2020-03-16
+2066,SONORA,F,21,,Sospechoso,España,2020-03-19
+2067,JALISCO,M,20,,Sospechoso,Estados Unidos,2020-03-13
+2068,MICHOACÁN,M,30,,Sospechoso,Contacto,
+2069,AGUASCALIENTES,F,45,,Sospechoso,Contacto,
+2070,SAN LUIS POTOSÍ,F,26,,Sospechoso,Contacto,
+2071,SONORA,F,28,,Sospechoso,Estados Unidos,2020-03-12
+2072,BAJA CALIFORNIA,F,26,,Sospechoso,Contacto,
+2073,COAHUILA,M,84,,Sospechoso,Contacto,
+2074,JALISCO,F,52,,Sospechoso,Estados Unidos,2020-03-03
+2075,MÉXICO,M,56,,Sospechoso,Contacto,
+2076,CHIAPAS,F,38,,Sospechoso,Contacto,
+2077,SINALOA,F,39,,Sospechoso,Contacto,
+2078,NUEVO LEÓN,M,59,,Sospechoso,Estados Unidos,2020-03-07
+2079,VERACRUZ,M,19,,Sospechoso,Contacto,
+2080,TAMAULIPAS,M,0,,Sospechoso,Contacto,
+2081,SAN LUIS POTOSÍ,F,22,,Sospechoso,España,2020-03-18
+2082,JALISCO,M,16,,Sospechoso,Contacto,
+2083,AGUASCALIENTES,F,41,,Sospechoso,Contacto,
+2084,CHIAPAS,M,33,,Sospechoso,Contacto,
+2085,AGUASCALIENTES,M,57,,Sospechoso,Contacto,
+2086,CHIAPAS,M,46,,Sospechoso,Contacto,2020-03-12
+2087,BAJA CALIFORNIA,F,55,,Sospechoso,Contacto,
+2088,JALISCO,M,24,,Sospechoso,Estados Unidos,2020-03-15
+2089,QUERETARO,F,34,,Sospechoso,España,2020-03-20
+2090,TAMAULIPAS,F,42,,Sospechoso,Contacto,
+2091,MICHOACÁN,F,45,,Sospechoso,Estados Unidos,2020-03-05
+2092,SONORA,F,28,,Sospechoso,Estados Unidos,2020-03-20
+2093,NUEVO LEÓN,M,59,,Sospechoso,Contacto,
+2094,SONORA,M,32,,Sospechoso,Contacto,
+2095,AGUASCALIENTES,F,16,,Sospechoso,Contacto,2020-03-23
+2096,BAJA CALIFORNIA,F,24,,Sospechoso,Estados Unidos,2020-03-21
+2097,JALISCO,M,25,,Sospechoso,Contacto,
+2098,QUERETARO,F,24,,Sospechoso,Contacto,
+2099,SINALOA,M,40,,Sospechoso,Contacto,
+2100,MICHOACÁN,M,5,,Sospechoso,Contacto,
+2101,AGUASCALIENTES,F,28,,Sospechoso,Contacto,
+2102,SINALOA,M,24,,Sospechoso,Estados Unidos,2020-03-20
+2103,QUERETARO,M,64,,Sospechoso,Contacto,
+2104,AGUASCALIENTES,M,23,,Sospechoso,Italia,2020-03-23
+2105,SINALOA,F,33,,Sospechoso,Contacto,
+2106,JALISCO,M,31,,Sospechoso,Contacto,
+2107,QUERETARO,F,25,,Sospechoso,Contacto,
+2108,BAJA CALIFORNIA,M,4,,Sospechoso,Contacto,
+2109,TABASCO,M,61,,Sospechoso,Contacto,2020-03-22
+2110,SONORA,F,82,,Sospechoso,Contacto,
+2111,CIUDAD DE MÉXICO,M,54,,Sospechoso,Contacto,
+2112,COAHUILA,F,50,,Sospechoso,Contacto,
+2113,AGUASCALIENTES,M,32,,Sospechoso,España,2020-03-24
+2114,COAHUILA,F,35,,Sospechoso,Contacto,
+2115,TABASCO,F,29,,Sospechoso,Contacto,
+2116,SAN LUIS POTOSÍ,M,21,,Sospechoso,España,2020-03-14
+2117,VERACRUZ,F,0,,Sospechoso,Contacto,
+2118,TABASCO,M,28,,Sospechoso,Contacto,
+2119,CIUDAD DE MÉXICO,M,42,,Sospechoso,Contacto,
+2120,BAJA CALIFORNIA,M,54,,Sospechoso,Contacto,2020-03-27
+2121,MICHOACÁN,F,49,,Sospechoso,Contacto,2020-03-08
+2122,HIDALGO,M,28,,Sospechoso,Contacto,
+2123,HIDALGO,M,51,,Sospechoso,Contacto,
+2124,NUEVO LEÓN,F,38,,Sospechoso,Contacto,
+2125,AGUASCALIENTES,M,31,,Sospechoso,Contacto,2020-03-19
+2126,SAN LUIS POTOSÍ,F,34,,Sospechoso,Estados Unidos,2020-03-24
+2127,OAXACA,F,50,,Sospechoso,Contacto,
+2128,MICHOACÁN,F,17,,Sospechoso,Contacto,
+2129,HIDALGO,M,25,,Sospechoso,Contacto,
+2130,TABASCO,F,59,,Sospechoso,Contacto,
+2131,SAN LUIS POTOSÍ,M,26,,Sospechoso,Contacto,
+2132,HIDALGO,M,24,,Sospechoso,Contacto,
+2133,COAHUILA,F,15,,Sospechoso,Contacto,
+2134,CIUDAD DE MÉXICO,F,29,,Sospechoso,Contacto,
+2135,TABASCO,M,61,,Sospechoso,Contacto,
+2136,SAN LUIS POTOSÍ,F,31,,Sospechoso,Estados Unidos,2020-03-24
+2137,AGUASCALIENTES,F,32,,Sospechoso,España,2020-03-24
+2138,NUEVO LEÓN,F,6,,Sospechoso,Estados Unidos,
+2139,MICHOACÁN,M,50,,Sospechoso,Contacto,
+2140,TABASCO,F,30,,Sospechoso,Contacto,
+2141,VERACRUZ,M,4,,Sospechoso,Estados Unidos,2020-12-03
+2142,TABASCO,F,6,,Sospechoso,Contacto,
+2143,SINALOA,M,20,,Sospechoso,Contacto,2020-03-27
+2144,VERACRUZ,M,55,,Sospechoso,Contacto,
+2145,DURANGO,M,29,,Sospechoso,Contacto,
+2146,HIDALGO,M,70,,Sospechoso,Contacto,
+2147,TAMAULIPAS,M,33,,Sospechoso,Contacto,
+2148,CIUDAD DE MÉXICO,F,30,,Sospechoso,Contacto,
+2149,TABASCO,M,67,,Sospechoso,Contacto,
+2150,TABASCO,M,36,,Sospechoso,Contacto,
+2151,COAHUILA,M,56,,Sospechoso,Estados Unidos,
+2152,NUEVO LEÓN,M,37,,Sospechoso,Contacto,
+2153,CHIAPAS,M,36,,Sospechoso,Contacto,
+2154,PUEBLA,F,52,,Sospechoso,Contacto,
+2155,JALISCO,M,39,,Sospechoso,Contacto,
+2156,TABASCO,F,41,,Sospechoso,Contacto,
+2157,TABASCO,M,38,,Sospechoso,Contacto,
+2158,COLIMA,M,43,,Sospechoso,Contacto,
+2159,BAJA CALIFORNIA,M,18,,Sospechoso,Contacto,2020-03-27
+2160,DURANGO,M,35,,Sospechoso,Contacto,
+2161,VERACRUZ,M,37,,Sospechoso,Contacto,
+2162,CIUDAD DE MÉXICO,F,30,,Sospechoso,Contacto,
+2163,COAHUILA,F,32,,Sospechoso,Estados Unidos,
+2164,NUEVO LEÓN,F,40,,Sospechoso,Estados Unidos,
+2165,JALISCO,F,46,,Sospechoso,Contacto,
+2166,NUEVO LEÓN,M,51,,Sospechoso,Contacto,
+2167,CHIAPAS,M,31,,Sospechoso,Contacto,
+2168,COAHUILA,M,41,,Sospechoso,Contacto,
+2169,TABASCO,F,40,,Sospechoso,Estados Unidos,2020-03-20
+2170,COAHUILA,M,34,,Sospechoso,Estados Unidos,
+2171,BAJA CALIFORNIA,F,50,,Sospechoso,Contacto,2020-03-20
+2172,TABASCO,F,40,,Sospechoso,Contacto,2020-03-17
+2173,DURANGO,F,34,,Sospechoso,Contacto,
+2174,VERACRUZ,F,30,,Sospechoso,Contacto,
+2175,CIUDAD DE MÉXICO,F,33,,Sospechoso,Contacto,
+2176,NUEVO LEÓN,F,23,,Sospechoso,Contacto,
+2177,TABASCO,F,48,,Sospechoso,Contacto,
+2178,HIDALGO,M,16,,Sospechoso,Contacto,
+2179,JALISCO,M,85,,Sospechoso,Contacto,
+2180,CHIAPAS,F,57,,Sospechoso,Contacto,
+2181,COAHUILA,F,24,,Sospechoso,Contacto,
+2182,VERACRUZ,F,19,,Sospechoso,Contacto,
+2183,CIUDAD DE MÉXICO,F,42,,Sospechoso,Contacto,
+2184,AGUASCALIENTES,F,23,,Sospechoso,Contacto,
+2185,COAHUILA,F,19,,Sospechoso,Contacto,
+2186,COAHUILA,F,35,,Sospechoso,Estados Unidos,
+2187,NUEVO LEÓN,M,3,,Sospechoso,Estados Unidos,
+2188,AGUASCALIENTES,F,51,,Sospechoso,Contacto,
+2189,TABASCO,F,60,,Sospechoso,Contacto,
+2190,CIUDAD DE MÉXICO,F,58,,Sospechoso,Contacto,
+2191,BAJA CALIFORNIA SUR,M,40,,Sospechoso,Contacto,
+2192,NUEVO LEÓN,M,57,,Sospechoso,Contacto,
+2193,COAHUILA,F,45,,Sospechoso,Contacto,
+2194,TABASCO,M,60,,Sospechoso,Contacto,
+2195,CIUDAD DE MÉXICO,M,53,,Sospechoso,Contacto,
+2196,COAHUILA,M,39,,Sospechoso,Contacto,
+2197,GUERRERO,F,102,,Sospechoso,Estados Unidos,2020-09-03
+2198,CHIAPAS,M,81,,Sospechoso,España,2020-03-13
+2199,PUEBLA,M,68,,Sospechoso,Contacto,
+2200,CIUDAD DE MÉXICO,M,40,,Sospechoso,Contacto,
+2201,JALISCO,M,34,,Sospechoso,Estados Unidos,2020-03-16
+2202,SAN LUIS POTOSÍ,M,85,,Sospechoso,Contacto,
+2203,DURANGO,M,34,,Sospechoso,Contacto,
+2204,COAHUILA,F,34,,Sospechoso,Contacto,
+2205,TABASCO,M,64,,Sospechoso,Contacto,
+2206,SINALOA,M,40,,Sospechoso,Contacto,
+2207,CHIAPAS,M,46,,Sospechoso,Contacto,
+2208,JALISCO,M,6,,Sospechoso,Contacto,2013-04-26
+2209,TABASCO,M,59,,Sospechoso,Contacto,
+2210,DURANGO,M,44,,Sospechoso,Contacto,
+2211,COAHUILA,F,26,,Sospechoso,Contacto,
+2212,CIUDAD DE MÉXICO,M,27,,Sospechoso,Contacto,
+2213,MÉXICO,M,1,,Sospechoso,Contacto,
+2214,COAHUILA,F,59,,Sospechoso,Estados Unidos,
+2215,CIUDAD DE MÉXICO,M,42,,Sospechoso,Contacto,
+2216,CIUDAD DE MÉXICO,M,36,,Sospechoso,Contacto,
+2217,CIUDAD DE MÉXICO,M,48,,Sospechoso,Estados Unidos,2020-03-14
+2218,CIUDAD DE MÉXICO,F,45,,Sospechoso,Contacto,
+2219,COAHUILA,F,54,,Sospechoso,Estados Unidos,
+2220,DURANGO,F,33,,Sospechoso,Contacto,
+2221,COAHUILA,F,44,,Sospechoso,Contacto,
+2222,SINALOA,F,65,,Sospechoso,Contacto,
+2223,TABASCO,M,39,,Sospechoso,Contacto,
+2224,JALISCO,M,58,,Sospechoso,Contacto,
+2225,HIDALGO,F,73,,Sospechoso,Contacto,
+2226,TABASCO,F,40,,Sospechoso,Contacto,
+2227,COAHUILA,M,30,,Sospechoso,Contacto,
+2228,COAHUILA,M,33,,Sospechoso,Contacto,
+2229,GUERRERO,F,3,,Sospechoso,Contacto,
+2230,BAJA CALIFORNIA,M,51,,Sospechoso,Contacto,2020-03-27
+2231,COAHUILA,F,45,,Sospechoso,Contacto,
+2232,DURANGO,F,27,,Sospechoso,Contacto,
+2233,CIUDAD DE MÉXICO,F,24,,Sospechoso,Contacto,
+2234,GUANAJUATO,M,39,,Sospechoso,Contacto,2020-03-20
+2235,PUEBLA,F,35,,Sospechoso,Estados Unidos,2020-11-03
+2236,COAHUILA,M,30,,Sospechoso,Contacto,
+2237,CIUDAD DE MÉXICO,M,76,,Sospechoso,Contacto,
+2238,MÉXICO,F,19,,Sospechoso,Contacto,
+2239,HIDALGO,F,37,,Sospechoso,Contacto,
+2240,COAHUILA,M,83,,Sospechoso,Contacto,
+2241,TLAXCALA,F,35,,Sospechoso,Contacto,
+2242,COAHUILA,F,44,,Sospechoso,Contacto,
+2243,CIUDAD DE MÉXICO,F,43,,Sospechoso,Contacto,
+2244,DURANGO,M,28,,Sospechoso,Contacto,
+2245,GUERRERO,M,52,,Sospechoso,Contacto,
+2246,JALISCO,F,27,,Sospechoso,Contacto,
+2247,CHIAPAS,M,28,,Sospechoso,España,
+2248,CIUDAD DE MÉXICO,F,45,,Sospechoso,Contacto,
+2249,CIUDAD DE MÉXICO,M,68,,Sospechoso,Contacto,
+2250,COAHUILA,M,30,,Sospechoso,Contacto,
+2251,MICHOACÁN,F,28,,Sospechoso,Contacto,
+2252,DURANGO,F,34,,Sospechoso,Contacto,
+2253,COAHUILA,F,54,,Sospechoso,Contacto,
+2254,CIUDAD DE MÉXICO,F,1,,Sospechoso,Contacto,
+2255,VERACRUZ,F,49,,Sospechoso,Contacto,
+2256,BAJA CALIFORNIA,F,44,,Sospechoso,Contacto,
+2257,MICHOACÁN,F,65,,Sospechoso,Estados Unidos,
+2258,GUERRERO,M,1,,Sospechoso,Contacto,
+2259,MÉXICO,F,61,,Sospechoso,Contacto,
+2260,TABASCO,M,43,,Sospechoso,Contacto,
+2261,COAHUILA,M,39,,Sospechoso,Contacto,
+2262,CIUDAD DE MÉXICO,M,34,,Sospechoso,Contacto,
+2263,CHIAPAS,F,20,,Sospechoso,Estados Unidos,
+2264,COAHUILA,F,47,,Sospechoso,Contacto,
+2265,DURANGO,F,31,,Sospechoso,Contacto,
+2266,QUINTANA ROO,F,52,,Sospechoso,Contacto,2020-12-03
+2267,VERACRUZ,M,62,,Sospechoso,Contacto,
+2268,CIUDAD DE MÉXICO,M,43,,Sospechoso,Contacto,
+2269,BAJA CALIFORNIA,F,76,,Sospechoso,Contacto,
+2270,MICHOACÁN,F,4,,Sospechoso,Contacto,
+2271,DURANGO,F,31,,Sospechoso,Contacto,
+2272,GUERRERO,F,35,,Sospechoso,Contacto,
+2273,HIDALGO,F,34,,Sospechoso,Contacto,
+2274,VERACRUZ,M,26,,Sospechoso,Contacto,
+2275,HIDALGO,F,30,,Sospechoso,Contacto,
+2276,COAHUILA,F,41,,Sospechoso,España,
+2277,QUINTANA ROO,M,35,,Sospechoso,Contacto,
+2278,CHIAPAS,F,45,,Sospechoso,Contacto,
+2279,TABASCO,F,29,,Sospechoso,Contacto,
+2280,BAJA CALIFORNIA SUR,F,2,,Sospechoso,Contacto,
+2281,VERACRUZ,F,36,,Sospechoso,Contacto,
+2282,COAHUILA,M,47,,Sospechoso,Estados Unidos,
+2283,GUERRERO,F,38,,Sospechoso,Contacto,
+2284,DURANGO,F,49,,Sospechoso,Contacto,
+2285,COAHUILA,F,68,,Sospechoso,Estados Unidos,
+2286,BAJA CALIFORNIA,F,24,,Sospechoso,Contacto,
+2287,TABASCO,F,39,,Sospechoso,Contacto,
+2288,COAHUILA,F,28,,Sospechoso,Contacto,
+2289,VERACRUZ,M,40,,Sospechoso,Contacto,
+2290,CHIAPAS,M,63,,Sospechoso,Contacto,
+2291,GUERRERO,M,47,,Sospechoso,Contacto,
+2292,HIDALGO,M,22,,Sospechoso,Contacto,
+2293,VERACRUZ,F,39,,Sospechoso,Contacto,
+2294,TABASCO,M,29,,Sospechoso,Contacto,
+2295,SONORA,M,21,,Sospechoso,Contacto,2020-11-03
+2296,DURANGO,F,38,,Sospechoso,Contacto,
+2297,VERACRUZ,F,7,,Sospechoso,Contacto,
+2298,QUINTANA ROO,M,28,,Sospechoso,Contacto,
+2299,GUERRERO,M,26,,Sospechoso,Contacto,
+2300,VERACRUZ,M,1,,Sospechoso,Contacto,
+2301,MÉXICO,F,68,,Sospechoso,Contacto,
+2302,MÉXICO,F,64,,Sospechoso,Contacto,
+2303,DURANGO,F,54,,Sospechoso,Contacto,
+2304,GUERRERO,F,6,,Sospechoso,Contacto,
+2305,CIUDAD DE MÉXICO,M,37,,Sospechoso,Contacto,
+2306,VERACRUZ,F,26,,Sospechoso,Contacto,
+2307,MÉXICO,F,32,,Sospechoso,Contacto,
+2308,MÉXICO,F,25,,Sospechoso,Contacto,
+2309,VERACRUZ,M,44,,Sospechoso,Contacto,
+2310,QUINTANA ROO,M,41,,Sospechoso,Contacto,
+2311,TABASCO,M,60,,Sospechoso,Contacto,2020-08-03
+2312,GUERRERO,F,50,,Sospechoso,Contacto,
+2313,MÉXICO,M,49,,Sospechoso,Contacto,
+2314,OAXACA,F,57,,Sospechoso,Contacto,
+2315,VERACRUZ,F,17,,Sospechoso,Contacto,
+2316,MÉXICO,F,45,,Sospechoso,Contacto,
+2317,QUINTANA ROO,F,29,,Sospechoso,Contacto,
+2318,GUERRERO,M,57,,Sospechoso,Contacto,
+2319,BAJA CALIFORNIA SUR,F,34,,Sospechoso,Contacto,
+2320,VERACRUZ,F,29,,Sospechoso,Contacto,
+2321,MÉXICO,M,30,,Sospechoso,Contacto,
+2322,TLAXCALA,F,4,,Sospechoso,Contacto,
+2323,VERACRUZ,M,38,,Sospechoso,Contacto,
+2324,QUINTANA ROO,F,84,,Sospechoso,Contacto,
+2325,MÉXICO,F,67,,Sospechoso,Contacto,
+2326,SONORA,F,50,,Sospechoso,Estados Unidos,2020-03-24
+2327,VERACRUZ,F,24,,Sospechoso,Contacto,
+2328,QUINTANA ROO,M,41,,Sospechoso,Contacto,
+2329,MICHOACÁN,M,71,,Sospechoso,Estados Unidos,2020-03-24
+2330,QUINTANA ROO,M,57,,Sospechoso,Contacto,
+2331,BAJA CALIFORNIA SUR,F,43,,Sospechoso,Contacto,
+2332,CIUDAD DE MÉXICO,F,24,,Sospechoso,Contacto,
+2333,MÉXICO,F,47,,Sospechoso,Contacto,
+2334,SAN LUIS POTOSÍ,F,31,,Sospechoso,Contacto,2020-03-18
+2335,BAJA CALIFORNIA SUR,M,33,,Sospechoso,Contacto,
+2336,SAN LUIS POTOSÍ,M,27,,Sospechoso,Estados Unidos,2020-03-17
+2337,QUINTANA ROO,F,52,,Sospechoso,Contacto,2020-12-03
+2338,DURANGO,M,51,,Sospechoso,Contacto,
+2339,MÉXICO,F,15,,Sospechoso,Contacto,
+2340,QUINTANA ROO,M,33,,Sospechoso,Contacto,
+2341,PUEBLA,M,80,,Sospechoso,Contacto,
+2342,DURANGO,F,47,,Sospechoso,Contacto,
+2343,JALISCO,F,35,,Sospechoso,Contacto,
+2344,HIDALGO,M,33,,Sospechoso,Contacto,
+2345,DURANGO,F,48,,Sospechoso,Contacto,
+2346,HIDALGO,F,25,,Sospechoso,Contacto,
+2347,JALISCO,F,51,,Sospechoso,Contacto,
+2348,JALISCO,M,54,,Sospechoso,Contacto,
+2349,CIUDAD DE MÉXICO,F,55,,Sospechoso,España,2020-02-29
+2350,JALISCO,F,23,,Sospechoso,Contacto,
+2351,JALISCO,F,38,,Sospechoso,Contacto,
+2352,JALISCO,M,34,,Sospechoso,Contacto,
+2353,JALISCO,M,25,,Sospechoso,Contacto,
+2354,JALISCO,F,41,,Sospechoso,Contacto,
+2355,JALISCO,F,44,,Sospechoso,Contacto,
+2356,GUANAJUATO,F,41,,Sospechoso,Contacto,
+2357,GUANAJUATO,F,29,,Sospechoso,Contacto,
+2358,MÉXICO,F,41,,Sospechoso,Contacto,
+2359,JALISCO,F,48,,Sospechoso,Contacto,
+2360,JALISCO,F,32,,Sospechoso,Contacto,
+2361,JALISCO,M,34,,Sospechoso,Contacto,
+2362,JALISCO,M,61,,Sospechoso,Contacto,
+2363,JALISCO,F,32,,Sospechoso,Contacto,
+2364,MÉXICO,F,17,,Sospechoso,Contacto,
+2365,QUERETARO,F,54,,Sospechoso,Contacto,
+2366,TAMAULIPAS,F,82,,Sospechoso,Contacto,
+2367,JALISCO,M,30,,Sospechoso,Contacto,
+2368,JALISCO,M,27,,Sospechoso,Contacto,
+2369,OAXACA,F,30,,Sospechoso,Contacto,
+2370,SINALOA,F,23,,Sospechoso,Contacto,
+2371,JALISCO,F,30,,Sospechoso,Contacto,
+2372,JALISCO,M,25,,Sospechoso,Contacto,
+2373,CIUDAD DE MÉXICO,F,34,,Sospechoso,Estados Unidos,2020-03-17
+2374,MÉXICO,M,74,,Sospechoso,Contacto,
+2375,JALISCO,M,76,,Sospechoso,Contacto,
+2376,JALISCO,M,22,,Sospechoso,Contacto,
+2377,MÉXICO,M,32,,Sospechoso,Contacto,
+2378,JALISCO,M,34,,Sospechoso,Contacto,
+2379,GUERRERO,M,60,,Sospechoso,Contacto,
+2380,JALISCO,M,21,,Sospechoso,Contacto,
+2381,MÉXICO,M,33,,Sospechoso,Contacto,
+2382,GUERRERO,F,54,,Sospechoso,Contacto,
+2383,QUERETARO,M,60,,Sospechoso,Contacto,
+2384,GUANAJUATO,M,36,,Sospechoso,Estados Unidos,
+2385,QUINTANA ROO,M,29,,Sospechoso,Contacto,
+2386,JALISCO,M,56,,Sospechoso,Contacto,
+2387,MÉXICO,F,30,,Sospechoso,Contacto,2020-08-03
+2388,CIUDAD DE MÉXICO,F,44,,Sospechoso,Contacto,
+2389,JALISCO,M,2,,Sospechoso,Contacto,
+2390,TABASCO,F,37,,Sospechoso,Contacto,
+2391,MÉXICO,M,56,,Sospechoso,Contacto,
+2392,JALISCO,M,29,,Sospechoso,Contacto,2020-03-15
+2393,JALISCO,M,20,,Sospechoso,Contacto,
+2394,GUANAJUATO,M,29,,Sospechoso,Contacto,
+2395,MÉXICO,M,40,,Sospechoso,Contacto,
+2396,CIUDAD DE MÉXICO,F,49,,Sospechoso,España,2020-03-15
+2397,QUERETARO,F,17,,Sospechoso,Contacto,
+2398,JALISCO,F,39,,Sospechoso,Estados Unidos,2020-03-16
+2399,MÉXICO,F,49,,Sospechoso,Contacto,2020-11-02
+2400,GUANAJUATO,M,57,,Sospechoso,Contacto,
+2401,GUANAJUATO,F,24,,Sospechoso,Estados Unidos,2020-03-16
+2402,MÉXICO,F,53,,Sospechoso,Contacto,
+2403,QUINTANA ROO,F,67,,Sospechoso,Contacto,
+2404,YUCATÁN,F,34,,Sospechoso,Contacto,
+2405,COAHUILA,M,29,,Sospechoso,Contacto,
+2406,CIUDAD DE MÉXICO,F,28,,Sospechoso,Contacto,
+2407,JALISCO,F,46,,Sospechoso,Contacto,
+2408,MÉXICO,M,32,,Sospechoso,Contacto,
+2409,CAMPECHE,M,24,,Sospechoso,Contacto,
+2410,GUANAJUATO,M,39,,Sospechoso,Estados Unidos,2020-03-16
+2411,MÉXICO,F,27,,Sospechoso,Contacto,
+2412,GUANAJUATO,M,47,,Sospechoso,Contacto,
+2413,JALISCO,M,18,,Sospechoso,Contacto,
+2414,COAHUILA,M,32,,Sospechoso,Contacto,
+2415,TAMAULIPAS,M,41,,Sospechoso,Contacto,
+2416,GUANAJUATO,M,68,,Sospechoso,Estados Unidos,2020-11-03
+2417,JALISCO,F,95,,Sospechoso,Contacto,
+2418,TABASCO,M,46,,Sospechoso,Contacto,
+2419,GUANAJUATO,F,41,,Sospechoso,Contacto,
+2420,CAMPECHE,F,44,,Sospechoso,Contacto,
+2421,MÉXICO,M,46,,Sospechoso,Contacto,
+2422,MÉXICO,M,64,,Sospechoso,Contacto,
+2423,GUANAJUATO,M,24,,Sospechoso,Estados Unidos,2020-03-27
+2424,VERACRUZ,F,82,,Sospechoso,Contacto,
+2425,JALISCO,F,54,,Sospechoso,Contacto,
+2426,MÉXICO,M,29,,Sospechoso,Contacto,
+2427,JALISCO,M,3,,Sospechoso,Contacto,
+2428,QUINTANA ROO,F,42,,Sospechoso,Contacto,
+2429,CAMPECHE,F,41,,Sospechoso,Contacto,
+2430,YUCATÁN,F,30,,Sospechoso,Contacto,
+2431,GUANAJUATO,F,28,,Sospechoso,Alemania,2020-03-21
+2432,QUINTANA ROO,F,30,,Sospechoso,Contacto,
+2433,MÉXICO,F,33,,Sospechoso,Contacto,
+2434,CAMPECHE,F,34,,Sospechoso,Contacto,
+2435,JALISCO,F,41,,Sospechoso,Contacto,
+2436,GUANAJUATO,M,36,,Sospechoso,Contacto,
+2437,JALISCO,M,6,,Sospechoso,Contacto,
+2438,TABASCO,F,35,,Sospechoso,Contacto,
+2439,MÉXICO,M,54,,Sospechoso,Contacto,
+2440,JALISCO,F,27,,Sospechoso,Contacto,
+2441,GUANAJUATO,F,36,,Sospechoso,Contacto,
+2442,TABASCO,F,38,,Sospechoso,Contacto,
+2443,GUANAJUATO,F,25,,Sospechoso,Estados Unidos,2020-03-27
+2444,MÉXICO,F,46,,Sospechoso,Contacto,
+2445,TABASCO,M,35,,Sospechoso,Contacto,
+2446,ZACATECAS,F,24,,Sospechoso,Contacto,
+2447,COAHUILA,F,41,,Sospechoso,Estados Unidos,2020-03-16
+2448,MÉXICO,F,32,,Sospechoso,Contacto,
+2449,JALISCO,F,92,,Sospechoso,Contacto,
+2450,GUANAJUATO,F,17,,Sospechoso,Contacto,2020-03-24
+2451,MÉXICO,M,60,,Sospechoso,Contacto,
+2452,GUANAJUATO,M,16,,Sospechoso,Contacto,
+2453,JALISCO,F,76,,Sospechoso,Estados Unidos,2020-03-20
+2454,TABASCO,M,38,,Sospechoso,Contacto,
+2455,JALISCO,M,34,,Sospechoso,Italia,2020-02-28
+2456,BAJA CALIFORNIA,M,50,,Sospechoso,Estados Unidos,2020-10-03
+2457,GUANAJUATO,M,22,,Sospechoso,Estados Unidos,2020-03-25
+2458,TLAXCALA,F,58,,Sospechoso,Contacto,
+2459,GUANAJUATO,M,39,,Sospechoso,Contacto,
+2460,SINALOA,F,23,,Sospechoso,Estados Unidos,
+2461,CAMPECHE,M,40,,Sospechoso,Contacto,
+2462,ZACATECAS,F,30,,Sospechoso,Contacto,
+2463,SAN LUIS POTOSÍ,F,34,,Sospechoso,Contacto,
+2464,MÉXICO,F,33,,Sospechoso,Contacto,
+2465,GUANAJUATO,M,16,,Sospechoso,Contacto,
+2466,TABASCO,F,50,,Sospechoso,Contacto,
+2467,YUCATÁN,F,44,,Sospechoso,Contacto,
+2468,GUANAJUATO,F,41,,Sospechoso,Contacto,
+2469,JALISCO,M,56,,Sospechoso,Alemania,2020-04-03
+2470,YUCATÁN,M,31,,Sospechoso,Contacto,
+2471,JALISCO,M,87,,Sospechoso,Estados Unidos,2020-10-03
+2472,GUANAJUATO,M,15,,Sospechoso,Contacto,
+2473,MÉXICO,M,46,,Sospechoso,Contacto,
+2474,MÉXICO,F,54,,Sospechoso,Contacto,
+2475,GUANAJUATO,F,24,,Sospechoso,Estados Unidos,2020-03-15
+2476,TLAXCALA,M,56,,Sospechoso,Contacto,
+2477,SINALOA,F,46,,Sospechoso,Contacto,
+2478,ZACATECAS,M,54,,Sospechoso,Contacto,
+2479,QUERETARO,M,37,,Sospechoso,Contacto,
+2480,JALISCO,F,56,,Sospechoso,España,2020-03-14
+2481,AGUASCALIENTES,F,0,,Sospechoso,Contacto,
+2482,GUANAJUATO,F,12,,Sospechoso,Contacto,
+2483,JALISCO,F,34,,Sospechoso,Contacto,2020-07-03
+2484,YUCATÁN,M,23,,Sospechoso,España,2020-03-15
+2485,BAJA CALIFORNIA SUR,F,23,,Sospechoso,Contacto,
+2486,MÉXICO,M,47,,Sospechoso,Contacto,
+2487,TABASCO,M,19,,Sospechoso,Contacto,
+2488,SINALOA,F,33,,Sospechoso,Contacto,
+2489,ZACATECAS,F,53,,Sospechoso,Contacto,
+2490,JALISCO,M,30,,Sospechoso,España,2020-03-13
+2491,MÉXICO,F,69,,Sospechoso,Contacto,
+2492,GUANAJUATO,M,47,,Sospechoso,Contacto,
+2493,AGUASCALIENTES,M,20,,Sospechoso,Contacto,
+2494,COAHUILA,M,24,,Sospechoso,Contacto,
+2495,CAMPECHE,F,60,,Sospechoso,Contacto,
+2496,JALISCO,M,41,,Sospechoso,España,2020-03-13
+2497,HIDALGO,F,25,,Sospechoso,Contacto,
+2498,VERACRUZ,M,26,,Sospechoso,Contacto,
+2499,YUCATÁN,F,30,,Sospechoso,Estados Unidos,2020-03-17
+2500,HIDALGO,F,49,,Sospechoso,Contacto,
+2501,BAJA CALIFORNIA SUR,M,65,,Sospechoso,Contacto,
+2502,JALISCO,M,2,,Sospechoso,Contacto,
+2503,SINALOA,F,38,,Sospechoso,Contacto,
+2504,COAHUILA,M,30,,Sospechoso,Contacto,
+2505,TLAXCALA,M,34,,Sospechoso,Contacto,
+2506,MÉXICO,M,34,,Sospechoso,Contacto,
+2507,JALISCO,M,59,,Sospechoso,España,2020-03-14
+2508,AGUASCALIENTES,F,27,,Sospechoso,Contacto,
+2509,MICHOACÁN,M,34,,Sospechoso,Contacto,
+2510,OAXACA,M,0,,Sospechoso,Contacto,
+2511,AGUASCALIENTES,F,35,,Sospechoso,Contacto,2020-03-28
+2512,GUANAJUATO,F,19,,Sospechoso,Estados Unidos,2020-03-26
+2513,SINALOA,F,25,,Sospechoso,Contacto,
+2514,MÉXICO,M,48,,Sospechoso,Contacto,
+2515,AGUASCALIENTES,F,34,,Sospechoso,Estados Unidos,2020-03-14
+2516,GUANAJUATO,M,32,,Sospechoso,Contacto,
+2517,VERACRUZ,M,0,,Sospechoso,Contacto,
+2518,JALISCO,M,40,,Sospechoso,Estados Unidos,2020-03-05
+2519,COAHUILA,F,7,,Sospechoso,Contacto,
+2520,YUCATÁN,M,34,,Sospechoso,Contacto,
+2521,OAXACA,F,72,,Sospechoso,Contacto,
+2522,MICHOACÁN,F,20,,Sospechoso,Contacto,
+2523,AGUASCALIENTES,F,40,,Sospechoso,Contacto,
+2524,YUCATÁN,F,72,,Sospechoso,Contacto,
+2525,GUANAJUATO,F,69,,Sospechoso,Contacto,
+2526,MÉXICO,F,25,,Sospechoso,Contacto,2020-03-14
+2527,TLAXCALA,M,29,,Sospechoso,Contacto,
+2528,SAN LUIS POTOSÍ,M,37,,Sospechoso,Contacto,
+2529,JALISCO,M,35,,Sospechoso,Contacto,
+2530,GUANAJUATO,M,13,,Sospechoso,Contacto,
+2531,MORELOS,F,45,,Sospechoso,China,2020-03-16
+2532,AGUASCALIENTES,M,28,,Sospechoso,Contacto,
+2533,HIDALGO,M,57,,Sospechoso,Contacto,
+2534,JALISCO,F,29,,Sospechoso,Contacto,
+2535,AGUASCALIENTES,M,1,,Sospechoso,Contacto,
+2536,MÉXICO,M,32,,Sospechoso,Contacto,
+2537,ZACATECAS,F,22,,Sospechoso,Contacto,2020-03-20
+2538,VERACRUZ,F,45,,Sospechoso,Contacto,
+2539,GUANAJUATO,M,19,,Sospechoso,Contacto,
+2540,GUERRERO,F,26,,Sospechoso,Estados Unidos,
+2541,MÉXICO,F,33,,Sospechoso,Contacto,
+2542,AGUASCALIENTES,M,72,,Sospechoso,Contacto,
+2543,AGUASCALIENTES,F,70,,Sospechoso,Contacto,
+2544,TABASCO,F,32,,Sospechoso,Contacto,2020-03-15
+2545,AGUASCALIENTES,M,27,,Sospechoso,Contacto,
+2546,COAHUILA,M,28,,Sospechoso,Contacto,
+2547,BAJA CALIFORNIA,F,25,,Sospechoso,Estados Unidos,2020-03-12
+2548,SINALOA,F,46,,Sospechoso,Contacto,
+2549,JALISCO,F,38,,Sospechoso,Contacto,2020-03-11
+2550,SINALOA,F,19,,Sospechoso,Contacto,
+2551,GUANAJUATO,M,58,,Sospechoso,Contacto,
+2552,PUEBLA,F,41,,Sospechoso,Contacto,
+2553,QUERETARO,M,38,,Sospechoso,Contacto,
+2554,MICHOACÁN,F,38,,Sospechoso,Contacto,
+2555,GUERRERO,M,22,,Sospechoso,Contacto,
+2556,JALISCO,F,23,,Sospechoso,Estados Unidos,2020-03-16
+2557,MÉXICO,F,59,,Sospechoso,Contacto,
+2558,JALISCO,M,31,,Sospechoso,Japón,2020-03-04
+2559,VERACRUZ,F,83,,Sospechoso,Contacto,
+2560,SINALOA,F,74,,Sospechoso,Contacto,
+2561,BAJA CALIFORNIA,F,17,,Sospechoso,Estados Unidos,2020-03-23
+2562,AGUASCALIENTES,M,25,,Sospechoso,Contacto,
+2563,CHIAPAS,M,63,,Sospechoso,Contacto,
+2564,SINALOA,F,73,,Sospechoso,Contacto,
+2565,TLAXCALA,M,33,,Sospechoso,Contacto,
+2566,MÉXICO,F,31,,Sospechoso,Contacto,
+2567,NUEVO LEÓN,F,20,,Sospechoso,Contacto,
+2568,MICHOACÁN,M,35,,Sospechoso,Contacto,
+2569,SINALOA,F,0,,Sospechoso,Contacto,
+2570,QUERETARO,M,39,,Sospechoso,Contacto,
+2571,CIUDAD DE MÉXICO,F,34,,Sospechoso,España,2020-03-25
+2572,JALISCO,F,58,,Sospechoso,Contacto,
+2573,MÉXICO,M,28,,Sospechoso,Contacto,
+2574,BAJA CALIFORNIA SUR,F,76,,Sospechoso,Contacto,
+2575,TABASCO,F,33,,Sospechoso,Contacto,
+2576,JALISCO,F,24,,Sospechoso,Estados Unidos,2020-03-09
+2577,SINALOA,M,21,,Sospechoso,Contacto,
+2578,MORELOS,F,32,,Sospechoso,Contacto,2020-03-15
+2579,JALISCO,F,44,,Sospechoso,Contacto,
+2580,MÉXICO,M,48,,Sospechoso,Contacto,2020-03-19
+2581,QUERETARO,F,22,,Sospechoso,Contacto,
+2582,AGUASCALIENTES,F,48,,Sospechoso,Contacto,
+2583,GUANAJUATO,M,26,,Sospechoso,Contacto,
+2584,BAJA CALIFORNIA SUR,F,54,,Sospechoso,Contacto,
+2585,VERACRUZ,M,3,,Sospechoso,Contacto,
+2586,JALISCO,M,53,,Sospechoso,Contacto,
+2587,ZACATECAS,F,39,,Sospechoso,Estados Unidos,2020-03-27
+2588,VERACRUZ,M,22,,Sospechoso,Contacto,
+2589,SINALOA,M,23,,Sospechoso,Contacto,
+2590,MICHOACÁN,F,25,,Sospechoso,Contacto,
+2591,TABASCO,F,14,,Sospechoso,Contacto,
+2592,MÉXICO,F,28,,Sospechoso,Contacto,
+2593,QUERETARO,F,37,,Sospechoso,Contacto,
+2594,TABASCO,M,24,,Sospechoso,Contacto,
+2595,VERACRUZ,F,60,,Sospechoso,Contacto,
+2596,JALISCO,F,43,,Sospechoso,Contacto,
+2597,TABASCO,F,60,,Sospechoso,Contacto,
+2598,JALISCO,F,54,,Sospechoso,Estados Unidos,2020-03-14
+2599,AGUASCALIENTES,M,54,,Sospechoso,Contacto,
+2600,NUEVO LEÓN,F,28,,Sospechoso,Contacto,
+2601,SAN LUIS POTOSÍ,F,4,,Sospechoso,Contacto,
+2602,NUEVO LEÓN,M,55,,Sospechoso,Estados Unidos,2020-03-12
+2603,JALISCO,M,22,,Sospechoso,Francia,2020-03-26
+2604,ZACATECAS,F,31,,Sospechoso,Contacto,
+2605,QUERETARO,F,30,,Sospechoso,Contacto,
+2606,AGUASCALIENTES,F,24,,Sospechoso,Contacto,
+2607,GUANAJUATO,F,14,,Sospechoso,Estados Unidos,2020-03-14
+2608,SINALOA,M,65,,Sospechoso,Contacto,
+2609,JALISCO,F,58,,Sospechoso,España,2020-03-13
+2610,TABASCO,F,33,,Sospechoso,Contacto,
+2611,VERACRUZ,M,29,,Sospechoso,Contacto,
+2612,NUEVO LEÓN,M,76,,Sospechoso,Contacto,
+2613,JALISCO,F,56,,Sospechoso,Contacto,
+2614,YUCATÁN,F,78,,Sospechoso,Contacto,2020-03-21
+2615,GUANAJUATO,F,43,,Sospechoso,Contacto,
+2616,AGUASCALIENTES,M,56,,Sospechoso,Estados Unidos,2020-03-14
+2617,CIUDAD DE MÉXICO,F,25,,Sospechoso,Alemania,2020-03-09
+2618,CIUDAD DE MÉXICO,M,13,,Sospechoso,España,2020-03-13
+2619,CIUDAD DE MÉXICO,M,37,,Sospechoso,Contacto,
+2620,CIUDAD DE MÉXICO,M,35,,Sospechoso,Contacto,2020-03-01
+2621,CIUDAD DE MÉXICO,F,33,,Sospechoso,Contacto,2020-03-14
+2622,CIUDAD DE MÉXICO,M,37,,Sospechoso,Contacto,
+2623,CIUDAD DE MÉXICO,M,40,,Sospechoso,Italia,2020-03-08
