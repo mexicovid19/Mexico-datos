@@ -7,8 +7,8 @@ pd.set_option('mode.chained_assignment', None)
 
 
 ssa_cols = ['id', 'estado', 'sexo', 'edad', 'fecha_sintomas',
-            'confirmacion', 'procedencia', 'fecha_llegada']
-ssa_date_cols = ['fecha_sintomas', 'fecha_llegada']
+            'confirmacion', 'procedencia']  # , 'fecha_llegada']
+ssa_date_cols = ['fecha_sintomas']  # , 'fecha_llegada']
 
 
 def format_df(df):
