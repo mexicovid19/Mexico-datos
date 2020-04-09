@@ -1,6 +1,11 @@
 # Datos publicados por la Secretaría de Salud
 
-En este directorio se encuentran las tablas de casos sospechosos y confirmados que publica la SSA todos los días. Para facilitar cualquier análisis en la computadora (usando Excel, Python, R, etc), se encuentran en formato `csv`. También incluimos los archivos PDF originales ya que la SSA no hace públicos los documentos archivados que corresponden a fechas anteriores.
+En este directorio se encuentran las tablas de casos sospechosos y confirmados que publica la SSA todos los días. Para facilitar cualquier análisis en la computadora (usando Excel, Python, R, etc), se encuentran en formato `csv`. También incluimos los archivos PDF originales ya que la SSA no hace proporciona un archivo de las fechas anteriores.
+
+**Actualización Abril 9**:
+
+- Los documentos PDF preparados por la SSA el día 8 de Abril no incluyen la penúltima columna que correspondería al país de procedencia del caso.
+
 
 **Actualización Abril 7**:
 
