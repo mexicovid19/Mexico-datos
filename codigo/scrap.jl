@@ -108,10 +108,9 @@ function scraping(archivo_pdf, archivo_csv;
 end
 
 # Si el nombre del csv no se proporciona, se utiliza la misma base
-function scraping(archivo_pdf; fecha_llegada=false, index_fechas=[5])
+function scraping(archivo_pdf; kwargs...)
   archivo_csv = splitext(basename(archivo_pdf))[1] * ".csv"
-  scraping(archivo_pdf, archivo_csv;
-          fecha_llegada=fecha_llegada, index_fechas=index_fechas)
+  scraping(archivo_pdf, archivo_csv; kwargs...)
 end
 
 
@@ -142,9 +141,6 @@ end
 
 function main()
   parsed_args = parse_commandline()
-  # for (arg,val) in parsed_args
-  #     println("$arg  =>  $val")
-  # end
 
   archivo_pdf = parsed_args["pdf"]
   @assert endswith(archivo_pdf, ".pdf")
@@ -156,7 +152,8 @@ function main()
   kwargs = Dict{Symbol,Any}()
   kwargs[:procedencia] = procedencia
   kwargs[:fecha_llegada] = fecha_llegada
-  fecha_llegada ? kwargs[:index_fechas] = [5,8] : nothing   # trata
+  # trata de adivinar que fecha_llegada es una columna de fecha
+  fecha_llegada ? kwargs[:index_fechas] = [5,8] : nothing
 
   if length(archivo_csv) == 0
     status = scraping(archivo_pdf; kwargs...)
