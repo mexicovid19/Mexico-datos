@@ -84,7 +84,8 @@ end
 #Función principal que toma el pdf y escribe csv correspondiente
 function scraping(archivo_pdf, archivo_csv;
                   procedencia=false,
-                  fecha_llegada=false, index_fechas=[5])
+                  fecha_llegada=false,
+                  index_fechas=[5])
 
   #Obtenemos los casos en un array:
   casos = procesa_fila.(eliminar_nocasos(texto_pdf(archivo_pdf)), Ref(index_fechas))
