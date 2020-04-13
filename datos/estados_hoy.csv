@@ -1,33 +1,33 @@
 Estado,Casos totales,Casos nuevos ultimas 24h,Casos activos,Muertes,Recuperaciones
-Aguascalientes,55,2,49,1,0
-Baja California,278,20,63,20,0
-Baja California Sur,102,17,26,2,0
-Campeche,18,3,8,1,0
-Chiapas,39,1,25,1,0
-Chihuahua,54,0,15,12,0
-Ciudad de México,1117,77,541,49,0
-Coahuila,156,13,77,11,1
+Aguascalientes,55,0,49,1,0
+Baja California,335,57,63,22,0
+Baja California Sur,120,18,26,2,0
+Campeche,19,1,8,1,0
+Chiapas,43,4,25,3,0
+Chihuahua,61,7,15,12,0
+Ciudad de México,1328,211,541,56,0
+Coahuila,157,1,77,11,1
 Colima,7,0,4,0,0
 Durango,16,0,9,4,0
-Estado de México,498,28,201,19,1
-Guanajuato,81,3,53,5,0
-Guerrero,56,2,28,6,0
-Hidalgo,53,2,29,8,0
-Jalisco,150,6,117,11,0
-Michoacán,50,4,27,8,0
-Morelos,40,5,12,7,0
-Nayarit,21,2,8,4,0
-Nuevo León,119,9,89,5,0
-Oaxaca,43,2,24,2,0
-Puebla,243,29,146,18,0
-Querétaro,57,2,35,3,0
-Quintana Roo,216,53,82,18,0
-San Luis Potosí,51,3,35,4,0
-Sinaloa,214,43,77,24,1
-Sonora,65,10,27,5,0
-Tabasco,143,9,93,12,0
-Tamaulipas,49,1,25,3,0
-Tlaxcala,38,4,11,1,0
-Veracruz,73,10,37,3,0
-Yucatán,103,15,65,4,0
-Zacatecas,14,0,8,2,0
+Estado de México,523,25,201,22,1
+Guanajuato,82,1,53,5,0
+Guerrero,70,14,28,6,0
+Hidalgo,58,5,29,9,0
+Jalisco,156,6,117,11,0
+Michoacán,61,11,27,9,0
+Morelos,44,4,12,7,0
+Nayarit,22,1,8,4,0
+Nuevo León,124,5,89,5,0
+Oaxaca,43,0,24,3,0
+Puebla,256,13,146,20,0
+Querétaro,61,4,35,3,0
+Quintana Roo,223,7,82,19,0
+San Luis Potosí,53,2,35,4,0
+Sinaloa,229,15,77,24,1
+Sonora,69,4,27,5,0
+Tabasco,153,10,93,12,0
+Tamaulipas,53,4,25,3,0
+Tlaxcala,40,2,11,2,0
+Veracruz,78,5,37,3,0
+Yucatán,107,4,65,6,0
+Zacatecas,15,1,8,2,0
