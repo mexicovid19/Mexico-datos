@@ -3,7 +3,7 @@ const fs = require('fs');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-const  url = "https://ncov.sinave.gob.mx/mapa.aspx";
+const  url = "https://covid19.sinave.gob.mx"; // antes "https://ncov.sinave.gob.mx/mapa.aspx";
 var date = new Date();
 date.setDate(date.getDate() - 1);
 var dd = String(date.getDate()).padStart(2, '0');
@@ -19,7 +19,7 @@ var options = {
 var ajax = {
   type: "POST",
   contentType: "application/json; charset=utf-8",
-  url: "Mapa.aspx/Grafica22",
+  url: "Log.aspx/Grafica22",  // antes Mapa.aspx
   data: "{}",
   datatype: "json",
   // success: llenarChart21,
