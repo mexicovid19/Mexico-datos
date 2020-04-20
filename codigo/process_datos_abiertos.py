@@ -1,13 +1,19 @@
 import numpy as np
 import pandas as pd
+import os
 
 ## READING ##
 # Lee los datos abiertos
-read_path = '../datos/datos_abiertos/'
-filename = '200416COVID19MEXICO.csv' # este debería automatizarse
-datos_abiertos = pd.read_csv( read_path+filename )
+directorio_lectura = '../datos/datos_abiertos/'
+archivos = os.listdir( directorio_lectura )
+archivos = [archivo for archivo in archivos if archivo not in {'README.md', 'diccionario'}]
+direccion_archivo = max([directorio_lectura+a for a in archivos], key=os.path.getctime)
+del archivos
+
+# filename = '200419COVID19MEXICO.csv' # este debería automatizarse
+datos_abiertos = pd.read_csv( direccion_archivo )
 # Lee catalogo de entidades
-entidades = pd.read_excel(read_path+'/diccionario/Catalogos_0412.xlsx', sheet_name='Catálogo de ENTIDADES')
+entidades = pd.read_excel(directorio_lectura+'/diccionario/Catalogos_0412.xlsx', sheet_name='Catálogo de ENTIDADES')
 # Crea diccionario entre entidades federales y sus claves
 entidades = entidades.set_index('CLAVE_ENTIDAD')['ENTIDAD_FEDERATIVA'].to_dict()
 # cambia mayúsculas de estados por formato título
@@ -149,26 +155,26 @@ def get_formato_series( series ):
 if __name__ == '__main__':
 
     # Carpeta donde se guarda el csv
-    save_path = '../datos/series_de_tiempo/'
+    directorio_escritura = '../datos/series_de_tiempo/'
 
     # Series de tiempo de nuevos casos
-    casos_confirmados_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_confirmados.csv' )
-    casos_negativos_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_negativos.csv' )
-    casos_pruebas_pendientes_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_pendientes.csv' )
-    casos_pruebas_totales_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_pruebas-totales.csv' )
-    casos_decesos_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_muertes.csv' )
-    casos_hospitalizados_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_hospitalizados.csv' )
-    casos_uci_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_uci.csv' )
-    casos_ambulatorios_diarios_por_estado( ).to_csv( save_path+'nuevos/covid19_mex_ambulatorios.csv' )
+    casos_confirmados_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_confirmados.csv' )
+    casos_negativos_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_negativos.csv' )
+    casos_pruebas_pendientes_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_pendientes.csv' )
+    casos_pruebas_totales_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_pruebas-totales.csv' )
+    casos_decesos_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_muertes.csv' )
+    casos_hospitalizados_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_hospitalizados.csv' )
+    casos_uci_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_uci.csv' )
+    casos_ambulatorios_diarios_por_estado( ).to_csv( directorio_escritura+'nuevos/covid19_mex_ambulatorios.csv' )
 
     # Series de tiempo de casos acumulados
-    casos_confirmados_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_confirmados.csv' )
-    casos_negativos_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_negativos.csv' )
-    casos_pruebas_pendientes_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_pendientes.csv' )
-    casos_pruebas_totales_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_pruebas-totales.csv' )
-    casos_decesos_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_muertes.csv' )
-    casos_hospitalizados_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_hospitalizados.csv' )
-    casos_uci_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_uci.csv' )
-    casos_ambulatorios_diarios_por_estado( ).cumsum().to_csv( save_path+'acumulados/covid19_mex_ambulatorios.csv' )
+    casos_confirmados_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_confirmados.csv' )
+    casos_negativos_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_negativos.csv' )
+    casos_pruebas_pendientes_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_pendientes.csv' )
+    casos_pruebas_totales_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_pruebas-totales.csv' )
+    casos_decesos_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_muertes.csv' )
+    casos_hospitalizados_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_hospitalizados.csv' )
+    casos_uci_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_uci.csv' )
+    casos_ambulatorios_diarios_por_estado( ).cumsum().to_csv( directorio_escritura+'acumulados/covid19_mex_ambulatorios.csv' )
 
-    print('Se procesaron exitosamente los datos abiertos de {}'.format( filename ))
+    print('Se procesaron exitosamente los datos abiertos de {}'.format( direccion_archivo ))
