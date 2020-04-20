@@ -77,6 +77,12 @@ muertes_df = pd.read_csv(muertes_file)
 row = pd.concat((date_s, sinave_df.defunciones))
 muertes_df = muertes_df.append(row, ignore_index=True)
 
+# Muertes nuevas por estado
+muertes_nuevas_file = series_dir + 'covid19_mex_muertes_nuevas.csv'
+muertes_nuevas_df = pd.read_csv(muertes_nuevas_file)
+row = pd.concat((date_s, muertes_nuevas_df.iloc[-1, 1:] - muertes_nuevas_df.iloc[-2, 1:]))
+muertes_nuevas_df = muertes_nuevas_df.append(row, ignore_index=True)
+
 # Sospechosos por estado
 sospechosos_file = series_dir + 'covid19_mex_sospechosos.csv'
 sospechosos_df = pd.read_csv(sospechosos_file)
@@ -94,7 +100,8 @@ pairs_file_df = [(totales_file, totales_df),
                  (nuevos_file, nuevos_df),
                  (muertes_file,  muertes_df),
                  (sospechosos_file, sospechosos_df),
-                 (negativos_file, negativos_df)]
+                 (negativos_file, negativos_df),
+                 (muertes_nuevas_files, muertes_nuevas_df)]
 
 for file, df in pairs_file_df:
     print(f'\nUltimos cambios {file}')
@@ -128,19 +135,25 @@ gdf.nuevos = nuevos_df.iloc[-1, 2:].astype('int')
 # gdf.activos = activos_df.iloc[-1, 2:].values.astype('int')
 gdf.totales_100k = gdf.totales * 100000 / gdf.population
 gdf.updated_at = str(update_time).replace(' ', 'T')
+gdf.muertes_nuevas = muertes_nuevas_df.iloc[-1, 2:].astype('int')
+gdf.muertes_100k = gdf.muertes * 100000 / gdf.population
 
 gdf = gdf.reset_index()
 assert gdf.shape[1] == 12
 
 
 cols_edos_hoy = ['name', 'totales', 'nuevos',
-                 'activos', 'muertes', 'recuperaciones']
+                 #'activos',
+                 'muertes',
+                 'muertes_nuevas']
+                 #'recuperaciones']
 map_cols = {'name': 'Estado',
             'totales': 'Casos totales',
             'nuevos': 'Casos nuevos ultimas 24h',
-            'activos': 'Casos activos',
+            #'activos': 'Casos activos',
             'muertes': 'Muertes',
-            'recuperaciones': 'Recuperaciones'}
+            'muertes_nuevas': 'Muertes nuevas ultimas 24h'}
+            #'recuperaciones': 'Recuperaciones'}
 edos_hoy_df = gdf[cols_edos_hoy].rename(columns=map_cols)
 
 if global_write:
