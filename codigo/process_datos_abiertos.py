@@ -127,6 +127,11 @@ def casos_ambulatorios_diarios_por_estado( datos=datos_abiertos ):
     return get_formato_series( series )
 
 ## HELPER FUNCTIONS ##
+diccionario_de_cambio_de_nombres = {'Ciudad De México': 'Ciudad de México',
+                                    'Coahuila De Zaragoza': 'Coahuila',
+                                    'Michoacán De Ocampo': 'Michoacán',
+                                    'Veracruz De Ignacio De La Llave': 'Veracruz'}
+
 def get_formato_series( series ):
     '''
     Construye las series por estado en el formato listo para mexicovid/Mexico-datos a partir de los datos abiertos de [1].
@@ -138,14 +143,15 @@ def get_formato_series( series ):
     series = series.unstack(level=0).fillna(0)
     series = series.astype('int')
 
-    # formato para mexicovid19/Mexico-datos
+    # Formato para mexicovid19/Mexico-datos
     series.index.name = 'Fecha'
-    series.rename( entidades, axis = 1, inplace=True )
-    # {key.title(): val  for (key,val) in entidades.items()}
-    # series.rename({'México': 'Estado de México'}, axis=1, inplace=True)
-    # series.loc[:,'México'] = series.sum(axis=1)
+    # Formato oficial de DGE
+    series.rename( entidades, axis=1, inplace=True )
+    # Formato específico de nuestro repositorio
+    series.rename( diccionario_de_cambio_de_nombres, axis=1, inplace=True )
+    # Formato de agregado nacional
     series.loc[:,'Nacional'] = series.sum(axis=1)
-    # serie nacional va primero
+    # Reordenar columnas para que los casos nacionales queden primero
     cols = list(series.columns)
     cols = cols[-1:] + cols[:-1]
     series = series[cols]
