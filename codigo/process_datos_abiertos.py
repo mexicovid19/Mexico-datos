@@ -203,6 +203,7 @@ def get_formato_series(series, entidades):
     series = series.rename(columns=entidades)
     # Formato específico de nuestro repositorio
     series = series.rename(columns=diccionario_cambio_edos)
+    series = series.reindex(sorted(series.columns), axis=1)
     # Formato de agregado nacional
     series.loc[:, 'Nacional'] = series.sum(axis=1)
     # Reordenar columnas para que los casos nacionales queden primero
