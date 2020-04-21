@@ -1,37 +1,12 @@
 import os
-from datetime import datetime, timedelta
 import csv
-import numpy as np
 import pandas as pd
-
-date = datetime.now() - timedelta(days=1)
-date_filename = date.strftime('%Y%m%d')
-date_iso = date.strftime('%Y-%m-%d')
-
-
-## READING ##
-# Lee los datos abiertos
-repo = '..'
-directorio_lectura = os.path.join(repo, 'datos_abiertos', 'raw', '')
-directorio_escritura = os.path.join(
-    repo, 'datos_abiertos', 'series_de_tiempo', '')
-series_dir = os.path.join(repo, 'datos', 'series_de_tiempo', '')
-input_filename = directorio_lectura + f'covid19_mex_{date_filename}.csv'
-
-datos_abiertos = pd.read_csv(input_filename)
-# Lee catalogo de entidades
-# entidades = pd.read_excel(directorio_lectura+'/diccionario/Catalogos_0412.xlsx', sheet_name='Catálogo de ENTIDADES')
-entidades = pd.read_csv(directorio_lectura + 'catalogo_entidades.csv')
-# Crea diccionario entre entidades federales y sus claves
-entidades = entidades.set_index('CLAVE_ENTIDAD')[
-    'ENTIDAD_FEDERATIVA'].to_dict()
-# cambia mayúsculas de estados por formato título
-entidades = {key: val.title() for (key, val) in entidades.items()}
+from datetime import datetime, timedelta
 
 
 ## PROCESSING FUNCTIONS ##
 
-def confirmados_diarios_por_estado(datos=datos_abiertos):
+def confirmados_diarios_por_estado(datos, entidades):
     """
     Calcula el número total de casos confirmados por fecha y por estado.
 
@@ -47,10 +22,10 @@ def confirmados_diarios_por_estado(datos=datos_abiertos):
     series = (datos[datos['RESULTADO'] == 1]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def negativos_diarios_por_estado(datos=datos_abiertos):
+def negativos_diarios_por_estado(datos, entidades):
     """
     Calcula el número total de casos negativos por fecha y por estado.
 
@@ -67,10 +42,10 @@ def negativos_diarios_por_estado(datos=datos_abiertos):
     series = (datos[datos['RESULTADO'] == 2]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def pruebas_pendientes_diarias_por_estado(datos=datos_abiertos):
+def pruebas_pendientes_diarias_por_estado(datos, entidades):
     """
     Calcula el número de pruebas pendientes por fecha y por estado.
 
@@ -87,10 +62,10 @@ def pruebas_pendientes_diarias_por_estado(datos=datos_abiertos):
     series = (datos[datos['RESULTADO'] == 3]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def pruebas_totales_diarias_por_estado(datos=datos_abiertos):
+def pruebas_totales_diarias_por_estado(datos, entidades):
     """
     Calcula el número total de pruebas realizadas por fecha y por estado.
 
@@ -107,10 +82,10 @@ def pruebas_totales_diarias_por_estado(datos=datos_abiertos):
     series = (datos
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def defunciones_diarias_por_estado(datos=datos_abiertos):
+def defunciones_diarias_por_estado(datos, entidades):
     """
     Calcula el número de defunciones por fecha y por estado.
 
@@ -128,10 +103,10 @@ def defunciones_diarias_por_estado(datos=datos_abiertos):
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_DEF'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def hospitalizados_diarios_por_estado(datos=datos_abiertos):
+def hospitalizados_diarios_por_estado(datos, entidades):
     """
     Calcula el número de pacientes hopitalizados por fecha y por estado.
 
@@ -150,10 +125,10 @@ def hospitalizados_diarios_por_estado(datos=datos_abiertos):
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def ambulatorios_diarios_por_estado(datos=datos_abiertos):
+def ambulatorios_diarios_por_estado(datos, entidades):
     """
     Calcula el número de pacientes ambulatorios por fecha y por estado.
 
@@ -171,10 +146,10 @@ def ambulatorios_diarios_por_estado(datos=datos_abiertos):
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
-def uci_diarios_por_estado(datos=datos_abiertos):
+def uci_diarios_por_estado(datos, entidades):
     """
     Calcula el número de pacientes ingresados a una UCI por fecha y por estado.
 
@@ -192,33 +167,33 @@ def uci_diarios_por_estado(datos=datos_abiertos):
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
-    return get_formato_series(series)
+    return get_formato_series(series, entidades)
 
 
 ## HELPER FUNCTIONS ##
-diccionario_cambio_edos = {'Ciudad De México': 'Ciudad de México',
-                           'Coahuila De Zaragoza': 'Coahuila',
-                           'Michoacán De Ocampo': 'Michoacán',
-                           'Veracruz De Ignacio De La Llave': 'Veracruz'}
 
-
-def get_formato_series(series):
+def get_formato_series(series, entidades):
     """
     Convierte groupby a formato tidy (columnas son estados e indice es la fecha).
-
-    Se asume que existe la variable `entidades`:
-        diccionario de clave_de_entidad: nombre_de_entidad.
 
     Input:
     - series:
         DataFrame en formato groupby agrupada for una columna que corresponde a
         entidades federativas y otra columna que corresponde a una fecha.
+    - entidades:
+        diccionario de clave_de_entidad => nombre_de_entidad.
+
     Output:
     - series:
         DataFrame en formato tidy, con los nombres de los estados como columnas
         (la primer columna es el total nacional) y con la fecha como indice.
 
     """
+    diccionario_cambio_edos = {'Ciudad De México': 'Ciudad de México',
+                               'Coahuila De Zaragoza': 'Coahuila',
+                               'Michoacán De Ocampo': 'Michoacán',
+                               'Veracruz De Ignacio De La Llave': 'Veracruz'}
+
     series = series.unstack(level=0).fillna(0).astype('int')
 
     # Formato para mexicovid19/Mexico-datos
@@ -245,6 +220,33 @@ def get_formato_series(series):
 
 if __name__ == '__main__':
 
+    date = datetime.now() - timedelta(days=1)
+    date_filename = date.strftime('%Y%m%d')
+    date_iso = date.strftime('%Y-%m-%d')
+
+    repo = '..'
+    dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
+    dir_datos = os.path.join(repo, 'datos', '')
+
+    dir_series_dge = os.path.join(dir_datos_abiertos, 'series_de_tiempo', '')
+    dir_series = os.path.join(dir_datos, 'series_de_tiempo', '')
+
+    dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
+    input_filename = dir_input + f'datos_abiertos_{date_filename}.csv'
+
+    ## READING ##
+
+    # Lee los datos abiertos
+    datos_abiertos_df = pd.read_csv(input_filename)
+
+    # Lee catalogo de entidades (hoja de calculo 'Catálogo de ENTIDADES' en
+    # el archivo 'diccionario_datos/Catalogos_0412.xlsx''; ha sido convertido a csv)
+    cat = (pd.read_csv(dir_input + 'diccionario_datos/catalogo_entidades.csv')
+           .set_index('CLAVE_ENTIDAD')['ENTIDAD_FEDERATIVA']
+           .to_dict())
+    # cambia mayúsculas de estados por formato título
+    entidades = {key: val.title() for (key, val) in cat.items()}
+
     # Datos abiertos
     files = ['covid19_mex_confirmados.csv',
              'covid19_mex_negativos.csv',
@@ -255,32 +257,36 @@ if __name__ == '__main__':
              'covid19_mex_uci.csv',
              'covid19_mex_ambulatorios.csv']
 
-    dfs = [confirmados_diarios_por_estado(),
-           negativos_diarios_por_estado(),
-           pruebas_pendientes_diarias_por_estado(),
-           pruebas_totales_diarias_por_estado(),
-           defunciones_diarias_por_estado(),
-           hospitalizados_diarios_por_estado(),
-           uci_diarios_por_estado(),
-           ambulatorios_diarios_por_estado()]
+    funciones = [confirmados_diarios_por_estado,
+                 negativos_diarios_por_estado,
+                 pruebas_pendientes_diarias_por_estado,
+                 pruebas_totales_diarias_por_estado,
+                 defunciones_diarias_por_estado,
+                 hospitalizados_diarios_por_estado,
+                 uci_diarios_por_estado,
+                 ambulatorios_diarios_por_estado]
 
-    for fname, df in zip(files, dfs):
-        df.to_csv(directorio_escritura + 'nuevos/' + fname)
-        df.cumsum().to_csv(directorio_escritura + 'acumulados/' + fname)
+    dfs = [func(datos_abiertos_df, entidades) for func in funciones]
 
-    # Series de tiempo (solo cambia ultima fila)
+    for f, df in zip(files, dfs):
+        df.to_csv(f'{dir_series_dge}/nuevos/{f}')
+        df.cumsum().to_csv(f'{dir_series_dge}/acumulados/{f}')
+
+    ## Series de tiempo estaticas (solo actualiza ultima fila) ##
+
+    # Formato unix sin quotes
     csv.register_dialect('unixnq', delimiter=',', lineterminator='\n',
                          quoting=csv.QUOTE_NONE)
 
     # Totales por estado
-    totales_file = series_dir + 'covid19_mex_casos_totales.csv'
-    df = confirmados_diarios_por_estado().cumsum()
+    totales_file = dir_series + 'covid19_mex_casos_totales.csv'
+    df = dfs[0].cumsum()  # confirmados_diarios_por_estado
     with open(totales_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + df.tail(1).values[0].tolist())
 
     # Casos ultimas 24h
-    nuevos_file = series_dir + 'covid19_mex_casos_nuevos.csv'
+    nuevos_file = dir_series + 'covid19_mex_casos_nuevos.csv'
     totales_df = pd.read_csv(totales_file)
     diff = totales_df.iloc[-1, 1:] - totales_df.iloc[-2, 1:]
     with open(nuevos_file, 'a') as f:
@@ -288,22 +294,22 @@ if __name__ == '__main__':
         writer.writerow([date_iso] + diff.values.tolist())  # diff is series
 
     # Muertes por estado
-    muertes_file = series_dir + 'covid19_mex_muertes.csv'
-    df = defunciones_diarias_por_estado().cumsum()
+    muertes_file = dir_series + 'covid19_mex_muertes.csv'
+    df = dfs[4].cumsum()  # defunciones_diarias_por_estado
     with open(muertes_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + df.tail(1).values[0].tolist())
 
     # Sospechosos por estado
-    sospechosos_file = series_dir + 'covid19_mex_sospechosos.csv'
-    df = pruebas_pendientes_diarias_por_estado().cumsum()
+    sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
+    df = dfs[2].cumsum()  # pruebas_pendientes_diarias_por_estado
     with open(sospechosos_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + df.tail(1).values[0].tolist())
 
     # Sospechosos por estado
-    negativos_file = series_dir + 'covid19_mex_negativos.csv'
-    df = negativos_diarios_por_estado().cumsum()
+    negativos_file = dir_series + 'covid19_mex_negativos.csv'
+    df = dfs[1].cumsum()  # negativos_diarios_por_estado
     with open(negativos_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + df.tail(1).values[0].tolist())
