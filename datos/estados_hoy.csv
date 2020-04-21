@@ -1,33 +1,33 @@
-Estado,Casos totales,Casos nuevos ultimas 24h,Casos activos,Muertes,Recuperaciones
-Aguascalientes,80,3,49,2,0
-Baja California,680,70,63,75,0
-Baja California Sur,193,20,26,7,0
-Campeche,57,1,8,4,0
-Chiapas,67,5,25,3,0
-Chihuahua,148,17,15,32,0
-Ciudad de México,2591,292,541,183,0
-Coahuila,237,5,77,18,1
-Colima,11,1,4,2,0
-Durango,21,2,9,4,0
-Estado de México,877,91,201,55,1
-Guanajuato,133,17,53,9,0
-Guerrero,121,11,28,12,0
-Hidalgo,87,12,29,14,0
-Jalisco,198,2,117,13,0
-Michoacán,115,8,27,17,0
-Morelos,82,5,12,12,0
-Nayarit,35,2,8,5,0
-Nuevo León,184,12,89,6,0
-Oaxaca,63,1,24,6,0
-Puebla,352,22,146,41,0
-Querétaro,81,2,35,6,0
-Quintana Roo,322,7,82,31,0
-San Luis Potosí,63,4,35,4,0
-Sinaloa,459,46,77,45,1
-Sonora,117,9,27,12,0
-Tabasco,335,57,93,38,0
-Tamaulipas,127,10,25,5,0
-Tlaxcala,76,4,11,4,0
-Veracruz,146,22,37,9,0
-Yucatán,176,4,65,10,0
-Zacatecas,27,0,8,2,0
+Estado,Confirmados totales,Confirmados nuevos,Defunciones,Sospechosos totales,Negativos totales
+Aguascalientes,80,0,2,57,866
+Baja California,741,61,75,685,957
+Baja California Sur,205,12,7,197,604
+Campeche,63,6,4,26,145
+Chiapas,68,1,3,41,313
+Chihuahua,152,4,32,196,334
+Ciudad de México,2710,119,188,1676,6875
+Coahuila,254,17,18,609,1607
+Colima,11,0,2,20,108
+Durango,22,1,4,65,337
+México,901,24,58,1193,2198
+Guanajuato,150,17,9,180,1990
+Guerrero,126,5,14,83,378
+Hidalgo,92,5,15,54,412
+Jalisco,216,18,14,276,2936
+Michoacán,127,12,17,155,764
+Morelos,85,3,12,49,349
+Nayarit,37,2,5,33,196
+Nuevo León,202,18,6,2131,2311
+Oaxaca,69,6,6,34,402
+Puebla,360,8,45,256,977
+Querétaro,85,4,6,65,483
+Quintana Roo,360,38,34,150,478
+San Luis Potosí,66,3,4,81,1003
+Sinaloa,486,27,45,179,902
+Sonora,117,0,12,91,611
+Tabasco,397,62,42,351,608
+Tamaulipas,134,7,5,175,840
+Tlaxcala,78,2,4,69,459
+Veracruz,156,10,12,377,1021
+Yucatán,191,15,10,67,696
+Zacatecas,31,4,2,32,330
