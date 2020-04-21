@@ -30,7 +30,7 @@ if curl -sSL "$URL" | tac | tac | grep -q "$DATE_PATTERN"; then
     curl -LO "$URL_ZIP" && unzip "$ZIP_FILE" -d "$TMP_DIR"
     echo -e "\nTermino descarga y descompresion\n"
 else
-    echo  -e "\nERROR: pagina no esta actualizada"
+    echo  -e "ERROR: pagina no esta actualizada"
     exit 1
 fi
 
