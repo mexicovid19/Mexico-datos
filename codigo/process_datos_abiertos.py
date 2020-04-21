@@ -126,7 +126,7 @@ def defunciones_diarias_por_estado(datos=datos_abiertos):
     """
     idx = (datos['RESULTADO'] == 1) & (datos['FECHA_DEF'] != '9999-99-99')
     series = (datos[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
+              .groupby(['ENTIDAD_UM', 'FECHA_DEF'])
               .count()['ORIGEN'])
     return get_formato_series(series)
 
