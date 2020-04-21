@@ -27,10 +27,10 @@ date_s = pd.Series(date.strftime('%Y-%m-%d'), ['Fecha'])
 
 # Datos en formato correcto
 cols = {1: 'estado', 2: 'poblacion', 4: 'positivos',
-        5: 'negativos', 6: 'sospechosos', 7: 'defunciones'}
+        5: 'negativos', 6: 'sospechosos', 7: 'defunciones', 8: 'tasa_100k', 10: 'num'}
 
 df = (pd.read_json(file, orient='records')
-      .drop([0, 3, 8], axis=1)  # columnas de indices
+      .drop([0, 3, 9], axis=1)  # columnas de indices
       .rename(columns=cols)
       .drop(32))
 
