@@ -1,26 +1,17 @@
 #!/bin/bash
 
-# PATH="$PATH:/home/user/miniconda3/condabin"
-
-CONDA_BASE="$(conda info --base)"
-CONDA_ENV="csv"
-source "$CONDA_BASE/etc/profile.d/conda.sh"
-conda activate  "$CONDA_ENV"
-
-
 set -euo pipefail
 
-
 URL="https://www.gob.mx/salud/documentos/datos-abiertos-152127"
-URL_ZIP="http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip" 
+URL_ZIP="http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip"
 ZIP_FILE="datos_abiertos_covid19.zip"
 DATE_PATTERN="[Bb]ase de [Dd]atos.*$(date -d "yesterday" +"%d/%m/%Y")"
 
-WORK_DIR="$HOME/Documents/covid/repo/codigo"
-cd "$WORK_DIR"
+# REPO_DIR="/direccion/al/repo/"  ##### <--- Modifica    ######
+cd "$REPO_DIR"
 
-DATA_DIR="../datos/datos_abiertos"
-FILENAME="covid19_mex_$(date -d "yesterday" +"%Y%m%d").csv"
+DATA_DIR="./datos_abiertos/raw"
+FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d").csv"
 
 
 # Creamos directorio temporal
@@ -48,7 +39,7 @@ fi
 if [ $(ls -1 "$TMP_DIR" | wc -l) -eq  "1" ]; then
     mv $TMP_DIR/*.csv "$DATA_DIR/$FILENAME"
     # NB: globs are not expanded in quotes
-    echo -e "Archivo csv renombrado: $FILENAME\n" 
+    echo -e "Archivo csv renombrado: $FILENAME\n"
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
     exit 1
