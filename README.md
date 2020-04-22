@@ -15,14 +15,14 @@ Si estás interesado/a en una visualización de los datos que aquí se encuentra
 
 #### Aviso importante
 
-Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE **no presenta inconsistencias** con respecto a los datos que Salud publicaba previamente:
+Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE **no presenta inconsistencias** con respecto a los datos que Salud publicaba previamente:
 
 - La base de datos abiertos tiene información mucho más completa y cada caso se puede seguir de individual. Para cada paciente, es posible conocer qué día fue atendido y el estado (confirmado, negativo o pendiente) de la prueba que se le realizó.
 
 - Al confirmarse que la prueba de un paciente fue positiva (o negativa), la entrada del paciente se actualiza. Sin embargo, no tiene sentido llevar cuenta de la fecha en que el resultado de la prueba se dio a conocer; en la nueva base de datos tiene más sentido contabilizar la prueba el día que el paciente visitó una Unidad Médica (la columna `FECHA_INGRESO` en la nueva base de datos).
 
-- Esto significa en la base de datos abiertos la información se propaga de manera retroactiva y que los casos de los días anteriores van a cambiar.
-
+- Esto significa en la base de datos abiertos la información se propaga de manera retroactiva y que los casos de los días anteriores van a cambiar. Esto sucede por ejemple en [el tablero oficial de la Secretaría de Salud](https://coronavirus.gob.mx/datos/).
+.
 - Esto contrasta con una serie de tiempo "usual" donde todos los casos que se confirmaron cierto día son contabilizados ese mismo día, y por lo tanto las fechas anteriores no cambian.
 
 - Nuestra base de datos refleja las dos maneras de contabilizar los datos.
@@ -59,7 +59,7 @@ Puedes leer una explicación más completa en [nuestra página](https://mexicovi
 
 - ~~Tabla de casos positivos y Tabla de casos sospechosos en formato PDF: [Coronavirus (COVID-19)-Comunicado Técnico Diario](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) de la Secretaría de Salud Federal.~~ Ya no se actualiza.
 
-- ~~[Mapa interactivo del Sistema Nacional de Vigilancia Epidemiológica (SINAVE)](https://ncov.sinave.gob.mx/mapa.aspx)~~ Ya no se actualiza.
+- ~~[Mapa interactivo del Sistema Nacional de Vigilancia Epidemiológica (SINAVE)](https://covid19.sinave.gob.mx)~~ Ya no se actualiza con casos confirmados, negativos o sospechosos (solo con casos activos).
 
 
 
