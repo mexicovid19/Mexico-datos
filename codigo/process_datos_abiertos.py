@@ -1,5 +1,6 @@
 import os
 import csv
+import json
 import pandas as pd
 import geopandas as gpd
 from datetime import datetime, timedelta
@@ -171,6 +172,41 @@ def uci_diarios_por_estado(datos, entidades):
     return get_formato_series(series, entidades)
 
 
+def confirmados_por_edad_sexo(datos, cat_sexo={1: 'MUJER', 2: 'HOMBRE', 99: 'NO ESPECIFICADO'}):
+    """
+    Calcula el número de pacientes confirmados por edad y por sexo.
+
+    Input:
+    - datos: datos abiertos de COVID-19 en México disponibles en [1].
+
+    Output:
+    - json: Los casos agrupados por grupos de edad de 5 años (0-4, 5-9, etc)
+        para hombres `male` y mujeres `female`.
+
+    [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+
+    """
+
+    df = datos[datos['RESULTADO'] == 1][['SEXO', 'EDAD', 'ID_REGISTRO']]
+    df['EDAD'] = df['EDAD'].apply(lambda x: x // 5)
+
+    gby = (df.groupby(['SEXO', 'EDAD'])
+           .count()['ID_REGISTRO']
+           .unstack(level=0)
+           .fillna(0)
+           .astype('int'))
+    gby.index = gby.index.map(lambda x: f'{5*x}-{5*x+4}')
+    gby = gby.rename(columns=cat_sexo)
+
+    # convertimos a JSON
+    json_list = []
+    for idx, row in gby.iterrows():
+        d = dict(age=idx, male=int(row['HOMBRE']), female=int(row['MUJER']))
+        json_list.append(d)
+
+    return json.dumps(json_list)
+
+
 ## HELPER FUNCTIONS ##
 
 def get_formato_series(series, entidades):
@@ -231,7 +267,7 @@ if __name__ == '__main__':
     dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
     dir_datos = os.path.join(repo, 'datos', '')
     dir_geo = os.path.join(dir_datos, 'geograficos', '')
-    # dir_demo = os.path.join(dir_datos, 'demograficos_variables', '')
+    dir_demograficos = os.path.join(dir_datos, 'demograficos_variables', '')
 
     dir_series_dge = os.path.join(dir_datos_abiertos, 'series_de_tiempo', '')
     dir_series = os.path.join(dir_datos, 'series_de_tiempo', '')
@@ -354,6 +390,12 @@ if __name__ == '__main__':
                 'negativos': 'Negativos totales'}
 
     edos_hoy_df = gdf[cols_edos_hoy].rename(columns=map_cols)
-    # edos_hoy_df.to_csv(edos_hoy_file, index=False)
+    edos_hoy_df.to_csv(edos_hoy_file, index=False)
+
+    ## Casos por sexo y edad (en formato JSON) ##
+    sexo_edad_file = dir_demograficos + 'piramide_sexo_edad.json'
+    sexo_edad_json = confirmados_por_edad_sexo(datos_abiertos_df)
+    with open(sexo_edad_file, 'w') as f:
+        f.write(sexo_edad_json)
 
     print(f'Se procesaron exitosamente los datos abiertos de {input_filename}')
