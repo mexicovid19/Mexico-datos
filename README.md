@@ -54,7 +54,7 @@ Puedes leer una explicación más completa en [nuestra página](https://mexicovi
 
 ## Fuentes para los datos del COVID-19
 
-- [Datos abiertos de la Dirección General de Epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127) publicados por la Secretaría de Salud Federal.
+- [Datos abiertos de la Dirección General de Epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127) publicados por la Secretaría de Salud Federal. Estos datos has sido publicados con una licencia `Libre Uso MX` como consta en el [portal de datos abiertos del gobierno](https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico).
 
 
 - ~~Tabla de casos positivos y Tabla de casos sospechosos en formato PDF: [Coronavirus (COVID-19)-Comunicado Técnico Diario](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) de la Secretaría de Salud Federal.~~ Ya no se actualiza.
@@ -98,7 +98,7 @@ Un repositorio con datos del Reino Unido que nos ha servido de inspiración:
 ## Codigo
 
 Para reproducir nuestro análisis puedes consultar nuestro código.
-    - [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior) y un script de python para actualizar las series de tiempo.
+    - [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
     - [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
 
 
@@ -112,6 +112,7 @@ Para reproducir nuestro análisis puedes consultar nuestro código.
 ```
 ./download_datos_abiertos.sh
 python process_datos_abiertos
+python update_tests.py
 ```
 
 <!-- ```
