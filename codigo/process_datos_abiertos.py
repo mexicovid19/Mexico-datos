@@ -342,6 +342,14 @@ if __name__ == '__main__':
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + fila_muertes.values[0].tolist())
 
+    # Muertes nuevas por estado
+    muertes_nuevas_file = dir_series + 'covid19_mex_muertes_nuevas.csv'
+    muertes_df = pd.read_csv(muertes_file)
+    fila_nuevos = (muertes_df.iloc[-1, 1:] - muertes_df.iloc[-2, 1:]).astype(int)
+    with open(muertes_nuevas_file, 'a') as f:
+        writer = csv.writer(f, 'unixnq')
+        writer.writerow([date_iso] + fila_muertes_nuevas.values[0].tolist())
+
     # Sospechosos por estado
     sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
     # pruebas_pendientes_diarias_por_estado
@@ -366,9 +374,11 @@ if __name__ == '__main__':
     gdf.totales = fila_totales.drop('Nacional', axis=1).squeeze()
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
+    gdf.muertes_nuevas = fila_muertes_nuevas.drop('Nacional').squeeze()
     gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
+    gdf.muertes_100k = gdf.muertes * 100000 / gdf.population
 
     gdf.updated_at = str(update_time).replace(' ', 'T')
 
@@ -380,12 +390,13 @@ if __name__ == '__main__':
 
     ### Estados hoy ###
     cols_edos_hoy = ['name', 'totales', 'nuevos',
-                     'muertes', 'sospechosos', 'negativos']
+                     'muertes', 'muertes_nuevas', 'sospechosos', 'negativos']
 
     map_cols = {'name': 'Estado',
                 'totales': 'Confirmados totales',
                 'nuevos': 'Confirmados nuevos',
                 'muertes': 'Defunciones',
+                'muertes_nuevas': 'Defunciones nuevas',
                 'sospechosos': 'Sospechosos totales',
                 'negativos': 'Negativos totales'}
 
