@@ -1,40 +1,67 @@
 # Datos para el monitoreo del COVID-19 en México
 
-Los datos sobre el número de casos confirmados, sospechosos y negativos de SARS-COV-2 (COVID-19) en México son publicados por el gobierno a través de la Secretaría de Salud (SSa). Sin embargo, estos datos se publican de manera fragmentada, con errores y omisiones, y por lo general en un formato que no es fácil de manejar en computadora. Tampoco se ha hecho público  archivo de datos, y por lo tanto no es posible seguir la evolución a través del tiempo.
+Los datos sobre el número de casos confirmados, sospechosos y negativos de SARS-COV-2 (COVID-19) en México son publicados por el gobierno a través de la Secretaría de Salud (SSa). ~~Estos datos se publicaban de manera fragmentada, con errores y omisiones, y por lo general en formato PDF lo que dificulta manejarlos en computadora. Tampoco se ha hecho público  archivo de datos, y por lo tanto no es posible seguir la evolución a través del tiempo.~~
 
-Este repositorio funge como una base de datos (no-oficial) para toda la información que publica la SSa. Archivamos, normalizamos y convertimos los datos a formatos que son fáciles de manipular en computadora (CSV, JSON, etc).
+Desde el lunes 13 de abril, la SSa a través de Dirección General de Epidemiología publica [una base de "datos abiertos"](https://www.gob.mx/salud/documentos/datos-abiertos-152127) muy completa y en formato CSV. Desde entonces, este repositorio funciona principalmente como una base de datos (no-oficial) donde se archiva la información actualizada, así como los datos previos publicados en PDF (que han sido archivados, normalizados y convertidos a CSV).
 
-**Este repositorio es actualizado a diario,** y trabajamos mucho para mejorarlo. Si tienes algún comentario, queja o sugerencia, por favor escríbenos al correo mexicovid19contacto@gmail.com, abre un issue o realiza un pull request.
+También mantenemos series de tiempo (formato *tidy*) de diferentes variables para facilitar el análisis de la base de datos abiertos.
+
+**Este repositorio es actualizado a diario,** y trabajamos constantemente para mejorarlo. Si tienes algún comentario, queja o sugerencia, abre un issue o realiza un pull request. También puedes escribirnos al correo mexicovid19contacto@gmail.com.
 
 Si estás interesado/a en una visualización de los datos que aquí se encuentran, puedes visitar [nuestra página para el monitoreo del coronavirus en México](https://mexicovid19.github.io/Mexico/) (y el [repositorio](https://github.com/mexicovid19/Mexico) con su respectivo código fuente).
 
 <!-- **Este repositorio es actualizado a diario.** La fecha y hora de la última actualización la encontrarás en `last_updated.csv` que se encuentra [aquí](https://github.com/mexicovid19/Mexico-datos/blob/master/datos/last_updated.csv). -->
 
 
+#### Aviso importante
+
+Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE **no presenta inconsistencias** con respecto a los datos que Salud publicaba previamente:
+
+- La base de datos abiertos tiene información mucho más completa y cada caso se puede seguir de individual. Para cada paciente, es posible conocer qué día fue atendido y el estado (confirmado, negativo o pendiente) de la prueba que se le realizó.
+
+- Al confirmarse que la prueba de un paciente fue positiva (o negativa), la entrada del paciente se actualiza. Sin embargo, no tiene sentido llevar cuenta de la fecha en que el resultado de la prueba se dio a conocer; en la nueva base de datos tiene más sentido contabilizar la prueba el día que el paciente visitó una Unidad Médica (la columna `FECHA_INGRESO` en la nueva base de datos).
+
+- Esto significa en la base de datos abiertos la información se propaga de manera retroactiva y que los casos de los días anteriores van a cambiar. Esto sucede por ejemple en [el tablero oficial de la Secretaría de Salud](https://coronavirus.gob.mx/datos/).
+.
+- Esto contrasta con una serie de tiempo "usual" donde todos los casos que se confirmaron cierto día son contabilizados ese mismo día, y por lo tanto las fechas anteriores no cambian.
+
+- Nuestra base de datos refleja las dos maneras de contabilizar los datos.
+
+
 ## Datos
 
-1. Los datos publicados por la Secretaría de Salud (SSa) en encuentran en los siguientes directorios. **Datos oficiales:**
-    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las dos tablas en formato PDF de casos confirmados y sospechosos que se publican junto con el Comunicado Técnico Diario (CDT), así como las tablas en formato CSV. Para más información sobre la normalización, referirse a este [README](datos/reportes_oficiales_ssa/README.md).
-    - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se obtienen a diario a partir del mapa de SINAVE.
-    - [datos/datos_abiertos](datos/datos_abiertos): a partir del lunes 13 de abril, la SSa publica tablas en formato CSV con todos los casos relacionados (confimados o no). Para facilitar su procesamiento, estos archivos se han incorporado a una base de datos sqlite.
+1. Datos abiertos:
+    - [datos_abiertos/raw](datos_abiertos/raw): los datos publicados por la DGE a partir del lunes 13 de abril.
+
+2. Datos abiertos en formato *tidy*:
+    - [datos_abiertos/series_de_tiempo/nuevos](datos_abiertos/series_de_tiempo/nuevos):
+    diferentes variables contabilizadas por día y por estado.
+    - [datos_abiertos/series_de_tiempo/acumulados](datos_abiertos/series_de_tiempo/acumulados):
+    diferentes variables contabilizadas por día y por estado y acumuladas hasta la fecha más reciente.
+
+3. Datos correspondientes a formatos antiguos (PDFs, SINAVE) y publicados hasta el 19 de abril (SSa ha dejado de actualizarlos):
+    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las dos tablas en formato PDF de casos confirmados y sospechosos que se la SSa publicaba. Para facilitar su análisis se incluten las convertidas a formato CSV.
+    - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se extraín  del mapa de SINAVE.
+
+4. Datos correspondientes a formatos antiguos en formato *tidy*:
+    - [datos/series_de_tiempo](datos/series_de_tiempo): el historial de casos a nivel nacional y desglosados por estado. **Estas series de tiempo se siguen actualizando con la base de datos abiertos** (el total de casos confirmados se asocia con el día de publicación).
 
 
-2. Procesamos los datos de Salud a diario para obtener el historial de los casos a nivel nacional y desglosados por estado, así como un resumen con el que construimos una pirámide poblacional según el sexo del paciente y el rango de edad. **Datos procesados:**
-    - [datos/series_de_tiempo/covid19_mex_casos_totales.csv](datos/series_de_tiempo/covid19_mex_casos_totales.csv)
-    - [datos/series_de_tiempo/covid19_mex_muertes.csv](datos/series_de_tiempo/covid19_mex_muertes.csv)
-    - [datos/series_de_tiempo/covid19_mex_casos_nuevos.csv](datos/series_de_tiempo/covid19_mex_casos_nuevos.csv)
-    - [datos/series_de_tiempo/covid19_mex_sospechosos.csv](datos/series_de_tiempo/covid19_mex_sospechosos.csv)
-    - [datos/series_de_tiempo/covid19_mex_negativos.csv](datos/series_de_tiempo/covid19_mex_negativos.csv)
-    - [datos/demograficos_variables/piramide_sexo_edad.json](datos/demograficos_variables/piramide_sexo_edad.json)
+<!-- 2. un resumen con el que construimos una pirámide poblacional según el sexo del paciente y el rango de edad.
+
+    - [datos/demograficos_variables/piramide_sexo_edad.json](datos/demograficos_variables/piramide_sexo_edad.json) -->
 
 
 ## Fuentes para los datos del COVID-19
 
-- Tabla de casos positivos y Tabla de casos sospechosos en formato PDF: [Coronavirus (COVID-19)-Comunicado Técnico Diario](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) de la Secretaría de Salud Federal.
+- [Datos abiertos de la Dirección General de Epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127) publicados por la Secretaría de Salud Federal. Estos datos has sido publicados con una licencia `Libre Uso MX` como consta en el [portal de datos abiertos del gobierno](https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico).
 
-- [Mapa interactivo del Sistema Nacional de Vigilancia Epidemiológica (SINAVE)](https://ncov.sinave.gob.mx/mapa.aspx)
 
-- [Datos abiertos de la Dirección General de Epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127) publicados por la Secretaría de Salud Federal.
+- ~~Tabla de casos positivos y Tabla de casos sospechosos en formato PDF: [Coronavirus (COVID-19)-Comunicado Técnico Diario](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) de la Secretaría de Salud Federal.~~ Ya no se actualiza.
+
+- ~~[Mapa interactivo del Sistema Nacional de Vigilancia Epidemiológica (SINAVE)](https://covid19.sinave.gob.mx)~~ Ya no se actualiza con casos confirmados, negativos o sospechosos (solo con casos activos).
+
+
 
 
 Otras fuentes que **no se incluyen aquí**
@@ -56,31 +83,39 @@ Otros repositorios con datos similares:
 Un repositorio con datos para otros países de América Latina:
 - [DataScienceResearchPeru/covid-19_latinoamerica](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
 
-Un repositorio con datos del Reino Unido que nos ha servido de inspiración en algunas cosas:
+Un repositorio con datos del Reino Unido que nos ha servido de inspiración:
 
 - [tomwhite/covid-19-uk-data](https://github.com/tomwhite/covid-19-uk-data)
 
 
 ### Otros datos
+
 - Población y número promedio de familia por estados, 2015: [Inegi, Encuesta Intercensal 2015](https://www.inegi.org.mx/programas/intercensal/2015/default.html#Tabulados);
 
 - Polígonos de los estados del país en formato  GEOJSON: [Blocks](http://bl.ocks.org/ponentesincausa/46d1d9a94ca04a56f93d)
 
 
-## Herramientas
+## Codigo
 
-Para convertir las tablas PDF de casos confirmados y sospechosos a formato CSV utilizamos primero Python y luego Julia (por el tiempo reducido para correr el código)
+Para reproducir nuestro análisis puedes consultar nuestro código.
+    - [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
+    - [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
 
-- [codigo/scrap.py](codigo/scrap.py): (Deprecado) `python scrapy.py`; Requerimientos: `pip install -r requirements.txt`
-- [codigo/scrap.jl](codigo/scrap.jl): `julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `TODO` (Esta función fue tomada de @carranco-sga y extendida para nuestros propósitos)
 
-Para descargar de forma autómatica los datos del mapa de SINAVE utilizamos un script en JS que corre en node.js.
 
-- [codigo/descarga_sinave.js](codigo/descarga_sinave.js) `node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`
+
+<!-- - [codigo/scrap.py](codigo/scrap.py): (Deprecado) `python scrapy.py`; Requerimientos: `pip install -r requirements.txt` -->
+
 
 ## Workflow diario
 
 ```
+./download_datos_abiertos.sh
+python process_datos_abiertos
+python update_tests.py
+```
+
+<!-- ```
 node download_sinave.js
 python update_from_json.py 20200415.json true
 
@@ -88,4 +123,4 @@ julia scrap.jl Tabla_casos_positivos_2020.04.15.pdf -o covid19_mex_confirmados_2
 julia scrap.jl Tabla_casos_sospechosos_2020.04.15.pdf -o covid19_mex_sospechosos_20200415.csv
 mv covid19_mex* ../datos/reportes_oficiales_ssa
 python update_pyramid.py
-```
+``` -->
