@@ -367,7 +367,7 @@ if __name__ == '__main__':
     ## Totales por estado en el archivo geojson ##
     geojson_file = dir_geo + 'mexico.geojson'
     edos_hoy_file = dir_datos + 'estados_hoy.csv'
-    # updated_file = dir_datos + 'last_updated.csv'
+    updated_file = dir_datos + 'last_updated.csv'
 
     gdf = gpd.read_file(geojson_file).set_index('name')
     gdf.totales = fila_totales.drop('Nacional', axis=1).squeeze()
