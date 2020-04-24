@@ -15,7 +15,7 @@ FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d").csv"
 
 
 # Creamos directorio temporal
-TMP_DIR=$(mktemp -d)  # -p "$WORK_DIR"
+TMP_DIR=$(mktemp -d)  # -p "$REPO_DIR"
 echo -e "Directorio temporal es $TMP_DIR\n"
 
 # Nos aseguramos de que los archivos nuevos se eliminen en caso de error
@@ -35,10 +35,20 @@ else
 fi
 
 
-# Verifica que el archivo zip descomprimido correponda a un un solo archivo csv, renombra
-if [ $(ls -1 "$TMP_DIR" | wc -l) -eq  "1" ]; then
-    mv $TMP_DIR/*.csv "$DATA_DIR/$FILENAME"
-    # NB: globs are not expanded in quotes
+
+# Verifica que el archivo zip descomprimido correponda a un un solo archivo, renombra
+if [ $(ls -1 "$TMP_DIR" | wc -l) == "1" ]; then
+    DOWLOAD_NAME=$TMP_DIR/*.csv  # NB: globs are not expanded in quotes
+
+    FILE_ENCODING="$(file -b --mime-encoding $DOWLOAD_NAME)"
+    if [ "$FILE_ENCODING" != "utf-8" ]; then
+        echo -n "Encoding era $FILE_ENCODING; convirtiendo\n"
+        iconv -f "$FILE_ENCODING" -t "utf-8" $DOWLOAD_NAME  > "$TMP_DIR/decoded.csv"
+    else
+        mv $DOWLOAD_NAME "$TMP_DIR/decoded.csv"
+    fi
+
+    mv "$TMP_DIR/decoded.csv" "$DATA_DIR/$FILENAME"
     echo -e "Archivo csv renombrado: $FILENAME\n"
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
