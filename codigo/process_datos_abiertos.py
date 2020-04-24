@@ -332,8 +332,7 @@ if __name__ == '__main__':
     fila_nuevos = (totales_df.iloc[-1, 1:] - totales_df.iloc[-2, 1:]).astype(int)
     with open(nuevos_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
-        # diff is series
-        writer.writerow([date_iso] + fila_nuevos.values.tolist())
+        writer.writerow([date_iso] + fila_nuevos.values.tolist())  # a series
 
     # Muertes por estado
     muertes_file = dir_series + 'covid19_mex_muertes.csv'
@@ -341,6 +340,14 @@ if __name__ == '__main__':
     with open(muertes_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + fila_muertes.values[0].tolist())
+
+    # Muertes nuevas por estado
+    muertes_nuevas_file = dir_series + 'covid19_mex_muertes_nuevas.csv'
+    muertes_df = pd.read_csv(muertes_file)
+    fila_nuevas = (muertes_df.iloc[-1, 1:] - muertes_df.iloc[-2, 1:]).astype(int)
+    with open(muertes_nuevas_file, 'a') as f:
+        writer = csv.writer(f, 'unixnq')
+        writer.writerow([date_iso] + fila_nuevas.values.tolist())  # a series
 
     # Sospechosos por estado
     sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
@@ -360,32 +367,35 @@ if __name__ == '__main__':
     ## Totales por estado en el archivo geojson ##
     geojson_file = dir_geo + 'mexico.geojson'
     edos_hoy_file = dir_datos + 'estados_hoy.csv'
-    updated_file = dir_datos + 'last_updated.csv'
+    # updated_file = dir_datos + 'last_updated.csv'
 
     gdf = gpd.read_file(geojson_file).set_index('name')
     gdf.totales = fila_totales.drop('Nacional', axis=1).squeeze()
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
+    gdf.muertes_nuevas = fila_nuevas.drop('Nacional').squeeze()  # series
     gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
+    gdf.muertes_100k = gdf.muertes * 100000 / gdf.population
 
     gdf.updated_at = str(update_time).replace(' ', 'T')
 
     gdf = gdf.reset_index()
-    assert gdf.shape[1] == 12
+    assert gdf.shape[1] == 14
 
     gdf.to_file(geojson_file, driver='GeoJSON')
     gdf.loc[0:0, ['updated_at']].to_csv(updated_file, index=False)
 
     ### Estados hoy ###
     cols_edos_hoy = ['name', 'totales', 'nuevos',
-                     'muertes', 'sospechosos', 'negativos']
+                     'muertes', 'muertes_nuevas', 'sospechosos', 'negativos']
 
     map_cols = {'name': 'Estado',
                 'totales': 'Confirmados totales',
                 'nuevos': 'Confirmados nuevos',
                 'muertes': 'Defunciones',
+                'muertes_nuevas': 'Defunciones nuevas',
                 'sospechosos': 'Sospechosos totales',
                 'negativos': 'Negativos totales'}
 
