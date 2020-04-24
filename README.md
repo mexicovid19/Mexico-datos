@@ -111,7 +111,7 @@ Para reproducir nuestro análisis puedes consultar nuestro código.
 
 ```
 ./download_datos_abiertos.sh
-python process_datos_abiertos
+python process_datos_abiertos.py
 python update_tests.py
 ```
 
