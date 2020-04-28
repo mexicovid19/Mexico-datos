@@ -38,17 +38,13 @@ fi
 
 # Verifica que el archivo zip descomprimido correponda a un un solo archivo, renombra
 if [ $(ls -1 "$TMP_DIR" | wc -l) == "1" ]; then
-    DOWLOAD_NAME=$TMP_DIR/*.csv  # NB: globs are not expanded in quotes
+    DOWNLOAD_NAME=($TMP_DIR/*.csv)  # NB: globs are not expanded in quotes
 
-    FILE_ENCODING="$(file -b --mime-encoding $DOWLOAD_NAME)"
-    if [ "$FILE_ENCODING" != "utf-8" ]; then
-        echo -n "Encoding era $FILE_ENCODING; convirtiendo\n"
-        iconv -f "$FILE_ENCODING" -t "utf-8" $DOWLOAD_NAME  > "$TMP_DIR/decoded.csv"
-    else
-        mv $DOWLOAD_NAME "$TMP_DIR/decoded.csv"
-    fi
+    FILE_ENCODING="$(file -b --mime-encoding $DOWNLOAD_NAME)"
 
-    mv "$TMP_DIR/decoded.csv" "$DATA_DIR/$FILENAME"
+    echo -e "Encoding era $FILE_ENCODING; corriendo script fix_latin\n"
+
+    fix_latin "$DOWNLOAD_NAME" > "$DATA_DIR/$FILENAME"
     echo -e "Archivo csv renombrado: $FILENAME\n"
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
