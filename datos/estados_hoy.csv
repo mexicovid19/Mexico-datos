@@ -1,33 +1,33 @@
 Estado,Confirmados totales,Confirmados nuevos,Defunciones,Defunciones nuevas,Sospechosos totales,Negativos totales
-Aguascalientes,148,2,2,0,101,1029
-Baja California,1286,80,162,0,281,1298
-Baja California Sur,285,19,12,0,17,783
-Campeche,94,7,14,3,47,221
-Chiapas,118,4,6,0,46,413
-Chihuahua,259,18,58,1,201,497
-Ciudad de México,4660,229,309,2,2101,9447
-Coahuila,344,8,33,0,208,2509
-Colima,18,2,2,0,10,145
-Durango,45,2,6,0,13,521
-Guanajuato,206,8,20,1,467,2760
-Guerrero,193,22,29,0,36,487
-Hidalgo,174,19,18,1,55,508
-Jalisco,282,11,25,2,782,3947
-Michoacán,210,15,31,3,223,1069
-Morelos,178,20,27,2,54,427
-México,1694,86,116,6,1046,2985
-Nayarit,57,4,7,0,42,269
-Nuevo León,287,5,9,0,457,4153
-Oaxaca,105,3,15,2,49,466
-Puebla,514,28,65,0,178,1227
-Querétaro,112,2,9,2,27,567
-Quintana Roo,593,53,79,3,78,621
-San Luis Potosí,79,3,6,0,42,1260
-Sinaloa,750,39,105,7,251,1091
-Sonora,144,9,18,0,52,858
-Tabasco,721,21,95,9,216,973
-Tamaulipas,262,45,11,0,157,1426
-Tlaxcala,140,7,13,0,80,579
-Veracruz,334,35,25,2,183,1427
-Yucatán,321,22,20,0,79,920
-Zacatecas,64,7,4,0,33,463
+Aguascalientes,161,13,2,0,149,1061
+Baja California,1316,30,167,5,330,1314
+Baja California Sur,286,1,13,1,48,785
+Campeche,103,9,15,1,29,235
+Chiapas,128,10,6,0,56,430
+Chihuahua,272,13,59,1,231,499
+Ciudad de México,4887,227,328,19,2321,9744
+Coahuila,354,10,34,1,222,2613
+Colima,23,5,2,0,11,149
+Durango,46,1,6,0,27,533
+Guanajuato,215,9,21,1,466,2873
+Guerrero,207,14,30,1,62,495
+Hidalgo,182,8,21,3,58,518
+Jalisco,303,21,25,0,643,4197
+Michoacán,219,9,34,3,282,1080
+Morelos,181,3,27,0,91,432
+México,1753,59,122,6,1313,3038
+Nayarit,58,1,7,0,57,274
+Nuevo León,295,8,10,1,402,4355
+Oaxaca,116,11,15,0,17,499
+Puebla,556,42,65,0,215,1259
+Querétaro,123,11,10,1,29,574
+Quintana Roo,643,50,85,6,145,640
+San Luis Potosí,84,5,6,0,58,1292
+Sinaloa,798,48,122,17,323,1112
+Sonora,159,15,18,0,69,889
+Tabasco,812,91,99,4,249,1007
+Tamaulipas,288,26,12,1,207,1482
+Tlaxcala,145,5,15,2,95,592
+Veracruz,402,68,31,6,228,1535
+Yucatán,350,29,23,3,109,976
+Zacatecas,64,0,4,0,72,478
