@@ -45,7 +45,7 @@ if [ $(ls -1 "$TMP_DIR" | wc -l) == "1" ]; then
     echo -e "Encoding era $FILE_ENCODING; corriendo script fix_latin\n"
 
     fix_latin "$DOWNLOAD_NAME" > "$DATA_DIR/$FILENAME"
-    echo -e "Archivo csv renombrado: $FILENAME\n"
+    echo -e "Archivo csv renombrado: $FILENAME (conversion fix_latin exitosa)\n"
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
     exit 1
