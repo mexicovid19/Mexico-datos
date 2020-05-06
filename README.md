@@ -102,9 +102,11 @@ Un repositorio con datos del Reino Unido que nos ha servido de inspiración:
 
 ## Código
 
-Para reproducir nuestro análisis puedes consultar nuestro código.
-    - [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
-    - [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
+Para reproducir nuestro análisis puedes consultar nuestro código:
+
+- [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
+
+- [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
 
 ### Requerimientos
 
@@ -137,6 +139,7 @@ Si todo está configurado correctamente el ejecutable `fix_latin` debería de es
 ./download_datos_abiertos.sh
 python process_datos_abiertos.py
 python update_tests.py
+python update_pyramids.py
 ```
 
 <!-- ```
