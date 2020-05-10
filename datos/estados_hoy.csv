@@ -1,33 +1,33 @@
 Estado,Confirmados totales,Confirmados nuevos,Defunciones,Defunciones nuevas,Sospechosos totales,Negativos totales
-Aguascalientes,304,8,12,1,373,1981
-Baja California,2304,100,365,21,792,1681
-Baja California Sur,372,5,22,2,78,962
-Campeche,230,11,27,1,48,350
-Chiapas,320,36,17,5,142,613
-Chihuahua,632,15,126,9,516,865
-Ciudad de México,10276,743,729,33,5834,16183
-Coahuila,537,36,51,1,684,3321
-Colima,36,3,6,0,20,223
-Durango,105,10,11,0,87,892
-Guanajuato,415,25,46,4,604,5354
-Guerrero,432,9,61,2,350,746
-Hidalgo,470,45,72,6,125,711
-Jalisco,559,49,47,6,397,5968
-Michoacán,519,32,59,1,302,1814
-Morelos,697,55,93,9,210,658
-México,3863,182,300,25,5586,4588
-Nayarit,193,23,21,1,76,493
-Nuevo León,609,35,33,1,506,6192
-Oaxaca,213,6,37,5,117,653
-Puebla,1030,53,129,5,411,1708
-Querétaro,220,15,21,1,58,744
-Quintana Roo,1022,33,175,7,176,812
-San Luis Potosí,227,24,11,1,149,1780
-Sinaloa,1380,61,204,7,662,1625
-Sonora,378,28,25,0,292,1221
-Tabasco,1516,125,201,13,407,1675
-Tamaulipas,441,1,31,3,564,2325
-Tlaxcala,331,18,50,7,95,928
-Veracruz,1013,87,112,13,634,2004
-Yucatán,747,26,48,9,208,1557
-Zacatecas,131,7,18,0,68,726
+Aguascalientes,307,3,14,2,456,2012
+Baja California,2392,88,402,37,837,1722
+Baja California Sur,377,5,22,0,85,972
+Campeche,250,20,27,0,29,365
+Chiapas,355,35,19,2,103,679
+Chihuahua,657,25,135,9,530,881
+Ciudad de México,10911,635,774,45,5615,16899
+Coahuila,553,16,52,1,647,3476
+Colima,36,0,6,0,24,229
+Durango,107,2,11,0,88,928
+Guanajuato,445,30,46,0,724,5529
+Guerrero,453,21,64,3,369,779
+Hidalgo,489,19,75,3,134,738
+Jalisco,595,36,48,1,447,6123
+Michoacán,574,55,62,3,218,1922
+Morelos,760,63,99,6,155,706
+México,4025,162,321,21,6092,4650
+Nayarit,199,6,22,1,76,515
+Nuevo León,616,7,33,0,574,6276
+Oaxaca,221,8,40,3,117,667
+Puebla,1076,46,145,16,383,1791
+Querétaro,230,10,21,0,70,768
+Quintana Roo,1062,40,182,7,151,844
+San Luis Potosí,237,10,12,1,208,1810
+Sinaloa,1401,21,207,3,655,1661
+Sonora,440,62,26,1,324,1249
+Tabasco,1584,68,211,10,424,1728
+Tamaulipas,710,269,37,6,446,2448
+Tlaxcala,364,33,53,3,65,977
+Veracruz,1114,101,121,9,626,2055
+Yucatán,784,37,48,0,161,1651
+Zacatecas,136,5,18,0,54,751
