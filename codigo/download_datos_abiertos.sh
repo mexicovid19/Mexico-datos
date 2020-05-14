@@ -11,7 +11,7 @@ DATE_PATTERN="[Bb]ase de [Dd]atos.*$(date -d "yesterday" +"%d/%m/%Y")"
 cd "$REPO_DIR"
 
 DATA_DIR="./datos_abiertos/raw"
-FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d").csv"
+FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d")"
 
 
 # Creamos directorio temporal
@@ -35,7 +35,6 @@ else
 fi
 
 
-
 # Verifica que el archivo zip descomprimido correponda a un un solo archivo, renombra
 if [ $(ls -1 "$TMP_DIR" | wc -l) == "1" ]; then
     DOWNLOAD_NAME=($TMP_DIR/*.csv)  # NB: globs are not expanded in quotes
@@ -44,10 +43,20 @@ if [ $(ls -1 "$TMP_DIR" | wc -l) == "1" ]; then
 
     echo -e "Encoding era $FILE_ENCODING; corriendo script fix_latin\n"
 
-    fix_latin "$DOWNLOAD_NAME" > "$DATA_DIR/$FILENAME"
-    echo -e "Archivo csv renombrado: $FILENAME (conversion fix_latin exitosa)\n"
+    fix_latin "$DOWNLOAD_NAME" > "$DATA_DIR/$FILENAME.csv"
+    echo -e "Archivo csv renombrado: $FILENAME.csv (conversion fix_latin exitosa)\n"
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
+    exit 1
+fi
+
+
+# Conprimimos archivo csv y generamos zip
+if [ -f "$DATA_DIR/$FILENAME.csv" ]; then
+    zip -9  "$DATA_DIR/$FILENAME.zip" "$DATA_DIR/$FILENAME.csv"
+    echo -e "\nArchivo zip creado\n"
+else
+    echo "ERROR: archivo csv no encontrado (paso de compresion)"
     exit 1
 fi
 
