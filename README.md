@@ -15,6 +15,8 @@ Si estás interesado/a en una visualización de los datos que aquí se encuentra
 
 ### Avisos
 
+**Mayo 14:** Dado que los archivos CSV superan a diario 20MB de espacio, estamos en proceso de refactorizar nuestra base de datos para que solamente utilice archivos comprimidos (en formato zip). Tenemos planeado que a partir de mañana 15 de mayo los archivos de datos abiertos en formato CSV hayan sido eliminados (con todo y el overhead de trackearlos con git). Si bien Salud publica sus archivos comprimidos, vale la pena mencionar que hasta el día de hoy la Secretaría **los sigue publicando con el error de encoding** y nosotros seguimos corrigiéndolo. 
+
 **Abril 28:** Desde el lunes 24 de Abril los archivos presentan problemas con el *encoding*. Aunque deberían de ser en principio UTF-8, el comando `file -i` en bash detecta ISO-8859-1 (también conocido como latin-1). El problema es que se utilizan ambos encodings para los acentos y éstos son incompatibles.
 
 Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](https://www.gob.mx/salud/documentos/datos-abiertos-152127) hay 26 filas donde la letra é en "Estados Unidos de América" está codificada con latin-1. En todos los demás casos se utiliza correctamente UTF-8. Para solucionar el problema hemos recurrido a la librería [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) escrita en perl y que se llama en nuestra script de bash `download_datos_abiertos.sh`.
