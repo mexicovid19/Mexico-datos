@@ -237,12 +237,12 @@ if __name__ == '__main__':
     dir_series = os.path.join(dir_datos, 'series_de_tiempo', '')
 
     dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
-    input_filename = dir_input + f'datos_abiertos_{date_filename}.csv'
+    input_filename = dir_input + f'datos_abiertos_{date_filename}.zip'
 
     ## READING ##
 
     # Lee los datos abiertos
-    datos_abiertos_df = pd.read_csv(input_filename)
+    datos_abiertos_df = pd.read_csv(input_filename, compression='zip')
 
     # Lee catalogo de entidades (hoja de calculo 'Catálogo de ENTIDADES' en
     # el archivo 'diccionario_datos/Catalogos_0412.xlsx''; ha sido convertido a csv)
