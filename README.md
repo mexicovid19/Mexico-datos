@@ -15,6 +15,8 @@ Si estás interesado/a en una visualización de los datos que aquí se encuentra
 
 ### Avisos
 
+**Mayo 19:** Los archivos de la base de datos abiertos se encuentran en formato zip. **No son solamente los archivos que publica Salud**, todos los días bajamos éstos, los descomprimimos, arreglamos el encoding, y los comprimimos de nuevo. También hemos eliminado las carpetas con los archivos PDF que sumaban más de 150 MB. 
+
 **Mayo 14:** Dado que los archivos CSV superan a diario 20MB de espacio, estamos en proceso de refactorizar nuestra base de datos para que solamente utilice archivos comprimidos (en formato zip). Tenemos planeado que a partir de mañana 15 de mayo los archivos de datos abiertos en formato CSV hayan sido eliminados (con todo y el overhead de trackearlos con git). Si bien Salud publica sus archivos comprimidos, vale la pena mencionar que hasta el día de hoy la Secretaría **los sigue publicando con el error de encoding** y nosotros seguimos corrigiéndolo. 
 
 **Abril 28:** Desde el lunes 24 de Abril los archivos presentan problemas con el *encoding*. Aunque deberían de ser en principio UTF-8, el comando `file -i` en bash detecta ISO-8859-1 (también conocido como latin-1). El problema es que se utilizan ambos encodings para los acentos y éstos son incompatibles.
@@ -47,7 +49,7 @@ Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](
     diferentes variables contabilizadas por día y por estado y acumuladas hasta la fecha más reciente.
 
 3. Datos correspondientes a formatos antiguos (PDFs, SINAVE) y publicados hasta el 19 de abril (SSa ha dejado de actualizarlos):
-    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las dos tablas en formato PDF de casos confirmados y sospechosos que se la SSa publicaba. Para facilitar su análisis se incluten las convertidas a formato CSV.
+    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las tablas de confirmados y sospechosos en formato CSV generadas a partir de los archivos PDF que SSa publicaba.
     - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se extraín  del mapa de SINAVE.
 
 4. Datos correspondientes a formatos antiguos en formato *tidy*:

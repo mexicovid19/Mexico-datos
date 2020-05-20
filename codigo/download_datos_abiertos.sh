@@ -54,6 +54,7 @@ fi
 # Conprimimos archivo csv y generamos zip
 if [ -f "$DATA_DIR/$FILENAME.csv" ]; then
     zip -9  "$DATA_DIR/$FILENAME.zip" "$DATA_DIR/$FILENAME.csv"
+    rm "$DATA_DIR/$FILENAME.csv"
     echo -e "\nArchivo zip creado\n"
 else
     echo "ERROR: archivo csv no encontrado (paso de compresion)"
