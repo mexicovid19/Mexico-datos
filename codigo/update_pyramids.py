@@ -61,7 +61,7 @@ if __name__ == '__main__':
     defunciones_file = dir_demograficos + 'defunciones_sexo_edad.json'
 
     dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
-    input_filename = dir_input + f'datos_abiertos_{dat_filename}.csv'
+    input_filename = dir_input + f'datos_abiertos_{dat_filename}.zip'
 
     # Lee los datos abiertos
     datos_abiertos_df = pd.read_csv(input_filename)
