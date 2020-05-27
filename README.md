@@ -13,9 +13,18 @@ Si estás interesado/a en una visualización de los datos que aquí se encuentra
 <!-- **Este repositorio es actualizado a diario.** La fecha y hora de la última actualización la encontrarás en `last_updated.csv` que se encuentra [aquí](https://github.com/mexicovid19/Mexico-datos/blob/master/datos/last_updated.csv). -->
 
 
-#### Aviso importante
+### Avisos
 
-Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE **no presenta inconsistencias** con respecto a los datos que Salud publicaba previamente:
+**Mayo 19:** Los archivos de la base de datos abiertos se encuentran en formato zip. **No son solamente los archivos que publica Salud**, todos los días bajamos éstos, los descomprimimos, arreglamos el encoding, y los comprimimos de nuevo. También hemos eliminado las carpetas con los archivos PDF que sumaban más de 150 MB. 
+
+**Mayo 14:** Dado que los archivos CSV superan a diario 20MB de espacio, estamos en proceso de refactorizar nuestra base de datos para que solamente utilice archivos comprimidos (en formato zip). Tenemos planeado que a partir de mañana 15 de mayo los archivos de datos abiertos en formato CSV hayan sido eliminados (con todo y el overhead de trackearlos con git). Si bien Salud publica sus archivos comprimidos, vale la pena mencionar que hasta el día de hoy la Secretaría **los sigue publicando con el error de encoding** y nosotros seguimos corrigiéndolo. 
+
+**Abril 28:** Desde el lunes 24 de Abril los archivos presentan problemas con el *encoding*. Aunque deberían de ser en principio UTF-8, el comando `file -i` en bash detecta ISO-8859-1 (también conocido como latin-1). El problema es que se utilizan ambos encodings para los acentos y éstos son incompatibles.
+
+Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](https://www.gob.mx/salud/documentos/datos-abiertos-152127) hay 26 filas donde la letra é en "Estados Unidos de América" está codificada con latin-1. En todos los demás casos se utiliza correctamente UTF-8. Para solucionar el problema hemos recurrido a la librería [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) escrita en perl y que se llama en nuestra script de bash `download_datos_abiertos.sh`.
+
+
+**Abril 22:** Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE *no presenta inconsistencias* con respecto a los datos que Salud publicaba previamente:
 
 - La base de datos abiertos tiene información mucho más completa y cada caso se puede seguir de individual. Para cada paciente, es posible conocer qué día fue atendido y el estado (confirmado, negativo o pendiente) de la prueba que se le realizó.
 
@@ -40,7 +49,7 @@ Puedes leer una explicación más completa en [nuestra página](https://mexicovi
     diferentes variables contabilizadas por día y por estado y acumuladas hasta la fecha más reciente.
 
 3. Datos correspondientes a formatos antiguos (PDFs, SINAVE) y publicados hasta el 19 de abril (SSa ha dejado de actualizarlos):
-    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las dos tablas en formato PDF de casos confirmados y sospechosos que se la SSa publicaba. Para facilitar su análisis se incluten las convertidas a formato CSV.
+    - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las tablas de confirmados y sospechosos en formato CSV generadas a partir de los archivos PDF que SSa publicaba.
     - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se extraín  del mapa de SINAVE.
 
 4. Datos correspondientes a formatos antiguos en formato *tidy*:
@@ -92,15 +101,36 @@ Un repositorio con datos del Reino Unido que nos ha servido de inspiración:
 
 - Población y número promedio de familia por estados, 2015: [Inegi, Encuesta Intercensal 2015](https://www.inegi.org.mx/programas/intercensal/2015/default.html#Tabulados);
 
-- Polígonos de los estados del país en formato  GEOJSON: [Blocks](http://bl.ocks.org/ponentesincausa/46d1d9a94ca04a56f93d)
+- Polígonos de los estados del país en formato GEOJSON: [Blocks](http://bl.ocks.org/ponentesincausa/46d1d9a94ca04a56f93d)
 
 
-## Codigo
+## Código
 
-Para reproducir nuestro análisis puedes consultar nuestro código.
-    - [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
-    - [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
+Para reproducir nuestro análisis puedes consultar nuestro código:
 
+- [codigo](codigo): se encuentra un script de bash para bajar la base de datos (si está actualizada y corresponde al día anterior); un script de python para actualizar las series de tiempo y un segundo script de python para hacer un resumen en CSV de los casos diarios.
+
+- [codigo/deprecated](codigo/deprecated): los scripts que se utilizaban anteriormente para convertir los PDF a CSV (`julia scrap.jl Tabla.pdf [-o output.csv]`; Requerimientos: `...`) o para descargar los datos en formato JSON del mapa de SINAVE (`node download_sinave.js 2>/dev/null`; Requerimientos: `npm install jsdom jquery`)
+
+### Requerimientos
+
+Para instalar [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) hemos seguido [los pasos en CPAN](https://www.cpan.org/modules/INSTALL.html) para instalar `cpanm` (un instalador de módulos). Utilizamos [el método de bootstrapping](https://metacpan.org/pod/local::lib#The-bootstrapping-technique) con `local::lib` para instalar las librerías en el directorio `~/.perl`, lo cual requiere descargar localmente el módulo `local::lib`, decomprimirlo, y haber hecho `cd` a él. Una vez hecho esto, la instalación completa se hace con los siguientes pasos:
+
+```
+cpan App::cpanminus  # instala cpanm
+
+perl Makefile.PL --bootstrap=~/.perl
+make test && make install  # instala local::lib en ~/.perl
+echo 'eval "$(perl -I$HOME/.perl/lib/perl5 -Mlocal::lib=$HOME/.perl)"' >> ~/.bashrc
+# Arriba, se configura el el environment desde el directorio ~/.perl
+
+# después de volver a leer .bashrc
+cpanm Encoding::FixLatin
+```
+
+Si todo está configurado correctamente el ejecutable `fix_latin` debería de estar disponible en la terminal y se puede llamar desde un script de bash.
+
+**Paso opcional:** también podemos instalar la [librería compilada de C](https://metacpan.org/pod/Encoding::FixLatin::XS) para que la conversión sea más rápida utilizando `cpanm Encoding::FixLatin::XS`.
 
 
 
@@ -111,8 +141,9 @@ Para reproducir nuestro análisis puedes consultar nuestro código.
 
 ```
 ./download_datos_abiertos.sh
-python process_datos_abiertos
+python process_datos_abiertos.py
 python update_tests.py
+python update_pyramids.py
 ```
 
 <!-- ```

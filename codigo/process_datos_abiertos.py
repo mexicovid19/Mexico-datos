@@ -1,6 +1,5 @@
 import os
 import csv
-import json
 import pandas as pd
 import geopandas as gpd
 from datetime import datetime, timedelta
@@ -172,41 +171,6 @@ def uci_diarios_por_estado(datos, entidades):
     return get_formato_series(series, entidades)
 
 
-def confirmados_por_edad_sexo(datos, cat_sexo={1: 'MUJER', 2: 'HOMBRE', 99: 'NO ESPECIFICADO'}):
-    """
-    Calcula el número de pacientes confirmados por edad y por sexo.
-
-    Input:
-    - datos: datos abiertos de COVID-19 en México disponibles en [1].
-
-    Output:
-    - json: Los casos agrupados por grupos de edad de 5 años (0-4, 5-9, etc)
-        para hombres `male` y mujeres `female`.
-
-    [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
-
-    """
-
-    df = datos[datos['RESULTADO'] == 1][['SEXO', 'EDAD', 'ID_REGISTRO']]
-    df['EDAD'] = df['EDAD'].apply(lambda x: x // 5)
-
-    gby = (df.groupby(['SEXO', 'EDAD'])
-           .count()['ID_REGISTRO']
-           .unstack(level=0)
-           .fillna(0)
-           .astype('int'))
-    gby.index = gby.index.map(lambda x: f'{5*x}-{5*x+4}')
-    gby = gby.rename(columns=cat_sexo)
-
-    # convertimos a JSON
-    json_list = []
-    for idx, row in gby.iterrows():
-        d = dict(age=idx, male=int(row['HOMBRE']), female=int(row['MUJER']))
-        json_list.append(d)
-
-    return json.dumps(json_list)
-
-
 ## HELPER FUNCTIONS ##
 
 def get_formato_series(series, entidades):
@@ -273,12 +237,12 @@ if __name__ == '__main__':
     dir_series = os.path.join(dir_datos, 'series_de_tiempo', '')
 
     dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
-    input_filename = dir_input + f'datos_abiertos_{date_filename}.csv'
+    input_filename = dir_input + f'datos_abiertos_{date_filename}.zip'
 
     ## READING ##
 
     # Lee los datos abiertos
-    datos_abiertos_df = pd.read_csv(input_filename)
+    datos_abiertos_df = pd.read_csv(input_filename, compression='zip')
 
     # Lee catalogo de entidades (hoja de calculo 'Catálogo de ENTIDADES' en
     # el archivo 'diccionario_datos/Catalogos_0412.xlsx''; ha sido convertido a csv)
@@ -332,8 +296,7 @@ if __name__ == '__main__':
     fila_nuevos = (totales_df.iloc[-1, 1:] - totales_df.iloc[-2, 1:]).astype(int)
     with open(nuevos_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
-        # diff is series
-        writer.writerow([date_iso] + fila_nuevos.values.tolist())
+        writer.writerow([date_iso] + fila_nuevos.values.tolist())  # a series
 
     # Muertes por estado
     muertes_file = dir_series + 'covid19_mex_muertes.csv'
@@ -345,10 +308,10 @@ if __name__ == '__main__':
     # Muertes nuevas por estado
     muertes_nuevas_file = dir_series + 'covid19_mex_muertes_nuevas.csv'
     muertes_df = pd.read_csv(muertes_file)
-    fila_nuevos = (muertes_df.iloc[-1, 1:] - muertes_df.iloc[-2, 1:]).astype(int)
+    fila_nuevas = (muertes_df.iloc[-1, 1:] - muertes_df.iloc[-2, 1:]).astype(int)
     with open(muertes_nuevas_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
-        writer.writerow([date_iso] + fila_muertes_nuevas.values[0].tolist())
+        writer.writerow([date_iso] + fila_nuevas.values.tolist())  # a series
 
     # Sospechosos por estado
     sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
@@ -374,7 +337,11 @@ if __name__ == '__main__':
     gdf.totales = fila_totales.drop('Nacional', axis=1).squeeze()
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
+<<<<<<< HEAD
     gdf.muertes_nuevas = fila_muertes_nuevas.drop('Nacional').squeeze()
+=======
+    gdf.muertes_nuevas = fila_nuevas.drop('Nacional').squeeze()  # series
+>>>>>>> 1f173a1ca995776c79adc0f90b056728f92823b0
     gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
@@ -383,7 +350,7 @@ if __name__ == '__main__':
     gdf.updated_at = str(update_time).replace(' ', 'T')
 
     gdf = gdf.reset_index()
-    assert gdf.shape[1] == 12
+    assert gdf.shape[1] == 14
 
     gdf.to_file(geojson_file, driver='GeoJSON')
     gdf.loc[0:0, ['updated_at']].to_csv(updated_file, index=False)
@@ -402,11 +369,5 @@ if __name__ == '__main__':
 
     edos_hoy_df = gdf[cols_edos_hoy].rename(columns=map_cols)
     edos_hoy_df.to_csv(edos_hoy_file, index=False)
-
-    ## Casos por sexo y edad (en formato JSON) ##
-    sexo_edad_file = dir_demograficos + 'piramide_sexo_edad.json'
-    sexo_edad_json = confirmados_por_edad_sexo(datos_abiertos_df)
-    with open(sexo_edad_file, 'w') as f:
-        f.write(sexo_edad_json)
 
     print(f'Se procesaron exitosamente los datos abiertos de {input_filename}')
