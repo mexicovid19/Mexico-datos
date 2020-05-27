@@ -337,11 +337,7 @@ if __name__ == '__main__':
     gdf.totales = fila_totales.drop('Nacional', axis=1).squeeze()
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
-<<<<<<< HEAD
-    gdf.muertes_nuevas = fila_muertes_nuevas.drop('Nacional').squeeze()
-=======
     gdf.muertes_nuevas = fila_nuevas.drop('Nacional').squeeze()  # series
->>>>>>> 1f173a1ca995776c79adc0f90b056728f92823b0
     gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
