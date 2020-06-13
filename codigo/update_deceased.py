@@ -8,8 +8,7 @@ repo = '..'
 dir_series = os.path.join(repo, 'datos', 'series_de_tiempo', '')
 
 dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
-dir_series_abiertos = os.path.join(
-    dir_datos_abiertos, 'series_de_tiempo', 'nuevos', '')
+dir_series_abiertos = os.path.join(dir_datos_abiertos, 'series_de_tiempo', 'nuevos', '')
 dir_save = os.path.join(dir_datos_abiertos, 'formato_especial', '')
 
 # Series de tiempo 'interpretacion JH'
@@ -35,25 +34,23 @@ casos_abiertos_df = (pd.read_csv(dir_series_abiertos + 'covid19_mex_confirmados.
 casos_abiertos_df.index = pd.to_datetime(casos_abiertos_df.index)
 
 # Creamos dfs
-muertes_nuevas = pd.concat(
-    (muertes_df, muertes_abiertos_df), axis=1).fillna(0).astype(int)
+muertes_nuevas = pd.concat((muertes_df, muertes_abiertos_df), axis=1).fillna(0).astype(int)
 muertes_acumuladas = muertes_nuevas.cumsum()
 
 # agregamos el promedio
-muertes_promedio = (muertes_nuevas.rolling(window=rolling_window, center=True)
+muertes_promedio = (muertes_nuevas.rolling(window=rolling_window, center=False)
                     .mean()
                     .round(2))  # 2 decimales
 muertes_nuevas = muertes_nuevas.join(muertes_promedio, rsuffix='_promedio')
 
-casos_nuevos = pd.concat((casos_df, casos_abiertos_df),
-                         axis=1).fillna(0).astype(int)
+casos_nuevos = pd.concat((casos_df, casos_abiertos_df),axis=1).fillna(0).astype(int)
 casos_acumulados = casos_nuevos.cumsum()
 
 # el promedio
-casos_promedio = (casos_nuevos.rolling(window=rolling_window, center=True)
+casos_promedio = (casos_nuevos.rolling(window=rolling_window, center=False)
                   .mean()
                   .round(2))  # 2 decimales
-casos_nuevos = casos_nuevos.join(casos_promedio, rsuffix='_promedio)
+casos_nuevos = casos_nuevos.join(casos_promedio, rsuffix='_promedio')
 
 # cutoff = '2020-02-28'
 
