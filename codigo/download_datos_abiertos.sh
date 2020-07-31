@@ -3,7 +3,7 @@
 set -euo pipefail
 
 URL="https://www.gob.mx/salud/documentos/datos-abiertos-152127"
-URL_ZIP="http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip"
+URL_ZIP="http://epidemiologia.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip"
 ZIP_FILE="datos_abiertos_covid19.zip"
 DATE_PATTERN="[Bb]ase de [Dd]atos.*$(date -d "yesterday" +"%d/%m/%Y")"
 
