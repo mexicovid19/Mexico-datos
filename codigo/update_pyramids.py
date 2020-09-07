@@ -1,4 +1,5 @@
 import os
+import argparse
 import json
 import pandas as pd
 from datetime import date, timedelta
@@ -50,21 +51,29 @@ if __name__ == '__main__':
     ## Casos por sexo y edad (en formato JSON) ##
 
     dat = date.today() - timedelta(days=1)
-    dat_filename = dat.strftime('%Y%m%d')
+    date_filename = dat.strftime('%Y%m%d')
     # date_iso = date.strftime('%Y-%m-%d')
 
-    repo = '..'
+    parser = argparse.ArgumentParser(description='procesa archivo de datos abiertos')
+    parser.add_argument('input_file', help='el archivo csv comprimido como zip')
+    args = parser.parse_args()
+    input_file = args.input_file
+    assert input_file.endswith(f'{date_filename}.zip'), \
+        'error: archivo deberia ser zip con la fecha más reciente'
+
+
+    repo = os.pardir
     dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
     dir_datos = os.path.join(repo, 'datos', '')
     dir_demograficos = os.path.join(dir_datos, 'demograficos_variables', '')
     confirmados_file = dir_demograficos + 'piramide_sexo_edad.json'
     defunciones_file = dir_demograficos + 'defunciones_sexo_edad.json'
 
-    dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
-    input_filename = dir_input + f'datos_abiertos_{dat_filename}.zip'
+    # dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
+    # input_filename = dir_input + f'datos_abiertos_{dat_filename}.zip'
 
     # Lee los datos abiertos
-    datos_abiertos_df = pd.read_csv(input_filename)
+    datos_abiertos_df = pd.read_csv(input_file)
 
     idx_confirmados = datos_abiertos_df['RESULTADO'] == 1
     idx_defunciones = idx_confirmados & (

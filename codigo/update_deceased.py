@@ -4,7 +4,7 @@ import pandas as pd
 
 rolling_window = 7  # promedio sobre 7 días
 
-repo = '..'
+repo = os.pardir
 dir_series = os.path.join(repo, 'datos', 'series_de_tiempo', '')
 
 dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
