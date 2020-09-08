@@ -2,8 +2,7 @@ import os
 import pandas as pd
 
 
-repo = '..'
-dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
+dir_datos_abiertos = os.path.join(os.pardir, 'datos_abiertos', '')
 dir_series = os.path.join(dir_datos_abiertos, 'series_de_tiempo', 'nuevos', '')
 dir_formato = os.path.join(dir_datos_abiertos, 'formato_especial', '')
 
