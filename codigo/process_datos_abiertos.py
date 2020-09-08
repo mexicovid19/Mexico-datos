@@ -63,11 +63,11 @@ if __name__ == '__main__':
 
     # Lee catalogo de entidades (hoja de calculo 'Catálogo de ENTIDADES' en
     # el archivo 'diccionario_datos/Catalogos_0412.xlsx''; ha sido convertido a csv)
-    cat = (pd.read_csv(dir_input + 'diccionario_datos/catalogo_entidades.csv')
-           .set_index('CLAVE_ENTIDAD')['ENTIDAD_FEDERATIVA']
-           .to_dict())
-    # cambia mayúsculas de estados por formato título
-    entidades = {key: val.title() for (key, val) in cat.items()}
+    entidades = (pd.read_csv(dir_input + 'diccionario_datos/catalogo_entidades.csv')
+                 .set_index('CLAVE_ENTIDAD')['ENTIDAD_FEDERATIVA']
+                 .str.title()
+                 .replace({'Ciudad De México':'Ciudad de México'})
+                 .to_dict())
 
 
     # Escribe las series de tiempo a partir de los datos abiertos
