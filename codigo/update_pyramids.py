@@ -75,7 +75,7 @@ if __name__ == '__main__':
     # Lee los datos abiertos
     datos_abiertos_df = pd.read_csv(input_file)
 
-    idx_confirmados = datos_abiertos_df['RESULTADO'] == 1
+    idx_confirmados = datos_abiertos_df['CLASIFICACION_FINAL'].isin([1, 2, 3])
     idx_defunciones = idx_confirmados & (
         datos_abiertos_df['FECHA_DEF'] != '9999-99-99')
 

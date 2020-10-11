@@ -16,7 +16,7 @@ def confirmados_diarios_por_estado(datos, entidades):
 
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
     """
-    series = (datos[datos['RESULTADO'] == 1]
+    series = (datos[datos['CLASIFICACION_FINAL'].isin([1, 2, 3])]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
     return get_formato_series(series, entidades)
@@ -36,50 +36,50 @@ def negativos_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    series = (datos[datos['RESULTADO'] == 2]
+    series = (datos[datos['CLASIFICACION_FINAL'] == 7]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
     return get_formato_series(series, entidades)
 
 
-def pruebas_pendientes_diarias_por_estado(datos, entidades):
-    """
-    Calcula el número de pruebas pendientes por fecha y por estado.
-
-    Input:
-    - datos: datos abiertos de COVID-19 en México disponibles en [1].
-
-    Output:
-    - series: Serie de tiempo de nuevas pruebas pendientes por dia para cada
-        entidad federativa en México.
-
-    [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
-
-    """
-    series = (datos[datos['RESULTADO'] == 3]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
-    return get_formato_series(series, entidades)
-
-
-def pruebas_totales_diarias_por_estado(datos, entidades):
-    """
-    Calcula el número total de pruebas realizadas por fecha y por estado.
-
-    Input:
-    - datos: datos abiertos de COVID-19 en México disponibles en [1].
-
-    Output:
-    - series: Serie de tiempo de nuevas pruebas totales por dia para cada
-        entidad federativa en México.
-
-    [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
-
-    """
-    series = (datos
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
-    return get_formato_series(series, entidades)
+# def pruebas_pendientes_diarias_por_estado(datos, entidades):
+#     """
+#     Calcula el número de pruebas pendientes por fecha y por estado.
+# 
+#     Input:
+#     - datos: datos abiertos de COVID-19 en México disponibles en [1].
+# 
+#     Output:
+#     - series: Serie de tiempo de nuevas pruebas pendientes por dia para cada
+#         entidad federativa en México.
+# 
+#     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+# 
+#     """
+#     series = (datos[datos['RESULTADO'] == 3]
+#               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
+#               .count()['ORIGEN'])
+#     return get_formato_series(series, entidades)
+# 
+# 
+# def pruebas_totales_diarias_por_estado(datos, entidades):
+#     """
+#     Calcula el número total de pruebas realizadas por fecha y por estado.
+# 
+#     Input:
+#     - datos: datos abiertos de COVID-19 en México disponibles en [1].
+# 
+#     Output:
+#     - series: Serie de tiempo de nuevas pruebas totales por dia para cada
+#         entidad federativa en México.
+# 
+#     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+# 
+#     """
+#     series = (datos
+#               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
+#               .count()['ORIGEN'])
+#     return get_formato_series(series, entidades)
 
 
 def defunciones_diarias_por_estado(datos, entidades):
@@ -96,7 +96,7 @@ def defunciones_diarias_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['RESULTADO'] == 1) & (datos['FECHA_DEF'] != '9999-99-99')
+    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3])) & (datos['FECHA_DEF'] != '9999-99-99')
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_DEF'])
               .count()['ORIGEN'])
@@ -118,7 +118,7 @@ def hospitalizados_diarios_por_estado(datos, entidades):
 
     """
     # esta serie incluye UCI + noUCI
-    idx = (datos['RESULTADO'] == 1) & (datos['TIPO_PACIENTE'] == 2)
+    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['TIPO_PACIENTE'] == 2))
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
@@ -139,7 +139,7 @@ def ambulatorios_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['RESULTADO'] == 1) & (datos['TIPO_PACIENTE'] == 1)
+    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['TIPO_PACIENTE'] == 1))
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])
@@ -160,7 +160,7 @@ def uci_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['RESULTADO'] == 1) & (datos['UCI'] == 1)
+    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['UCI'] == 1))
     series = (datos[idx]
               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
               .count()['ORIGEN'])

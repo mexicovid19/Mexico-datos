@@ -8,8 +8,8 @@ from datetime import datetime, timedelta
 from parsers import (
     confirmados_diarios_por_estado,
     negativos_diarios_por_estado,
-    pruebas_pendientes_diarias_por_estado,
-    pruebas_totales_diarias_por_estado,
+    # pruebas_pendientes_diarias_por_estado,
+    # pruebas_totales_diarias_por_estado,
     defunciones_diarias_por_estado,
     hospitalizados_diarios_por_estado,
     ambulatorios_diarios_por_estado,
@@ -21,8 +21,8 @@ from parsers import (
 func_dict = dict()
 func_dict['covid19_mex_confirmados.csv'] = confirmados_diarios_por_estado
 func_dict['covid19_mex_negativos.csv'] = negativos_diarios_por_estado
-func_dict['covid19_mex_pendientes.csv'] = pruebas_pendientes_diarias_por_estado
-func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
+# func_dict['covid19_mex_pendientes.csv'] = pruebas_pendientes_diarias_por_estado
+# func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
 func_dict['covid19_mex_muertes.csv'] = defunciones_diarias_por_estado
 func_dict['covid19_mex_hospitalizados.csv'] = hospitalizados_diarios_por_estado
 func_dict['covid19_mex_uci.csv'] = uci_diarios_por_estado
@@ -71,10 +71,12 @@ if __name__ == '__main__':
 
 
     # Escribe las series de tiempo a partir de los datos abiertos
-    dfs = [func(datos_abiertos_df, entidades) for key, func in func_dict.items()]
+    # dfs = [func(datos_abiertos_df, entidades) for key, func in func_dict.items()]
+    dfs = []
 
     for key, func in func_dict.items():
         df = func(datos_abiertos_df, entidades)
+        dfs.append(df)
         df.to_csv(f'{dir_series_dge}/nuevos/{key}')
         df.cumsum().to_csv(f'{dir_series_dge}/acumulados/{key}')
 
@@ -101,7 +103,7 @@ if __name__ == '__main__':
 
     # Muertes por estado
     muertes_file = dir_series + 'covid19_mex_muertes.csv'
-    fila_muertes = dfs[4].cumsum().tail(1)  # defunciones_diarias_por_estado
+    fila_muertes = dfs[2].cumsum().tail(1)  # defunciones_diarias_por_estado
     with open(muertes_file, 'a') as f:
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + fila_muertes.values[0].tolist())
@@ -114,15 +116,15 @@ if __name__ == '__main__':
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + fila_nuevas.values.tolist())  # a series
 
-    # Sospechosos por estado
-    sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
-    # pruebas_pendientes_diarias_por_estado
-    fila_sospechosos = dfs[2].cumsum().tail(1)
-    with open(sospechosos_file, 'a') as f:
-        writer = csv.writer(f, 'unixnq')
-        writer.writerow([date_iso] + fila_sospechosos.values[0].tolist())
+    ## # Sospechosos por estado
+    ## sospechosos_file = dir_series + 'covid19_mex_sospechosos.csv'
+    ## # pruebas_pendientes_diarias_por_estado
+    ## fila_sospechosos = dfs[2].cumsum().tail(1)
+    ## with open(sospechosos_file, 'a') as f:
+    ##     writer = csv.writer(f, 'unixnq')
+    ##     writer.writerow([date_iso] + fila_sospechosos.values[0].tolist())
 
-    # Sospechosos por estado
+    # Negativos por estado
     negativos_file = dir_series + 'covid19_mex_negativos.csv'
     fila_negativos = dfs[1].cumsum().tail(1)  # negativos_diarios_por_estado
     with open(negativos_file, 'a') as f:
@@ -139,7 +141,7 @@ if __name__ == '__main__':
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
     gdf.muertes_nuevas = fila_nuevas.drop('Nacional').squeeze()  # series
-    gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
+    gdf.sospechosos = 0  # fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
     gdf.muertes_100k = gdf.muertes * 100000 / gdf.population
