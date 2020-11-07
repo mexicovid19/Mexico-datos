@@ -24,7 +24,7 @@ Si estás interesado/a en una visualización de los datos que aquí se encuentra
 Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](https://www.gob.mx/salud/documentos/datos-abiertos-152127) hay 26 filas donde la letra é en "Estados Unidos de América" está codificada con latin-1. En todos los demás casos se utiliza correctamente UTF-8. Para solucionar el problema hemos recurrido a la librería [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) escrita en perl y que se llama en nuestra script de bash `download_datos_abiertos.sh`.
 
 
-**Abril 22:** Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continucación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE *no presenta inconsistencias* con respecto a los datos que Salud publicaba previamente:
+**Abril 22:** Puedes leer una explicación más completa en [nuestra página](https://mexicovid19.github.io/Mexico/datos_abiertos.html) pero a continuación aclaramos por qué nuestro equipo ha encontrado que la base de datos abiertos de la DGE *no presenta inconsistencias* con respecto a los datos que Salud publicaba previamente:
 
 - La base de datos abiertos tiene información mucho más completa y cada caso se puede seguir de individual. Para cada paciente, es posible conocer qué día fue atendido y el estado (confirmado, negativo o pendiente) de la prueba que se le realizó.
 
@@ -50,7 +50,7 @@ Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](
 
 3. Datos correspondientes a formatos antiguos (PDFs, SINAVE) y publicados hasta el 19 de abril (SSa ha dejado de actualizarlos):
     - [datos/reportes_oficiales_ssa](datos/reportes_oficiales_ssa): se archivan las tablas de confirmados y sospechosos en formato CSV generadas a partir de los archivos PDF que SSa publicaba.
-    - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se extraín  del mapa de SINAVE.
+    - [datos/sinave](datos/sinave): se archivan los datos en formato JSON que se extraían  del mapa de SINAVE.
 
 4. Datos correspondientes a formatos antiguos en formato *tidy*:
     - [datos/series_de_tiempo](datos/series_de_tiempo): el historial de casos a nivel nacional y desglosados por estado. **Estas series de tiempo se siguen actualizando con la base de datos abiertos** (el total de casos confirmados se asocia con el día de publicación).
@@ -79,7 +79,7 @@ Otras fuentes que **no se incluyen aquí**
 - [Blog de @mayrop](https://www.covid19in.mx/docs/datos/tablas-casos/)
 - [Our World in Data](https://ourworldindata.org/coronavirus)
 - [Worldometers](https://www.worldometers.info/coronavirus/country/mexico/): reporta casos recuperados pero no menciona la fuente.
-- [John Hopkins University](https://github.com/CSSEGISandData/COVID-19): para México reporta como fuente a Worldometers
+- [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19): para México reporta como fuente a Worldometers
 - [IIGEA](iigea.com/amag/covid-19/): recopila información de las Secretarías Estatales de Salud.
 - [verificovid](https://verificovid.mx/);
 
@@ -114,7 +114,7 @@ Para reproducir nuestro análisis puedes consultar nuestro código:
 
 ### Requerimientos
 
-Para instalar [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) hemos seguido [los pasos en CPAN](https://www.cpan.org/modules/INSTALL.html) para instalar `cpanm` (un instalador de módulos). Utilizamos [el método de bootstrapping](https://metacpan.org/pod/local::lib#The-bootstrapping-technique) con `local::lib` para instalar las librerías en el directorio `~/.perl`, lo cual requiere descargar localmente el módulo `local::lib`, decomprimirlo, y haber hecho `cd` a él. Una vez hecho esto, la instalación completa se hace con los siguientes pasos:
+Para instalar [Encoding::FixLatin](https://metacpan.org/pod/Encoding::FixLatin) hemos seguido [los pasos en CPAN](https://www.cpan.org/modules/INSTALL.html) para instalar `cpanm` (un instalador de módulos). Utilizamos [el método de bootstrapping](https://metacpan.org/pod/local::lib#The-bootstrapping-technique) con `local::lib` para instalar las librerías en el directorio `~/.perl`, lo cual requiere descargar localmente el módulo `local::lib`, descomprimirlo, y haber hecho `cd` a él. Una vez hecho esto, la instalación completa se hace con los siguientes pasos:
 
 ```
 cpan App::cpanminus  # instala cpanm
@@ -128,7 +128,7 @@ echo 'eval "$(perl -I$HOME/.perl/lib/perl5 -Mlocal::lib=$HOME/.perl)"' >> ~/.bas
 cpanm Encoding::FixLatin
 ```
 
-Si todo está configurado correctamente el ejecutable `fix_latin` debería de estar disponible en la terminal y se puede llamar desde un script de bash.
+Si todo está configurado correctamente, el ejecutable `fix_latin` debería de estar disponible en la terminal y se puede llamar desde un script de bash.
 
 **Paso opcional:** también podemos instalar la [librería compilada de C](https://metacpan.org/pod/Encoding::FixLatin::XS) para que la conversión sea más rápida utilizando `cpanm Encoding::FixLatin::XS`.
 
