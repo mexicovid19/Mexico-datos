@@ -4,6 +4,8 @@ import json
 import pandas as pd
 from datetime import date, timedelta
 
+from utils import parse_date
+
 pd.set_option('mode.chained_assignment', None)
 
 
@@ -50,13 +52,13 @@ if __name__ == '__main__':
 
     ## Casos por sexo y edad (en formato JSON) ##
 
-    dat = date.today() - timedelta(days=1)
-    date_filename = dat.strftime('%Y%m%d')
-    # date_iso = date.strftime('%Y-%m-%d')
-
     parser = argparse.ArgumentParser(description='procesa archivo de datos abiertos')
     parser.add_argument('input_file', help='el archivo csv comprimido como zip')
+    parser.add_argument('-d', '--date', type=str, default=None,
+                        help='specify the date to use as yyymmdd')
     args = parser.parse_args()
+    date_filename, _ = parse_date(args)
+
     input_file = args.input_file
     assert input_file.endswith(f'{date_filename}.zip'), \
         'error: archivo deberia ser zip con la fecha más reciente'

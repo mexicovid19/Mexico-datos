@@ -5,6 +5,8 @@ import pandas as pd
 import geopandas as gpd
 from datetime import datetime, timedelta
 
+from utils import parse_date
+
 from parsers import (
     confirmados_diarios_por_estado,
     negativos_diarios_por_estado,
@@ -33,13 +35,14 @@ func_dict['covid19_mex_ambulatorios.csv'] = ambulatorios_diarios_por_estado
 if __name__ == '__main__':
 
     update_time = datetime.now() - timedelta(hours=6)
-    date = datetime.now() - timedelta(days=1)
-    date_filename = date.strftime('%Y%m%d')
-    date_iso = date.strftime('%Y-%m-%d')
 
     parser = argparse.ArgumentParser(description='procesa archivo de datos abiertos')
     parser.add_argument('input_file', help='el archivo csv comprimido como zip')
+    parser.add_argument('-d', '--date', type=str, default=None,
+                        help='specify the date to use as yyymmdd')
     args = parser.parse_args()
+    date_filename, date_iso = parse_date(args)
+
     input_file = args.input_file
     assert input_file.endswith(f'{date_filename}.zip'), \
             'error: archivo deberia ser zip con la fecha más reciente'
