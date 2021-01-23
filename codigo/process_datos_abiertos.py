@@ -43,9 +43,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     date_filename, date_iso = parse_date(args)
 
-    input_file = args.input_file
-    assert input_file.endswith(f'{date_filename}.zip'), \
-            'error: archivo deberia ser zip con la fecha más reciente'
+    # input_file = args.input_file
+    # assert input_file.endswith(f'{date_filename}.zip'), \
+    #         'error: archivo deberia ser zip con la fecha más reciente'
+
+    input_file = '../datos_abiertos/20210121.zip'
 
     repo = os.pardir
     dir_datos_abiertos = os.path.join(repo, 'datos_abiertos', '')
@@ -61,9 +63,6 @@ if __name__ == '__main__':
 
     ## READING ##
 
-    # Lee los datos abiertos
-    datos_abiertos_df = pd.read_csv(input_file, compression='zip')
-
     # Lee catalogo de entidades (hoja de calculo 'Catálogo de ENTIDADES' en
     # el archivo 'diccionario_datos/Catalogos_0412.xlsx''; ha sido convertido a csv)
     entidades = (pd.read_csv(dir_input + 'diccionario_datos/catalogo_entidades.csv')
@@ -72,16 +71,35 @@ if __name__ == '__main__':
                  .replace({'Ciudad De México':'Ciudad de México'})
                  .to_dict())
 
+    # Lee los datos abiertos en chunks para no saturar la memoria RAM
+    datos_abiertos_chunks = pd.read_csv(input_file, compression='zip', chunksize=1_000_000)
 
-    # Escribe las series de tiempo a partir de los datos abiertos
-    # dfs = [func(datos_abiertos_df, entidades) for key, func in func_dict.items()]
-    dfs = []
+    # Concatenamos los datos en un diccionario con cada categoría (pe. confirmados, hospitalizados, ambulatorios)
+    dfs = {}
+    starter = 0
+    # Calcula las series de tiempo dinámicas usando los datos abiertos por pedazos (chunks); equivalente a:
+    # dfs = [func(datos_abiertos_df, entidades) for key, func in func_dict.items()] si no hay chunks
+    for chunk in datos_abiertos_chunks:
+        print( chunk.shape )
+        print( starter )
 
-    for key, func in func_dict.items():
-        df = func(datos_abiertos_df, entidades)
-        dfs.append(df)
-        df.to_csv(f'{dir_series_dge}/nuevos/{key}')
-        df.cumsum().to_csv(f'{dir_series_dge}/acumulados/{key}')
+        for key, func in func_dict.items():
+            if starter ==  0:
+                dfs[key] = pd.DataFrame()   
+                dfs[key] = dfs[key].add( func(chunk, entidades), fill_value=0 )
+            else:
+                dfs[key] = dfs[key].add( func(chunk, entidades), fill_value=0 )
+        
+        starter += 1
+
+    # Guardamos las series de tiempo en formato csv.
+    for key in func_dict.keys():
+        dfs[key].to_csv( f'{dir_series_dge}/nuevos/{key}' )
+        dfs[key].cumsum().to_csv(f'{dir_series_dge}/acumulados/{key}')
+
+
+    # Escribe todas las series agregadas en una lista para las series de tiempo estáticas
+    dfs = list( dfs.values() )
 
     ## Series de tiempo estaticas (solo actualiza ultima fila) ##
 
