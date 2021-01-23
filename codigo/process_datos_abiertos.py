@@ -92,6 +92,7 @@ if __name__ == '__main__':
 
     # Guardamos las series de tiempo en formato csv.
     for key in func_dict.keys():
+        dfs[key] = dfs[key].astype('int')
         dfs[key].to_csv( f'{dir_series_dge}/nuevos/{key}' )
         dfs[key].cumsum().to_csv(f'{dir_series_dge}/acumulados/{key}')
 
