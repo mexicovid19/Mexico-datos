@@ -9,7 +9,7 @@ from utils import parse_date
 pd.set_option('mode.chained_assignment', None)
 
 
-def por_edad_sexo(datos_filtrados, reindex=False,
+def casos_por_edad_sexo(datos_filtrados, reindex=False,
                   cat_sexo={1: 'MUJER', 2: 'HOMBRE', 99: 'NO ESPECIFICADO'}):
     """
     Calcula el número de pacientes confirmados por edad y por sexo.
@@ -39,9 +39,12 @@ def por_edad_sexo(datos_filtrados, reindex=False,
     gby.index = gby.index.map(lambda x: f'{5*x}-{5*x+4}')
     gby = gby.rename(columns=cat_sexo)
 
+    return gby
+
+def convierte_json(df):
     # convertimos a JSON
     json_list = []
-    for idx, row in gby.iterrows():
+    for idx, row in df.iterrows():
         d = dict(age=idx, male=int(row['HOMBRE']), female=int(row['MUJER']))
         json_list.append(d)
 
@@ -61,7 +64,7 @@ if __name__ == '__main__':
 
     input_file = args.input_file
     assert input_file.endswith(f'{date_filename}.zip'), \
-        'error: archivo deberia ser zip con la fecha más reciente'
+            'error: archivo deberia ser zip con la fecha más reciente'
 
 
     repo = os.pardir
@@ -74,17 +77,33 @@ if __name__ == '__main__':
     # dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
     # input_filename = dir_input + f'datos_abiertos_{dat_filename}.zip'
 
-    # Lee los datos abiertos
-    datos_abiertos_df = pd.read_csv(input_file)
+    # Lee los datos abiertos en chunks
+    datos_abiertos_chunks = pd.read_csv(input_file, compression='zip', chunksize=1_000_000)
 
-    idx_confirmados = datos_abiertos_df['CLASIFICACION_FINAL'].isin([1, 2, 3])
-    idx_defunciones = idx_confirmados & (
-        datos_abiertos_df['FECHA_DEF'] != '9999-99-99')
+    # Para almacenar los totales
+    confirmados_df = pd.DataFrame()
+    defunciones_df = pd.DataFrame()
 
-    confirmados_json = por_edad_sexo(datos_abiertos_df.loc[idx_confirmados])
+    for chunk in datos_abiertos_chunks:
+        idx_confirmados = chunk['CLASIFICACION_FINAL'].isin([1, 2, 3])
+        idx_defunciones = idx_confirmados & (chunk['FECHA_DEF'] != '9999-99-99')
+
+        confirmados_df = confirmados_df.add(
+            casos_por_edad_sexo(chunk.loc[idx_confirmados]),
+            fill_value=0
+        )
+
+        defunciones_df = defunciones_df.add(
+            casos_por_edad_sexo(chunk.loc[idx_defunciones]),
+            fill_value=0
+        )
+
     with open(confirmados_file, 'w') as f:
-        f.write(confirmados_json)
+        f.write(convierte_json(confirmados_df))
+        # conversion a int no es necesaria porque json lo hace automaticamente
 
-    defunciones_json = por_edad_sexo(datos_abiertos_df.loc[idx_defunciones])
     with open(defunciones_file, 'w') as f:
-        f.write(defunciones_json)
+        f.write(convierte_json(defunciones_df))
+
+
+    print(f'Se procesaron exitosamente las piramides para {input_file}')
