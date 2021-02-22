@@ -36,7 +36,7 @@ if [ -f  $DATA_DIR/$FILENAME ]; then
     rm -rf $DATA_DIR
     git add ../datos ; git add ../datos_abiertos
     git commit -m "Automatic update"
-    git push #-f fork
+    git push LeonardoCastro master #-f fork
 else
     echo "Archivo no encontrado"
 fi

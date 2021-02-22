@@ -6,14 +6,14 @@ URL="https://www.gob.mx/salud/documentos/datos-abiertos-152127"
 URL_ZIP="http://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos"
 ZIP_FILE="datos_abiertos_covid19.zip"
 
-DATE_CMD='date -d yesterday'  # date -d funciona en linux (bash)
+#DATE_CMD='date -d yesterday'  # date -d funciona en linux (bash)
 # En MacOS utilizar date -v (descomentar línea de abajo)
-# DATE_CMD='date -v -1d'
+DATE_CMD='date -v -1d'
 
 # El patrón que se utiliza para saber si la página está actualizada
 DATE_PATTERN="[Bb]ase de [Dd]atos.*$( $DATE_CMD +"%d/%m/%Y" )"
 
-# después de descargar se renombra el archivo usando la fecha 
+# después de descargar se renombra el archivo usando la fecha
 FILENAME="$( $DATE_CMD +"%Y%m%d" )"
 
 # La linea abajo consigue el direcororio donde se encuentra el script sin
