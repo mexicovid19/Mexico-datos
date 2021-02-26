@@ -21,7 +21,7 @@ from parsers import (
 
 # El archivo y la respectiva función que lo actualiza
 func_dict = dict()
-func_dict['covid19_mex_casos_totales.csv'] = confirmados_diarios_por_estado
+func_dict['covid19_mex_confirmados.csv'] = confirmados_diarios_por_estado
 func_dict['covid19_mex_negativos.csv'] = negativos_diarios_por_estado
 func_dict['covid19_mex_sospechosos.csv'] = sospechosos_diarios_por_estado
 # func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
@@ -102,7 +102,8 @@ if __name__ == '__main__':
                          quoting=csv.QUOTE_NONE)
 
     # Totales por estado
-    key = 'covid19_mex_casos_totales.csv'
+    # I had a typo here: non-matching key = 'covid19_mex_casos_totales.csv'
+    key = 'covid19_mex_confirmados.csv'
     totales_file = dir_series + key
     fila_totales = dfs[key].cumsum().tail(1)
     with open(totales_file, 'a') as f:
