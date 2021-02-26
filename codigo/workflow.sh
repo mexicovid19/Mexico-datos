@@ -21,8 +21,10 @@ cd "$DIR"
 /bin/bash ./download.sh
 # /bin/bash ./download_mirror.sh
 
-DATA_DIR=../tmp.*
-FILENAME="$(date -d "yesterday" +"%Y%m%d").zip"
+DATA_DIR=..
+#/tmp.*
+DATE_CMD='date -v -1d'
+FILENAME="$( $DATE_CMD +"%Y%m%d").zip"
 # si download_mirror, el nombre es el de abajo
 # FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d").zip"
 
@@ -33,7 +35,7 @@ if [ -f  $DATA_DIR/$FILENAME ]; then
     python update_deceased.py
     python update_pyramids.py $DATA_DIR/$FILENAME
 
-    rm -rf $DATA_DIR
+    rm -rf $DATA_DIR/$FILENAME
     git add ../datos ; git add ../datos_abiertos
     git commit -m "Automatic update"
     git push LeonardoCastro master #-f fork

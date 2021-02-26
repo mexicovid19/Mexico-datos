@@ -63,8 +63,8 @@ if __name__ == '__main__':
     date_filename, _ = parse_date(args)
 
     input_file = args.input_file
-    assert input_file.endswith(f'{date_filename}.zip'), \
-            'error: archivo deberia ser zip con la fecha más reciente'
+    #assert input_file.endswith(f'{date_filename}.zip'), \
+    #        'error: archivo deberia ser zip con la fecha más reciente'
 
 
     repo = os.pardir
