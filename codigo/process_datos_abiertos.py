@@ -10,7 +10,7 @@ from utils import parse_date
 from parsers import (
     confirmados_diarios_por_estado,
     negativos_diarios_por_estado,
-    # pruebas_pendientes_diarias_por_estado,
+    sospechosos_diarios_por_estado,
     # pruebas_totales_diarias_por_estado,
     defunciones_diarias_por_estado,
     hospitalizados_diarios_por_estado,
@@ -23,7 +23,7 @@ from parsers import (
 func_dict = dict()
 func_dict['covid19_mex_casos_totales.csv'] = confirmados_diarios_por_estado
 func_dict['covid19_mex_negativos.csv'] = negativos_diarios_por_estado
-# func_dict['covid19_mex_pendientes.csv'] = pruebas_pendientes_diarias_por_estado
+func_dict['covid19_mex_sospechosos.csv'] = sospechosos_diarios_por_estado
 # func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
 func_dict['covid19_mex_muertes.csv'] = defunciones_diarias_por_estado
 func_dict['covid19_mex_hospitalizados.csv'] = hospitalizados_diarios_por_estado
@@ -57,7 +57,6 @@ if __name__ == '__main__':
     dir_series = os.path.join(dir_datos, 'series_de_tiempo', '')
 
     dir_input = os.path.join(dir_datos_abiertos, 'raw', '')
-    # input_filename = dir_input + f'datos_abiertos_{date_filename}.zip'
 
     ## READING ##
 
@@ -134,14 +133,14 @@ if __name__ == '__main__':
         writer = csv.writer(f, 'unixnq')
         writer.writerow([date_iso] + fila_nuevas.values.tolist())  # a series
 
-    ## # Sospechosos por estado
-    ## key = 'covid19_mex_sospechosos.csv'
-    ## sospechosos_file = dir_series + key
-    ## # pruebas_pendientes_diarias_por_estado
-    ## fila_sospechosos = dfs[key].cumsum().tail(1)
-    ## with open(sospechosos_file, 'a') as f:
-    ##     writer = csv.writer(f, 'unixnq')
-    ##     writer.writerow([date_iso] + fila_sospechosos.values[0].tolist())
+    # Sospechosos por estado
+    key = 'covid19_mex_sospechosos.csv'
+    sospechosos_file = dir_series + key
+    # pruebas_pendientes_diarias_por_estado
+    fila_sospechosos = dfs[key].cumsum().tail(1)
+    with open(sospechosos_file, 'a') as f:
+        writer = csv.writer(f, 'unixnq')
+        writer.writerow([date_iso] + fila_sospechosos.values[0].tolist())
 
     # Negativos por estado
     key = 'covid19_mex_negativos.csv'
@@ -161,7 +160,7 @@ if __name__ == '__main__':
     gdf.nuevos = fila_nuevos.drop('Nacional').squeeze()  # series
     gdf.muertes = fila_muertes.drop('Nacional', axis=1).squeeze()
     gdf.muertes_nuevas = fila_nuevas.drop('Nacional').squeeze()  # series
-    gdf.sospechosos = 0  # fila_sospechosos.drop('Nacional', axis=1).squeeze()
+    gdf.sospechosos = fila_sospechosos.drop('Nacional', axis=1).squeeze()
     gdf.negativos = fila_negativos.drop('Nacional', axis=1).squeeze()
     gdf.totales_100k = gdf.totales * 100000 / gdf.population
     gdf.muertes_100k = gdf.muertes * 100000 / gdf.population

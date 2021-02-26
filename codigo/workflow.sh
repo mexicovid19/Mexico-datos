@@ -29,7 +29,7 @@ FILENAME="$(date -d "yesterday" +"%Y%m%d").zip"
 if [ -f  $DATA_DIR/$FILENAME ]; then
     echo -e "\nDatos bajados, inicia script Python\n"
     python -u process_datos_abiertos.py $DATA_DIR/$FILENAME; echo
-    # python update_tests.py
+    python update_tests.py
     python update_deceased.py
     python update_pyramids.py $DATA_DIR/$FILENAME
 
