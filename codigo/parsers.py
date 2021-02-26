@@ -42,26 +42,26 @@ def negativos_diarios_por_estado(datos, entidades):
     return get_formato_series(series, entidades)
 
 
-# def pruebas_pendientes_diarias_por_estado(datos, entidades):
-#     """
-#     Calcula el número de pruebas pendientes por fecha y por estado.
-# 
-#     Input:
-#     - datos: datos abiertos de COVID-19 en México disponibles en [1].
-# 
-#     Output:
-#     - series: Serie de tiempo de nuevas pruebas pendientes por dia para cada
-#         entidad federativa en México.
-# 
-#     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
-# 
-#     """
-#     series = (datos[datos['RESULTADO'] == 3]
-#               .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-#               .count()['ORIGEN'])
-#     return get_formato_series(series, entidades)
-# 
-# 
+def sospechosos_diarios_por_estado(datos, entidades):
+    """
+    Calcula el número de sospechosos por fecha y por estado.
+
+    Input:
+    - datos: datos abiertos de COVID-19 en México disponibles en [1].
+
+    Output:
+    - series: Serie de tiempo de nuevas pruebas pendientes por dia para cada
+        entidad federativa en México.
+
+    [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+
+    """
+    series = (datos[datos['CLASIFICACION_FINAL'].isin([3, 4, 5])]
+              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
+              .count()['ORIGEN'])
+    return get_formato_series(series, entidades)
+
+
 # def pruebas_totales_diarias_por_estado(datos, entidades):
 #     """
 #     Calcula el número total de pruebas realizadas por fecha y por estado.

@@ -14,9 +14,10 @@ neg = (pd.read_csv(dir_series + 'covid19_mex_negativos.csv')
        .set_index('Fecha')['Nacional']
        .rename('negativos'))
 neg.index = pd.to_datetime(neg.index)
-pend = (pd.read_csv(dir_series + 'covid19_mex_pendientes.csv')
+pend = (pd.read_csv(dir_series + 'covid19_mex_sospechosos.csv')
         .set_index('Fecha')['Nacional']
         .rename('pendientes'))
+#TODO: rename pendientes to sospechosos, but this needs to be fixed on the website too
 pend.index = pd.to_datetime(pend.index)
 
 left = pd.concat((pos, neg), axis=1)
