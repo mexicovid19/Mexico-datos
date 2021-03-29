@@ -36,7 +36,8 @@ def casos_por_edad_sexo(datos_filtrados, reindex=False,
         gby = gby.reindex(idx)
 
     gby = gby.fillna(0).astype('int')
-    gby.index = gby.index.map(lambda x: f'{5*x}-{5*x+4}')
+    # Esto tiene que hacerse afuera de la funcion debido a los chunks desordenan los rangos
+    # gby.index = gby.index.map(lambda x: f'{5*x}-{5*x+4}')
     gby = gby.rename(columns=cat_sexo)
 
     return gby
@@ -97,6 +98,10 @@ if __name__ == '__main__':
             casos_por_edad_sexo(chunk.loc[idx_defunciones]),
             fill_value=0
         )
+
+    # Despues de haber procesado todos los chunks, cambiamos indices a rangos
+    confirmados_df.index = confirmados_df.index.map(lambda x: f'{5*x}-{5*x+4}')
+    defunciones_df.index = defunciones_df.index.map(lambda x: f'{5*x}-{5*x+4}')
 
     with open(confirmados_file, 'w') as f:
         f.write(convierte_json(confirmados_df))

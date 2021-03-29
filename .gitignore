@@ -1,0 +1,7 @@
+*/.DS_Store
+*/__pycache__/
+datos/reportes_oficiales_ssa/casos_confirmados/rename_cmd.txt
+datos_abiertos/raw/zip_cmd.txt
+datos_abiertos/raw/datos_abiertos*.csv
+codigo/archive
+codigo/deprecated/workflow.sh

@@ -11,7 +11,7 @@ from parsers import (
     confirmados_diarios_por_estado,
     negativos_diarios_por_estado,
     sospechosos_diarios_por_estado,
-    # pruebas_totales_diarias_por_estado,
+    pruebas_totales_diarias_por_estado,
     defunciones_diarias_por_estado,
     hospitalizados_diarios_por_estado,
     ambulatorios_diarios_por_estado,
@@ -24,7 +24,7 @@ func_dict = dict()
 func_dict['covid19_mex_confirmados.csv'] = confirmados_diarios_por_estado
 func_dict['covid19_mex_negativos.csv'] = negativos_diarios_por_estado
 func_dict['covid19_mex_sospechosos.csv'] = sospechosos_diarios_por_estado
-# func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
+func_dict['covid19_mex_pruebas-totales.csv'] = pruebas_totales_diarias_por_estado
 func_dict['covid19_mex_muertes.csv'] = defunciones_diarias_por_estado
 func_dict['covid19_mex_hospitalizados.csv'] = hospitalizados_diarios_por_estado
 func_dict['covid19_mex_uci.csv'] = uci_diarios_por_estado
