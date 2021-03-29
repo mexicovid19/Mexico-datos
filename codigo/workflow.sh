@@ -21,7 +21,7 @@ cd "$DIR"
 /bin/bash ./download.sh
 # /bin/bash ./download_mirror.sh
 
-DATA_DIR=../tmp.*
+DATA_DIR=".."
 FILENAME="$(date -d "yesterday" +"%Y%m%d").zip"
 # si download_mirror, el nombre es el de abajo
 # FILENAME="datos_abiertos_$(date -d "yesterday" +"%Y%m%d").zip"
@@ -36,10 +36,11 @@ if [ -f  $DATA_DIR/$FILENAME ]; then
     rm -rf $DATA_DIR
     git add ../datos ; git add ../datos_abiertos
     git commit -m "Automatic update"
-    git push LeonardoCastro master #-f fork
+    git push  #-f fork
 else
     echo "Archivo no encontrado"
 fi
 
 
 # fin del script
+

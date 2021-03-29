@@ -19,15 +19,17 @@ FILENAME="$( $DATE_CMD +"%Y%m%d" )"
 # La linea abajo consigue el direcororio donde se encuentra el script sin
 # importar de donde se llame (no funciona si el último componente es un symlink)
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd $DIR
+cd ..
 
 
 
 # Creamos directorio temporal
-TMP_DIR=$(mktemp -dp ..)  # -p "$REPO_DIR"
+TMP_DIR=$(mktemp -dp .)  # -p "$REPO_DIR"
 echo -e "Directorio temporal es $TMP_DIR\n"
 
-# Nos aseguramos de que los archivos nuevos se eliminen en caso de error
-trap 'rm -rf "$TMP_DIR"' ERR  # TODO: no funciona, arreglar
+# Nos aseguramos de limpiar archivos temporales
+trap 'rm "$ZIP_FILE" && rm -rf "$TMP_DIR"' EXIT
 
 
 # Descarga el archivo zip
@@ -63,6 +65,7 @@ fi
 # Conprimimos archivo csv y generamos zip
 if [ -f "$TMP_DIR/$FILENAME.csv" ]; then
     zip  "$TMP_DIR/$FILENAME.zip" "$TMP_DIR/$FILENAME.csv"
+    mv "$TMP_DIR/$FILENAME.zip" .
     echo -e "\nArchivo zip creado\n"
 else
     echo "ERROR: archivo csv no encontrado (paso de compresion)"
@@ -70,9 +73,5 @@ else
 fi
 
 
-# Eliminamos archivos temporales
-# rm -rf "$TMP_DIR"
-rm "$ZIP_FILE"
-rm $TMP_DIR/*.csv
-
 echo "Termina script"
+
