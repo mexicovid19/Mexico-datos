@@ -1,0 +1,11 @@
+
+### Requirements ###
+# Install with
+# pip install -r requirements.txt
+
+numpy
+pandas
+geopandas
+
+### No longer used (used for scrapping the PDFs)
+# camelot
