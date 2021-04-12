@@ -17,8 +17,9 @@ cd "$DIR"
 
 
 # Activa el ambiente virtual
-source "env/bin/activate"
-trap 'deactivate' EXIT
+VENV="virtualenv"
+source "${VENV}/bin/activate"
+# trap 'deactivate' EXIT  # deactivate not found, pero no es necesario
 
 DATE_CMD='date -d yesterday'  # date -d funciona en linux (bash)
 # En MacOS utilizar date -v (descomentar línea de abajo)
@@ -44,7 +45,6 @@ else
 fi
 
 rm "$FILENAME"
-deactivate
 
 
 echo -e "\nTermina script workflow.sh\n"
