@@ -41,7 +41,7 @@ echo -e "Directorio temporal es: $TMP_DIR\n"
 cd "$TMP_DIR"
 
 # Borrar archivos temporales en caso de error
-trap 'rm -rf "$TMP_DIR"' EXIT
+trap 'cd ..; rm -rf "$TMP_DIR"' EXIT
 
 
 # Descarga el archivo zip
