@@ -1,5 +1,3 @@
-import pandas as pd
-
 from utils import get_formato_series
 
 
@@ -16,10 +14,8 @@ def confirmados_diarios_por_estado(datos, entidades):
 
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
     """
-    idx = datos['CLASIFICACION_FINAL'].isin([1, 2, 3])
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"].isin([1, 2, 3])
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -37,10 +33,8 @@ def negativos_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['CLASIFICACION_FINAL'] == 7)
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"] == 7
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -58,10 +52,8 @@ def sospechosos_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = datos['CLASIFICACION_FINAL'].isin([3, 4, 5])
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"].isin([3, 4, 5])
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -79,10 +71,8 @@ def pruebas_totales_diarias_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['TOMA_MUESTRA_LAB'] == 1) | (datos['TOMA_MUESTRA_ANTIGENO'] == 1)
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = (datos["TOMA_MUESTRA_LAB"] == 1) | (datos["TOMA_MUESTRA_ANTIGENO"] == 1)
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -100,10 +90,10 @@ def defunciones_diarias_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3])) & (datos['FECHA_DEF'] != '9999-99-99')
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_DEF'])
-              .count()['ORIGEN'])
+    idx = (datos["CLASIFICACION_FINAL"].isin([1, 2, 3])) & (
+        datos["FECHA_DEF"] != "9999-99-99"
+    )
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_DEF"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -122,10 +112,8 @@ def hospitalizados_diarios_por_estado(datos, entidades):
 
     """
     # esta serie incluye UCI + noUCI
-    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['TIPO_PACIENTE'] == 2))
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"].isin([1, 2, 3]) & (datos["TIPO_PACIENTE"] == 2)
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -143,10 +131,8 @@ def ambulatorios_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['TIPO_PACIENTE'] == 1))
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"].isin([1, 2, 3]) & (datos["TIPO_PACIENTE"] == 1)
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
 
 
@@ -164,9 +150,6 @@ def uci_diarios_por_estado(datos, entidades):
     [1]: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 
     """
-    idx = (datos['CLASIFICACION_FINAL'].isin([1, 2, 3]) & (datos['UCI'] == 1))
-    series = (datos.loc[idx]
-              .groupby(['ENTIDAD_UM', 'FECHA_INGRESO'])
-              .count()['ORIGEN'])
+    idx = datos["CLASIFICACION_FINAL"].isin([1, 2, 3]) & (datos["UCI"] == 1)
+    series = datos.loc[idx].groupby(["ENTIDAD_UM", "FECHA_INGRESO"]).size()
     return get_formato_series(series, entidades)
-
