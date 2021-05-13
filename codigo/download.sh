@@ -16,8 +16,9 @@ DATE_PATTERN="[Bb]ase de [Dd]atos.*$( $DATE_CMD +"%d/%m/%Y" )"
 # después de descargar se renombra el archivo usando la fecha 
 TARGET_BASENAME="$( $DATE_CMD +"%Y%m%d" )"
 
-# dentro del archivo zip, el archivo csv tiene el siguiente nombre
-CSV_FILENAME="$( $DATE_CMD +"%y%m%d" )COVID19MEXICO.csv"
+# dentro del archivo zip, el archivo csv tiene uno de los siguientes nombres
+CSV_FALLBACK="COVID19MEXICO.csv"
+CSV_FILENAME="$( $DATE_CMD +"%y%m%d" )$CSV_FALLBACK"
 
 # La linea abajo consigue el directorio donde se encuentra el script sin
 # importar de donde se llame (no funciona si el último componente es un symlink)
@@ -50,23 +51,27 @@ curl -L "$URL_ZIP" -o "$TARGET_BASENAME.zip"
 echo -e "\nDescomprimiendo"
 unzip "$TARGET_BASENAME.zip"
 
-if [ -f "$CSV_FILENAME" ]; then
-    # TODO: limpiar columnas por nombre
-    # awk -F, '{print $3","$5","$10","$11","$13","$36}' "$CSV_FILENAME" > "$TARGET_BASENAME.csv"
-    # echo -e "Archivo csv reducido: solo las columnas necesarias fueron conservadas\n"
+# TODO: limpiar columnas por nombre
+# awk -F, '{print $3","$5","$10","$11","$13","$36}' "$CSV_FILENAME" > "$TARGET_BASENAME.csv"
+# echo -e "Archivo csv reducido: solo las columnas necesarias fueron conservadas\n"
 
-    echo -e "\nCorriendo script fix_latin sobre: $CSV_FILENAME"
-    fix_latin "$CSV_FILENAME" > "$TARGET_BASENAME.csv"
-    echo -e "Archivo corregido es: $TARGET_BASENAME.csv\n"
+if [[ -f "$CSV_FILENAME" ]]; then
+    INPUT_FILENAME="$CSV_FILENAME"
+
+elif [[ -f "$CSV_FALLBACK" ]]; then
+    INPUT_FILENAME="$CSV_FALLBACK"
 
 else
     echo "ERROR: archivo csv no encontrado o hay ambiguedad"
     exit 1
 fi
 
+echo -e "\nCorriendo script fix_latin sobre: $INPUT_FILENAME"
+fix_latin "$INPUT_FILENAME" > "$TARGET_BASENAME.csv"
+
 
 # Conprimimos archivo csv y generamos zip
-if [ -f "$TARGET_BASENAME.csv" ]; then
+if [[ -f "$TARGET_BASENAME.csv" ]]; then
     echo -e "Comprimiendo (sobreescribe zip original)"
     zip - "$TARGET_BASENAME.csv" > "$TARGET_BASENAME.zip"
     # la redireccion a stdout sobreescribe zip original

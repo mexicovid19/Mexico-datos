@@ -75,9 +75,23 @@ if __name__ == "__main__":
         .to_dict()
     )
 
-    # Lee los datos abiertos en chunks para no saturar la memoria RAM
+    # Lee los datos en chunks y solo las cols necesarias para no saturar la memoria
+    columns = [
+        "ENTIDAD_UM",
+        "FECHA_INGRESO",
+        "CLASIFICACION_FINAL",
+        "TOMA_MUESTRA_LAB",
+        "TOMA_MUESTRA_ANTIGENO",
+        "FECHA_DEF",
+        "TIPO_PACIENTE",
+        "UCI",
+        "SEXO",
+        "EDAD",
+        "ID_REGISTRO",
+    ]
+
     datos_abiertos_chunks = pd.read_csv(
-        input_file, compression="zip", chunksize=1_000_000
+        input_file, compression="zip", usecols=columns, chunksize=1_000_000
     )
 
     # Concatenamos los datos en un diccionario con cada categoría (pe. confirmados, hospitalizados, ambulatorios)

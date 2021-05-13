@@ -30,7 +30,7 @@ FILENAME="$( $DATE_CMD +"%Y%m%d" ).zip"
 # FILENAME="datos_abiertos_$FILENAME"
 
 
-if [ -f  "$FILENAME" ]; then
+if [[ -f  "$FILENAME" ]]; then
     echo -e "\nBase de datos encontrada, inician scripts de Python\n"
     python -u process_datos_abiertos.py "$FILENAME"; echo
     python update_tests.py

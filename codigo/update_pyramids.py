@@ -85,8 +85,22 @@ if __name__ == "__main__":
     # input_filename = dir_input + f'datos_abiertos_{dat_filename}.zip'
 
     # Lee los datos abiertos en chunks
+    columns = [
+        "ENTIDAD_UM",
+        "FECHA_INGRESO",
+        "CLASIFICACION_FINAL",
+        "TOMA_MUESTRA_LAB",
+        "TOMA_MUESTRA_ANTIGENO",
+        "FECHA_DEF",
+        "TIPO_PACIENTE",
+        "UCI",
+        "SEXO",
+        "EDAD",
+        "ID_REGISTRO",
+    ]
+
     datos_abiertos_chunks = pd.read_csv(
-        input_file, compression="zip", chunksize=1_000_000
+        input_file, compression="zip", usecols=columns, chunksize=1_000_000
     )
 
     # Para almacenar los totales
