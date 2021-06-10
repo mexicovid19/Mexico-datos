@@ -7,3 +7,4 @@ datos_abiertos/raw/zip_cmd.txt
 datos_abiertos/raw/datos_abiertos*.csv
 codigo/archive
 codigo/deprecated/workflow.sh
+.DS_Store
