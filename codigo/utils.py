@@ -40,7 +40,8 @@ def get_formato_series(counts: pd.Series, colnames: Dict[str, str], zero_dates=T
     # Reordenar columnas para que los casos nacionales queden primero
     df = df[cols]
 
-    if zero_dates:
+    min_date, max_date = df.index.min(), df.index.max()
+    if zero_dates and not (pd.isna(min_date) or pd.isna(max_date)):
         # Llenamos ceros para fechas sin informacion
         idx = pd.date_range(df.index.min(), df.index.max())
         df = df.reindex(idx, fill_value=0)

@@ -105,9 +105,13 @@ if __name__ == "__main__":
         for key, func in func_dict.items():
             if starter == 0:
                 dfs[key] = pd.DataFrame()
-                dfs[key] = dfs[key].add(func(chunk, entidades), fill_value=0)
+                dfs[key] = (
+                    dfs[key].add(func(chunk, entidades), fill_value=0).astype(int)
+                )
             else:
-                dfs[key] = dfs[key].add(func(chunk, entidades), fill_value=0)
+                dfs[key] = (
+                    dfs[key].add(func(chunk, entidades), fill_value=0).astype(int)
+                )
 
         starter += 1
 
