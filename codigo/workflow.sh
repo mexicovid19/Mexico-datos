@@ -12,7 +12,8 @@ cd "$DIR"
 
 
 # Descarga la ultima base de datos
-/bin/bash ./download.sh
+# /bin/bash ./download.sh
+/bin/bash ./download_nodecompress.sh
 # /bin/bash ./download_mirror.sh
 
 
