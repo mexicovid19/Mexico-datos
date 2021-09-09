@@ -67,6 +67,7 @@ mv "$TARGET_BASENAME.zip" ..
 
 # Borramos archivos temporales
 cd ..
+rm -rf "$TMP_DIR"
 
 echo -e "\nTermina script download.sh\n"
 
