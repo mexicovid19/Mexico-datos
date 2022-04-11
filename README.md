@@ -70,6 +70,7 @@ Por ejemplo, en el archivo del día 27 que se puede bajar [del portal de Salud](
 
 - ~~[Mapa interactivo del Sistema Nacional de Vigilancia Epidemiológica (SINAVE)](https://covid19.sinave.gob.mx)~~ Ya no se actualiza con casos confirmados, negativos o sospechosos (solo con casos activos).
 
+- [Hospitalizaciones en la Red IRAG](https://www.gits.igg.unam.mx/red-irag-dashboard/reviewHome#) son descargadas mediante el scrapper en [@CapacidadHospitalariaMX](https://github.com/RodrigoZepeda/CapacidadHospitalariaMX)
 
 
 
